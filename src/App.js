@@ -1,7 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+// import Footer from "./Components/Shared/Footer";
 import Navbar from "./Components/Shared/Navbar";
-import Home from "./Page/Home";
+import Home from "./Page/Home.jsx";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <h1 className="text-7xl bg-violet-700 text-white p-10">
         Traveling Agency App
       </h1>
-      <button class="btn btn-primary">Button</button>
+      {/* <Footer /> */}
     </section>
   );
 }
