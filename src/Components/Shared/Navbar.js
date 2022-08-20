@@ -51,7 +51,15 @@ const Navbar = () => {
           <ul class="menu menu-horizontal p-0">{navMenu}</ul>
         </div>
         <div class="navbar-end">
-        <button class="btn btn-ghost btn-circle">
+          <div class="form-control">
+            <input
+              type="text"
+              placeholder="Search"
+              class="input input-bordered"
+            />
+          </div>
+
+          <button class="btn btn-ghost btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
@@ -134,8 +142,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
-      
     </>
   );
 };
