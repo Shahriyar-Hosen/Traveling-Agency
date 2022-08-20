@@ -5,7 +5,10 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <h1>This is Home page</h1>
+      
+      <h1 className="text-7xl bg-violet-700 text-white p-10">
+        Traveling Agency App
+      </h1>
     </div>
   );
 };
