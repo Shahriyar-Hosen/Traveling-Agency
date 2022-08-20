@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  // Navbar Menu
   const navMenu = (
     <>
       <li>
@@ -15,9 +16,51 @@ const Navbar = () => {
       </li>
     </>
   );
+
+  // Profile Menu
+  const profileMenu = (
+    <>
+      <li>
+        <Link to="/" class="justify-between">
+          Profile
+          <span class="badge  badge-primary ">New</span>
+        </Link>
+      </li>
+      <li>
+        <Link to="/" class=" w-full flex justify-between items-center ">
+          Card
+          <span className="indicator mx-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+              />
+            </svg>
+            <span class="badge badge-primary badge-sm indicator-item">7</span>
+          </span>
+        </Link>
+      </li>
+      <li>
+        <Link to="/">Dashboard</Link>
+      </li>
+      <li>
+        <Link to="/">Logout</Link>
+      </li>
+    </>
+  );
+
   return (
     <>
       <div class="navbar bg-base-100 px-3">
+        {/* Logo section */}
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -47,18 +90,24 @@ const Navbar = () => {
             daisyUI
           </Link>
         </div>
+
+        {/* Navbar Phone/horizontal Menu */}
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal p-0">{navMenu}</ul>
         </div>
+
+        {/* navbar end section*/}
         <div class="navbar-end">
-          <div class="form-control">
+          {/* Search input */}
+          <div class="form-control bg-secondary bg-opacity-5 rounded-lg">
             <input
               type="text"
               placeholder="Search"
-              class="input input-bordered"
+              class="input input-ghost w-full max-w-xs"
             />
           </div>
 
+          {/* Search button */}
           <button class="btn btn-ghost btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -75,6 +124,8 @@ const Navbar = () => {
               />
             </svg>
           </button>
+
+          {/* Notify button */}
           <button class="btn btn-ghost btn-circle">
             <div class="indicator">
               <svg
@@ -94,49 +145,23 @@ const Navbar = () => {
               <span class="badge badge-xs badge-primary indicator-item"></span>
             </div>
           </button>
+
+          {/* Profile Section */}
           <div class="flex justify-center items-center gap-2">
             <div class="dropdown dropdown-end">
+              {/* img */}
               <label tabindex="0" class="btn btn-ghost btn-circle avatar">
                 <div class="w-10 rounded-full">
-                  <img src="https://placeimg.com/80/80/people" alt="" />
+                  <img src="https://placeimg.com/192/192/people" alt="" />
                 </div>
               </label>
+
+              {/* Profile Section Menu*/}
               <ul
                 tabindex="0"
                 class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
               >
-                <li>
-                  <Link to="/" class="justify-between">
-                    Profile
-                    <span class="badge">New</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/">Settings</Link>
-                </li>
-                <li>
-                  <Link to="/">Logout</Link>
-                </li>
-                <li>
-                  <div class="indicator flex justify-center items-center gap-3">
-                    <h1>Card</h1>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                      />
-                    </svg>
-                    <span class="badge badge-sm indicator-item">8</span>
-                  </div>
-                </li>
+                {profileMenu}
               </ul>
             </div>
           </div>
