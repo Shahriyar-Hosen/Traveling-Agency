@@ -59,7 +59,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div class="navbar bg-base-100 px-3">
+      <div class="navbar px-3">
         {/* Logo section */}
         <div class="navbar-start">
           <div class="dropdown">
@@ -87,7 +87,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/" class="btn btn-ghost normal-case text-xl">
-            daisyUI
+          BD Traveller
           </Link>
         </div>
 

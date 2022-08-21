@@ -4,7 +4,7 @@ import banner from "../../Assets/banner/banner-1.png";
 const Banner = () => {
   return (
     <div
-      className="hero min-h-[75vh]"
+      className="hero min-h-[75vh] "
       style={{ background: `url(${banner})`, backgroundSize: "cover" }}
     >
       <div className="hero-overlay bg-opacity-25"></div>
@@ -18,7 +18,7 @@ const Banner = () => {
             Adventures are the best way to learn. Dare to live the life you've
             always wanted.
           </p>
-          <button className="btn btn-primary ">Get Started</button>
+          <button className="btn btn-primary ">Choose Place</button>
         </div>
       </div>
     </div>
