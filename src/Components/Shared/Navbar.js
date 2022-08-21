@@ -87,7 +87,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/" class="btn btn-ghost normal-case text-xl">
-          BD Traveller
+          BD Traveler
           </Link>
         </div>
 
