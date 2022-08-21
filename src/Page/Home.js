@@ -6,7 +6,7 @@ const Home = () => {
     <div>
       <Header />
       
-      <h1 className="text-7xl bg-violet-700 text-white p-10">
+      <h1 className="text-7xl mt-10 bg-violet-700 text-white p-10">
         Traveling Agency App
       </h1>
     </div>
