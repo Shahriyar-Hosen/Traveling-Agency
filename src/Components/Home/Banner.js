@@ -10,7 +10,7 @@ const Banner = () => {
       <div className="hero-overlay bg-opacity-25"></div>
       <div className="hero-content text-center text-white">
         <div className="max-w-3xl flex flex-col gap-10 md:gap-16 justify-center items-center">
-          <h1 className="mb-12 md:text-7xl text-3xl font-bold">
+          <h1 className="md:mb-12 md:text-7xl text-4xl font-bold">
             LOVE & Travel
           </h1>
           <p className="mb-5 text-lg md:text-xl">

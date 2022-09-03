@@ -23,7 +23,7 @@ const Navbar = () => {
       <li>
         <Link to="/" class="justify-between">
           Profile
-          <span class="badge  badge-primary ">New</span>
+          <span class="badge badge-primary ">New</span>
         </Link>
       </li>
       <li>
@@ -59,7 +59,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div class="navbar px-3">
+      <div class="navbar px-3 bg-transparent absolute max-w-7xl ">
         {/* Logo section */}
         <div class="navbar-start">
           <div class="dropdown">
@@ -86,8 +86,10 @@ const Navbar = () => {
               {navMenu}
             </ul>
           </div>
-          <Link to="/" class="btn btn-ghost normal-case text-xl">
-          BD Traveler
+          <Link to="/" class="btn btn-ghost normal-case text-2xl">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-warning font-extrabold">
+              BD Traveler
+            </span>
           </Link>
         </div>
 
