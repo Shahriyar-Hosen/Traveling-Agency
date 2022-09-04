@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -41,7 +41,7 @@ const PlacesSlider = () => {
   return (
     <>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={1}
         spaceBetween={30}
         freeMode={false}
         grabCursor={true}
@@ -63,7 +63,7 @@ const PlacesSlider = () => {
             slidesPerView: 2,
             spaceBetween: 40,
           },
-          1024: {
+          1200: {
             slidesPerView: 3,
             spaceBetween: 50,
           },
@@ -72,9 +72,9 @@ const PlacesSlider = () => {
         className="mySwiper"
       >
         <SwiperSlide className="pb-20">
-          <div className="w-96 h-96">
+          <div className="w-80 h-80">
             <img
-              className="w-32 md:w-96 md:h-96 rounded-lg"
+              className="w-32 md:w-80 md:h-80 rounded-lg"
               src="https://i.ibb.co/sRMwdrN/cox-s-bazar.jpg"
               alt=""
             />
@@ -82,9 +82,9 @@ const PlacesSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-96 h-96">
+          <div className="w-80 h-80">
             <img
-              className="w-32  md:w-96 md:h-96 rounded-lg"
+              className="w-32  md:w-80 md:h-80 rounded-lg"
               src="https://i.ibb.co/SV5RJhP/dubai.jpg"
               alt=""
             />
@@ -92,9 +92,9 @@ const PlacesSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-96 h-96">
+          <div className="w-80 h-80">
             <img
-              className="w-32  md:w-96 md:h-96 rounded-lg"
+              className="w-32  md:w-80 md:h-80 rounded-lg"
               src="https://i.ibb.co/FJz4sxT/istanbul.jpg"
               alt=""
             />
@@ -102,9 +102,9 @@ const PlacesSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-96 h-96">
+          <div className="w-80 h-80">
             <img
-              className="w-32  md:w-96 md:h-96 rounded-lg"
+              className="w-32  md:w-80 md:h-80 rounded-lg"
               src="https://i.ibb.co/WsdhSsF/maldives.jpg"
               alt=""
             />
@@ -112,9 +112,9 @@ const PlacesSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-96 h-96">
+          <div className="w-80 h-80">
             <img
-              className="w-32  md:w-96 md:h-96 rounded-lg"
+              className="w-32  md:w-80 md:h-80 rounded-lg"
               src="https://i.ibb.co/WsrVvYH/agra.jpg"
               alt=""
             />
@@ -122,9 +122,9 @@ const PlacesSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-96 h-96">
+          <div className="w-80 h-80">
             <img
-              className="w-32  md:w-96 md:h-96 rounded-lg"
+              className="w-32  md:w-80 md:h-80 rounded-lg"
               src="https://i.ibb.co/2nsH6L7/bankok.jpg"
               alt=""
             />
@@ -132,9 +132,9 @@ const PlacesSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-96 h-96">
+          <div className="w-80 h-80">
             <img
-              className="w-32  md:w-96 md:h-96 rounded-lg"
+              className="w-32  md:w-80 md:h-80 rounded-lg"
               src=" https://i.ibb.co/Yd39kWY/kathmandu.jpg"
               alt=""
             />
@@ -142,9 +142,9 @@ const PlacesSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-96 h-96">
+          <div className="w-80 h-80">
             <img
-              className="w-32  md:w-96 md:h-96 rounded-lg"
+              className="w-32  md:w-80 md:h-80 rounded-lg"
               src="https://i.ibb.co/xGSyWmB/colombo.jpg"
               alt=""
             />
