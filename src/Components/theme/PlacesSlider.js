@@ -70,7 +70,7 @@ const PlacesSlider = () => {
           <div>
             <div className="w-96">
               <img
-                className="w-32 h-72 md:w-96 md:h-96 rounded-lg"
+                className="w-32  md:w-96 md:h-96 rounded-lg"
                 src="https://i.ibb.co/sRMwdrN/cox-s-bazar.jpg"
                 alt=""
               />

@@ -8,13 +8,13 @@ module.exports = {
     themes: [
       {
         light: {
-          primary: "#0aff8d",
-          secondary: "#19d3ae",
-          accent: "#191919",
+          primary: "#029e9d",
+          secondary: "#fdc703",
+          accent: "#3a78c9",
           neutral: "#3D4451",
           "base-100": "#FFFFFF",
-          info: "#82bd69",
-          success: "#3ABFF8",
+          info: "#3ABFF8",
+          success: "#36D399",
           warning: "#FBBD23",
           error: "#F87272",
         },

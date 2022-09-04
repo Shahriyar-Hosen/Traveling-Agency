@@ -59,7 +59,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div class="navbar px-3 bg-transparent absolute max-w-7xl ">
+      <div class="navbar px-3 ">
         {/* Logo section */}
         <div class="navbar-start">
           <div class="dropdown">
