@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import navLogo from "../../Assets/log/traveler.png";
 
 const Navbar = () => {
   // Navbar Menu
@@ -59,7 +60,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div class="navbar px-3 ">
+      <div class="navbar px-3 bg-gradient-to-r  from-blue-500 to-green-400">
         {/* Logo section */}
         <div class="navbar-start">
           <div class="dropdown">
@@ -86,9 +87,14 @@ const Navbar = () => {
               {navMenu}
             </ul>
           </div>
-          <Link to="/" class="btn btn-ghost normal-case text-2xl">
+          <Link to="/" class="normal-case text-2xl">
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-warning font-extrabold">
-              BD Traveler
+              {/* BD Traveler */}
+              <img
+                src={navLogo}
+                alt=""
+                className=" px-2 py-0 rounded-full w-48"
+              />
             </span>
           </Link>
         </div>
