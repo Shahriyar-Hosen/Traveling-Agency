@@ -60,7 +60,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div class="navbar px-3 bg-gradient-to-r  from-blue-500 to-green-400">
+      <div class="navbar px-3 bg-gradient-to-r from-green-400 via-white to-secondary  from- to-">
         {/* Logo section */}
         <div class="navbar-start">
           <div class="dropdown">
@@ -107,11 +107,11 @@ const Navbar = () => {
         {/* navbar end section*/}
         <div class="navbar-end">
           {/* Search input */}
-          <div class="form-control bg-secondary bg-opacity-5 rounded-lg">
+          <div class="form-control bg-secondary bg-opacity-5 rounded-lg hidden lg:block">
             <input
               type="text"
               placeholder="Search"
-              class="input input-ghost w-full max-w-xs"
+              class="input input-ghost w-full h-8 max-w-xs text-xs"
             />
           </div>
 
