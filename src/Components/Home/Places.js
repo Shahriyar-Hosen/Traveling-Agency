@@ -30,6 +30,7 @@ const Places = () => {
       <div className="my-10">
         {/* slider */}
         <PlacesSlider />
+        
       </div>
       <div className="w-48 mx-auto">
         <button className="py-1 mt-5 px-6 font-bold rounded-full border-spacing-1 border border-primary md:hidden">
