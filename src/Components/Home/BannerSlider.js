@@ -16,12 +16,12 @@ import banner3 from "../../Assets/banner/banner-3.png";
 
 const BannerSlider = () => {
   return (
-    <div>
+    <div className="max-h-[70vh]">
       <Swiper
         navigation={false}
         keyboard={true}
         autoplay={{
-          delay: 5000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -32,11 +32,11 @@ const BannerSlider = () => {
       >
         <SwiperSlide>
           <div
-            className="w-full min-h-[80vh]"
+            className="w-full min-h-[70vh]"
             style={{ background: `url(${banner1})`, backgroundSize: "cover" }}
           >
             <div className="bg-gray-900 bg-opacity-30 ">
-              <div className=" max-w-3xl px-10 mx-auto w-sm h-[80vh] p-10 flex flex-col justify-center items-center pt-28">
+              <div className=" max-w-3xl px-10 mx-auto w-sm h-[70vh] p-10 flex flex-col justify-center items-center pt-28">
                 <h5 className="font-semibold text-white font-serif text-lg">
                   Amazing Places
                 </h5>{" "}
@@ -56,11 +56,11 @@ const BannerSlider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className="w-full min-h-[80vh]"
+            className="w-full min-h-[70vh]"
             style={{ background: `url(${banner2})`, backgroundSize: "cover" }}
           >
             <div className="bg-gray-900 bg-opacity-30 ">
-              <div className=" max-w-3xl px-10 mx-auto w-sm h-[80vh] p-10 flex flex-col justify-center items-center pt-28">
+              <div className=" max-w-3xl px-10 mx-auto w-sm h-[70vh] p-10 flex flex-col justify-center items-center pt-28">
                 <h5 className="font-semibold text-white font-serif text-lg">
                   Explore Travel
                 </h5>{" "}
@@ -85,11 +85,11 @@ const BannerSlider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className="w-full min-h-[80vh]"
+            className="w-full min-h-[70vh]"
             style={{ background: `url(${banner3})`, backgroundSize: "cover" }}
           >
             <div className="bg-gray-900 bg-opacity-30 ">
-              <div className=" max-w-3xl px-10 mx-auto w-sm h-[80vh] p-10 flex flex-col justify-center items-center pt-28">
+              <div className=" max-w-3xl px-10 mx-auto w-sm h-[70vh] p-10 flex flex-col justify-center items-center pt-28">
                 <h5 className="font-semibold text-white font-serif text-lg">
                   Road To Travel
                 </h5>{" "}
