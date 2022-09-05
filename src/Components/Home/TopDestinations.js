@@ -76,7 +76,7 @@ const TopDestinations = () => {
         </div>
         <div className="row-span-4 max-h-[700px] relative">
           <img
-            className="w-full h-full rounded-xl"
+            className="w-full h-full rounded-xl transform transition duration-500 hover:scale-125"
             src="https://htmldesigntemplates.com/html/travelin/images/destination/destination1.jpg"
             alt=""
           />
