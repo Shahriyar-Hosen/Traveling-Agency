@@ -2,16 +2,7 @@ import React from "react";
 import PlacesSlider from "../theme/PlacesSlider";
 
 const Places = () => {
-  /* 
-    https://i.ibb.co/sRMwdrN/cox-s-bazar.jpg
-    https://i.ibb.co/SV5RJhP/dubai.jpg
-    https://i.ibb.co/FJz4sxT/istanbul.jpg
-    https://i.ibb.co/WsdhSsF/maldives.jpg
-    https://i.ibb.co/WsrVvYH/agra.jpg
-    https://i.ibb.co/2nsH6L7/bankok.jpg
-    https://i.ibb.co/Yd39kWY/kathmandu.jpg
-    https://i.ibb.co/xGSyWmB/colombo.jpg
-*/
+
 
   return (
     <div className="flex flex-col gap-5 min-h-[350px] my-16 px-5">
