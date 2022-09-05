@@ -15,7 +15,40 @@ const TopDestinations = () => {
           eiusmod tempor incididunt ut labore.
         </p>
       </div>
-      <div></div>
+      <div className="grid grid-rows-3 grid-flow-col gap-5">
+        <div className="row-span-4 grid grid-rows-3 gap-5">
+          <div className="position-relative rounded row-span-3">
+            <img
+              className="w-full h-full rounded-xl"
+              src="	https://htmldesigntemplates.com/html/travelin/images/destination/destination2.jpg"
+              alt=""
+            />
+          </div>
+          <div className="grid grid-cols-2 gap-5">
+            <div>
+              <img
+                className="w-full h-full rounded-xl"
+                src="https://htmldesigntemplates.com/html/travelin/images/destination/destination15.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="w-full h-full rounded-xl"
+                src="	https://htmldesigntemplates.com/html/travelin/images/destination/destination16.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div className="row-span-4 max-h-[700px]">
+          <img
+            className="w-full h-full rounded-xl"
+            src="https://htmldesigntemplates.com/html/travelin/images/destination/destination1.jpg"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
   );
 };
