@@ -10,8 +10,8 @@ const Home = () => {
     <div>
       <Header />
       <CoreFeatures />
-      <TopDestinations />
       <Places />
+      <TopDestinations />
       <BestYear />
     </div>
   );

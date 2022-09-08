@@ -2,7 +2,7 @@ import React from "react";
 
 const TopDestinations = () => {
   return (
-    <div className="px-5">
+    <div className="px-5 mb-10">
       <div className="flex justify-center items-center flex-col gap-5  text-center w-3/4 mx-auto">
         <h5 className="font-serif text-secondary font-semibold text-lg mt-16">
           Top Destinations
