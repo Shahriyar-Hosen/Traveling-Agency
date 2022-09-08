@@ -8,6 +8,7 @@ import TourPackages from "../Components/Home/TourPackages/TourPackages";
 import TopDeals from "../Components/Home/TopDeals/TopDeals";
 import Testimonials from "../Components/Home/Testimonials/Testimonials";
 import TourGuides from "../Components/Home/TourGuides";
+import Blogs from "../Components/Home/Blogs/Blogs";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <TopDeals />
       <Testimonials />
       <TourGuides />
+      <Blogs />
     </section>
   );
 };

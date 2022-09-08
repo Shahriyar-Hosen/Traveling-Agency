@@ -2,7 +2,7 @@ import React from "react";
 
 const GuidesCard = ({ img, h1, h2 }) => {
   return (
-    <div className="mt-10 w-80 mx-auto ">
+    <div className="w-72 mx-auto">
       <figure>
         <img className="rounded-t-xl" src={img} alt="tour guides" />
       </figure>
