@@ -11,43 +11,8 @@ import "swiper/css/pagination";
 
 // import required modules
 import { FreeMode, Autoplay, Pagination, Navigation } from "swiper";
-/*     
-      effect={"coverflow"}
-      grabCursor={true}
-      centeredSlides={true}
-      slidesPerView={"auto"}
-      coverflowEffect={{
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      }}
-      spaceBetween={30}
-      // centeredSlides={true}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
-      pagination={{
-        clickable: true,
-      }}
-      navigation={true}
-      modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
-      className="mySwiper"
-*/
 
 const PlacesSlider = () => {
-  /* 
-    https://i.ibb.co/sRMwdrN/cox-s-bazar.jpg
-    https://i.ibb.co/SV5RJhP/dubai.jpg
-    https://i.ibb.co/FJz4sxT/istanbul.jpg
-    https://i.ibb.co/WsdhSsF/maldives.jpg
-    https://i.ibb.co/WsrVvYH/agra.jpg
-    https://i.ibb.co/2nsH6L7/bankok.jpg
-    https://i.ibb.co/Yd39kWY/kathmandu.jpg
-    https://i.ibb.co/xGSyWmB/colombo.jpg
-*/
 
   return (
     <>
