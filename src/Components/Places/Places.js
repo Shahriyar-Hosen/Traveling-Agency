@@ -5,7 +5,7 @@ const Places = () => {
 
 
   return (
-    <div className="flex flex-col gap-5 min-h-[350px] my-16 px-5">
+    <div className="flex flex-col gap-5 min-h-[350px] mt-20 px-5">
       <div className="flex justify-between items-center gap-3">
         <div>
           <span className="text-md text-secondary">PLAN YOUR TRIP</span>
@@ -17,7 +17,7 @@ const Places = () => {
           View all Places
         </button>
       </div>
-      <div className="my-10">
+      <div className="my-5">
         {/* slider */}
         <PlacesSlider />
       </div>

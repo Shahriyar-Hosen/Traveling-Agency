@@ -4,16 +4,18 @@ import CoreFeatures from "../Components/Home/CoreFeatures";
 import Header from "../Components/Home/Header";
 import TopDestinations from "../Components/Home/TopDestinations";
 import Places from "../Components/Places/Places";
+import TourPackages from "../Components/TourPackages/TourPackages";
 
 const Home = () => {
   return (
-    <div>
+    <section>
       <Header />
       <CoreFeatures />
       <Places />
       <TopDestinations />
       <BestYear />
-    </div>
+      <TourPackages />
+    </section>
   );
 };
 
