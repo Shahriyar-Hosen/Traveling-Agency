@@ -1,6 +1,7 @@
 import React from "react";
 import { MdArrowForwardIos, MdArrowBackIosNew } from "react-icons/md";
 import bgImg from "../../../Assets/background/shape8.png";
+import TopCategoriesSlider from "./TopCategoriesSlider";
 import TourPackagesSlider from "./TourPackagesSlider";
 
 const TourPackages = () => {
@@ -25,18 +26,23 @@ const TourPackages = () => {
             eiusmod tempor incididunt ut labore.
           </p>
         </div>
-        <div className="flex justify-center items-center">
-          <button className="btn text-black bg-white border-none hover:btn-primary hover:text-white">
+        <div className="flex justify-center items-center gap-1">
+          <button className="btn text-black bg-gray-100 border-none hover:btn-primary hover:text-white">
             <MdArrowBackIosNew />
           </button>
-          <button className="btn text-black bg-white border-none hover:btn-primary hover:text-white">
+          <button className="btn text-black bg-gray-100 border-none hover:btn-primary hover:text-white">
             <MdArrowForwardIos />
           </button>{" "}
         </div>
       </div>
-
-      <div className="mt-24">
+      <div className="mt-16">
         <TourPackagesSlider />
+      </div>
+      <div className="w-full flex flex-col lg:flex-row gap-5 justify-start items-center">
+        <div className="bg-primary w-full lg:w-48 py-10 text-4xl lg:text-3xl px-5 font-semibold text-white flex justify-center items-center rounded-lg text-center">
+          Top Categories
+        </div>
+          <TopCategoriesSlider />
       </div>
     </div>
   );
