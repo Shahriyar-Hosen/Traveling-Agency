@@ -13,7 +13,6 @@ import "swiper/css/pagination";
 import { FreeMode, Autoplay, Pagination, Navigation } from "swiper";
 
 const TourPackagesSlider = () => {
-
   return (
     <>
       <Swiper
@@ -23,7 +22,7 @@ const TourPackagesSlider = () => {
         grabCursor={true}
         centeredSlides={true}
         autoplay={{
-          delay: 3000,
+          delay: 3500,
           disableOnInteraction: true,
         }}
         pagination={{
@@ -67,30 +66,30 @@ const TourPackagesSlider = () => {
                   <input
                     type="radio"
                     name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
+                    className="mask mask-star-2 bg-secondary"
                   />
                   <input
                     type="radio"
                     name="rating-2"
-                    className="mask mask-star-2 bg-orange-400 "
+                    className="mask mask-star-2 bg-secondary "
                     checked
                   />
                   <input
                     type="radio"
                     name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
+                    className="mask mask-star-2 bg-secondary"
                     checked
                   />
                   <input
                     type="radio"
                     name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
+                    className="mask mask-star-2 bg-secondary"
                     checked
                   />
                   <input
                     type="radio"
                     name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
+                    className="mask mask-star-2 bg-secondary"
                     checked
                   />
                 </div>
@@ -135,30 +134,30 @@ const TourPackagesSlider = () => {
                   <input
                     type="radio"
                     name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
+                    className="mask mask-star-2 bg-secondary"
                   />
                   <input
                     type="radio"
                     name="rating-2"
-                    className="mask mask-star-2 bg-orange-400 "
+                    className="mask mask-star-2 bg-secondary "
                     checked
                   />
                   <input
                     type="radio"
                     name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
+                    className="mask mask-star-2 bg-secondary"
                     checked
                   />
                   <input
                     type="radio"
                     name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
+                    className="mask mask-star-2 bg-secondary"
                     checked
                   />
                   <input
                     type="radio"
                     name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
+                    className="mask mask-star-2 bg-secondary"
                     checked
                   />
                 </div>
@@ -203,30 +202,30 @@ const TourPackagesSlider = () => {
                   <input
                     type="radio"
                     name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
+                    className="mask mask-star-2 bg-secondary"
                   />
                   <input
                     type="radio"
                     name="rating-2"
-                    className="mask mask-star-2 bg-orange-400 "
+                    className="mask mask-star-2 bg-secondary "
                     checked
                   />
                   <input
                     type="radio"
                     name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
+                    className="mask mask-star-2 bg-secondary"
                     checked
                   />
                   <input
                     type="radio"
                     name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
+                    className="mask mask-star-2 bg-secondary"
                     checked
                   />
                   <input
                     type="radio"
                     name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
+                    className="mask mask-star-2 bg-secondary"
                     checked
                   />
                 </div>
@@ -271,30 +270,30 @@ const TourPackagesSlider = () => {
                   <input
                     type="radio"
                     name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
+                    className="mask mask-star-2 bg-secondary"
                   />
                   <input
                     type="radio"
                     name="rating-2"
-                    className="mask mask-star-2 bg-orange-400 "
+                    className="mask mask-star-2 bg-secondary "
                     checked
                   />
                   <input
                     type="radio"
                     name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
+                    className="mask mask-star-2 bg-secondary"
                     checked
                   />
                   <input
                     type="radio"
                     name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
+                    className="mask mask-star-2 bg-secondary"
                     checked
                   />
                   <input
                     type="radio"
                     name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
+                    className="mask mask-star-2 bg-secondary"
                     checked
                   />
                 </div>

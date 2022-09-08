@@ -5,6 +5,7 @@ import Header from "../Components/Home/Header";
 import TopDestinations from "../Components/Home/TopDestinations";
 import Places from "../Components/Home/Places/Places";
 import TourPackages from "../Components/Home/TourPackages/TourPackages";
+import TopDeals from "../Components/Home/TopDeals/TopDeals";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <TopDestinations />
       <BestYear />
       <TourPackages />
+      <TopDeals />
     </section>
   );
 };
