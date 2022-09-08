@@ -6,6 +6,7 @@ import TopDestinations from "../Components/Home/TopDestinations";
 import Places from "../Components/Home/Places/Places";
 import TourPackages from "../Components/Home/TourPackages/TourPackages";
 import TopDeals from "../Components/Home/TopDeals/TopDeals";
+import Testimonials from "../Components/Home/Testimonials/Testimonials";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <BestYear />
       <TourPackages />
       <TopDeals />
+      <Testimonials />
     </section>
   );
 };

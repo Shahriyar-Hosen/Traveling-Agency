@@ -13,15 +13,6 @@ import "swiper/css/pagination";
 import { FreeMode, Autoplay, Pagination, Navigation } from "swiper";
 
 const TopCategoriesSlider = () => {
-  /* 
-    
-    
-    
-    
-    
-    
-    
-     */
 
   return (
     <>
