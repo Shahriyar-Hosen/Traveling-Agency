@@ -25,7 +25,7 @@ const CoreFeatures = () => {
       </div>
 
       {/* cards */}
-      <div className="w-full pt-10 mx-5 flex justify-center items-center flex-col md:grid md:grid-cols-2 lg:grid-cols-4 gap-5 place-content-center">
+      <div className="w-full pt-10 px-5 flex justify-center items-center flex-col md:grid md:grid-cols-2 lg:grid-cols-4 gap-5 place-content-center">
         <div className="w-72 bg-white p-9 rounded-lg flex flex-col gap-5 border border-gray-300">
           <div>
             <BsFlag className="text-primary text-7xl" />{" "}

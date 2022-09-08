@@ -2,7 +2,7 @@ import React from "react";
 
 const TopDestinations = () => {
   return (
-    <div>
+    <div className="px-5">
       <div className="flex justify-center items-center flex-col gap-5  text-center w-3/4 mx-auto">
         <h5 className="font-serif text-secondary font-semibold text-lg mt-16">
           Top Destinations
@@ -15,9 +15,9 @@ const TopDestinations = () => {
           eiusmod tempor incididunt ut labore.
         </p>
       </div>
-      <div className="grid grid-rows-3 grid-flow-col gap-5">
-        <div className="row-span-4 grid grid-rows-3 gap-5">
-          <div className="row-span-3 relative">
+      <div className="grid grid-cols-1  lg:grid-flow-col gap-5 mt-5">
+        <div className="md:row-span-4 grid md:grid-rows-3grid-cols-1 gap-5">
+          <div className="md:row-span-3 relative">
             <img
               className="w-full h-full rounded-xl"
               src="	https://htmldesigntemplates.com/html/travelin/images/destination/destination2.jpg"
@@ -35,7 +35,7 @@ const TopDestinations = () => {
               </button>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="relative">
               <img
                 className="w-full h-full rounded-xl "
