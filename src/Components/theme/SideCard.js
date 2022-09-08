@@ -6,7 +6,7 @@ const SideCard = ({ img, h2, h1, rating, details, time, price, offers }) => {
     <div className="card lg:card-side bg-base-100 shadow-xl lg:w-[700px]">
       {" "}
         <figure className="relative w-full lg:w-[350px]">
-          <span className="absolute top-14 -left-24 font-bold bg-secondary px-24 py-2 text-xl text-white -rotate-45">
+          <span className="absolute top-14 -left-20 font-bold bg-secondary px-20 py-2 text-xl text-white -rotate-45">
             <span className="pl-8">{offers}% OFF</span>
           </span>
           <img
