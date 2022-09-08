@@ -1,5 +1,5 @@
 import React from "react";
-import PlacesSlider from "../theme/PlacesSlider";
+import PlacesSlider from "./PlacesSlider";
 
 const Places = () => {
 

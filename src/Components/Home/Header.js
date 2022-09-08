@@ -1,5 +1,5 @@
 import React from "react";
-import BannerSlider from "./BannerSlider";
+import BannerSlider from "./Banner/BannerSlider";
 import Search from "./Search";
 
 const Header = () => {

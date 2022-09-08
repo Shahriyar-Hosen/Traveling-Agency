@@ -10,9 +10,9 @@ import "swiper/css/pagination";
 // import required modules
 import { Navigation, Pagination, Keyboard, Autoplay } from "swiper";
 
-import banner1 from "../../Assets/banner/banner1.png";
-import banner2 from "../../Assets/banner/banner-2.png";
-import banner3 from "../../Assets/banner/banner-3.png";
+import banner1 from "../../../Assets/banner/banner1.png";
+import banner2 from "../../../Assets/banner/banner-2.png";
+import banner3 from "../../../Assets/banner/banner-3.png";
 
 const BannerSlider = () => {
   return (

@@ -2,8 +2,8 @@ import React from "react";
 import BestYear from "../Components/Home/BestYear";
 import CoreFeatures from "../Components/Home/CoreFeatures";
 import Header from "../Components/Home/Header";
-import Places from "../Components/Home/Places";
 import TopDestinations from "../Components/Home/TopDestinations";
+import Places from "../Components/Places/Places";
 
 const Home = () => {
   return (
