@@ -17,7 +17,7 @@ const Testimonials = () => {
             {/* Header */}
             <div className="w-full lg:w-7/12 flex flex-col justify-start items-start gap-5">
               <span className="text-2xl font-serif font-bold text-secondary">
-                Our Testimonails
+                Our Testimonials
               </span>
               <h2 className="text-4xl md:text-5xl font-bold text-white font-serif">
                 Good Reviews By <br />{" "}
