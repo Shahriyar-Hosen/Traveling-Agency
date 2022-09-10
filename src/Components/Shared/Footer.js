@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../Assets/log/logo-w.png";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Content from "../theme/Content";
+import PButton from "../theme/PButton";
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
         />
       </figure>
       <Content className="flex flex-col gap-20 text-white pt-20 px-5">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1  lg:grid-cols-3 gap-10">
           <div className="flex flex-col gap-5">
             <div>
               <figure>
@@ -31,7 +32,7 @@ const Footer = () => {
             </p>
           </div>
           {/* Categories */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 font-semibold gap-6 justify-center items-center text-center md:text-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 font-semibold gap-6 justify-items-center items-center text-center md:text-start">
             <div className="flex flex-col gap-2">
               <h1 className="text-3xl font-bold font-serif mb-2">Quick Link</h1>
               <p>About Us</p>
@@ -58,13 +59,13 @@ const Footer = () => {
               Jin our community of over 200,000 global readers who receives
               emails filled with news, promotions, and other good stuff.
             </p>
-            <form className="flex flex-row gap-2 md:mr-5 mt-5">
+            <form className="flex flex-col lg:flex-row gap-2 md:mr-5 mt-5 w-full">
               <input
                 type="email"
                 placeholder="Enter your Email"
                 className="input w-full text-black"
               />
-              <button className="btn btn-primary text-white">Subscribe</button>
+              <PButton className="btn btn-primary text-white">Subscribe</PButton>
             </form>
           </div>
         </div>
