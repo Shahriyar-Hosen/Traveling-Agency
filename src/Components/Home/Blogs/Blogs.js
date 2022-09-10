@@ -1,9 +1,10 @@
 import React from "react";
 import BlogCard from "../../theme/BlogCard";
+import Content from "../../theme/Content";
 
 const Blogs = () => {
   return (
-    <div>
+    <Content>
       <div className="flex justify-center items-center flex-col gap-5  text-center w-3/4 mx-auto ">
         <h5 className="font-serif text-secondary font-semibold text-lg mt-16">
           Our Blogs Offers
@@ -35,7 +36,7 @@ const Blogs = () => {
           p="Services To Grow Your Business Sell Affiliate Products"
         />
       </div>
-    </div>
+    </Content>
   );
 };
 
