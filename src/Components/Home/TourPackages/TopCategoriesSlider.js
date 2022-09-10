@@ -56,7 +56,7 @@ const TopCategoriesSlider = () => {
         className="mySwiper"
       >
         <SwiperSlide className="my-5 pb-5">
-          <div className="card card-compact w-44 h-44 bg-base-100  shadow-xl">
+          <div className="card card-compact w-44 h-44 bg-gray-100  shadow-xl">
             <figure>
               <img
                 className="w-full p-12 pt-12 pb-4"
@@ -70,7 +70,7 @@ const TopCategoriesSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="my-5 pb-5">
-          <div className="card card-compact w-44 h-44 bg-base-100  shadow-xl">
+          <div className="card card-compact w-44 h-44 bg-gray-100  shadow-xl">
             <figure>
               <img
                 className="w-full p-12 pt-12 pb-4"
@@ -84,7 +84,7 @@ const TopCategoriesSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="my-5 pb-5">
-          <div className="card card-compact w-44 h-44 bg-base-100  shadow-xl">
+          <div className="card card-compact w-44 h-44 bg-gray-100  shadow-xl">
             <figure>
               <img
                 className="w-full p-12 pt-12 pb-4"
@@ -98,7 +98,7 @@ const TopCategoriesSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="my-5 pb-5">
-          <div className="card card-compact w-44 h-44 bg-base-100  shadow-xl">
+          <div className="card card-compact w-44 h-44 bg-gray-100  shadow-xl">
             <figure>
               <img
                 className="w-full p-12 pt-12 pb-4"
@@ -112,7 +112,7 @@ const TopCategoriesSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="my-5 pb-5">
-          <div className="card card-compact w-44 h-44 bg-base-100  shadow-xl">
+          <div className="card card-compact w-44 h-44 bg-gray-100  shadow-xl">
             <figure>
               <img
                 className="w-full p-12 pt-12 pb-4"
@@ -126,7 +126,7 @@ const TopCategoriesSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="my-5 pb-5">
-          <div className="card card-compact w-44 h-44 bg-base-100  shadow-xl">
+          <div className="card card-compact w-44 h-44 bg-gray-100 shadow-xl">
             <figure>
               <img
                 className="w-full p-12 pt-12 pb-4"
@@ -140,7 +140,7 @@ const TopCategoriesSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="my-5 pb-5">
-          <div className="card card-compact w-44 h-44 bg-base-100  shadow-xl">
+          <div className="card card-compact w-44 h-44 bg-gray-100 shadow-xl">
             <figure>
               <img
                 className="w-full p-12 pt-12 pb-4"
