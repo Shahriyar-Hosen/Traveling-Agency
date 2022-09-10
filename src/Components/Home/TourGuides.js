@@ -1,9 +1,10 @@
 import React from "react";
+import Content from "../theme/Content";
 import GuidesCard from "../theme/GuidesCard";
 
 const TourGuides = () => {
   return (
-    <div>
+    <Content>
       <div className="flex justify-center items-center flex-col gap-5  text-center w-3/4 mx-auto ">
         <h5 className="font-serif text-secondary font-semibold text-lg mt-16">
           Tour Guides
@@ -40,7 +41,7 @@ const TourGuides = () => {
           h2="Quality Assurance"
         />
       </div>
-    </div>
+    </Content>
   );
 };
 
