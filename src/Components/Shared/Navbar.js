@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import navLogo from "../../Assets/log/traveler.png";
 import Content from "../theme/Content";
 
@@ -8,13 +8,13 @@ const Navbar = () => {
   const navMenu = (
     <>
       <li>
-        <Link to="/">Home</Link>
+        <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <Link to="/destination">Destination</Link>
+        <NavLink to="/destination">Destination</NavLink>
       </li>
       <li>
-        <Link to="/">Menu 3</Link>
+        <NavLink to="/3">Menu 3</NavLink>
       </li>
     </>
   );
@@ -63,7 +63,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-gradient-to-r from-cyan-400 via-white to-cyan-400">
-      <Content className="navbar px-3">
+      <Content className="navbar  px-3">
         {/* Logo section */}
         <div className="navbar-start">
           <div className="dropdown">
