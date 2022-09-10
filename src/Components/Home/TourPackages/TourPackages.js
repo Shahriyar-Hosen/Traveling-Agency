@@ -15,7 +15,7 @@ const TourPackages = () => {
       </figure>
       <Content>
         <div className="flex justify-between items-center gap-3">
-          <div className="max-w-xl flex flex-col justify-start items-start gap-5">
+          <div className="max-w-xl flex flex-col justify-start items-start gap-5 mx-5">
             <span className="text-md font-serif font-bold text-secondary">
               Top Pick
             </span>
