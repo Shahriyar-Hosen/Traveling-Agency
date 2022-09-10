@@ -11,10 +11,11 @@ import "swiper/css/pagination";
 
 // import required modules
 import { FreeMode, Autoplay, Pagination, Navigation } from "swiper";
+import Content from "../theme/Content";
 
 const Partners = () => {
   return (
-    <div>
+    <Content>
       <div className="flex justify-center items-center flex-col gap-5  text-center w-3/4 mx-auto ">
         <h5 className="font-serif text-secondary font-semibold text-lg mt-16">
           Our Partners
@@ -116,7 +117,7 @@ const Partners = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-    </div>
+    </Content>
   );
 };
 
