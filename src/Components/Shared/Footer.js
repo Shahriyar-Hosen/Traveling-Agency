@@ -7,7 +7,6 @@ const Footer = () => {
     <footer className="bg-[#17233e] pb-7">
       <figure>
         <img
-          // className="bg-[#17233e]"
           src="https://i.ibb.co/mGnbXdH/shape8.png"
           alt=""
         />

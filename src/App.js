@@ -6,7 +6,7 @@ import Home from "./Page/Home.js";
 
 function App() {
   return (
-    <section className="max-w-7xl mx-auto">
+    <section>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

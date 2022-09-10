@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import navLogo from "../../Assets/log/traveler.png";
+import Content from "../theme/Content";
 
 const Navbar = () => {
   // Navbar Menu
@@ -22,18 +23,18 @@ const Navbar = () => {
   const profileMenu = (
     <>
       <li>
-        <Link to="/" class="justify-between">
+        <Link to="/" className="justify-between">
           Profile
-          <span class="badge badge-primary ">New</span>
+          <span className="badge badge-primary ">New</span>
         </Link>
       </li>
       <li>
-        <Link to="/" class=" w-full flex justify-between items-center ">
+        <Link to="/" className=" w-full flex justify-between items-center ">
           Card
           <span className="indicator mx-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
+              className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -45,7 +46,9 @@ const Navbar = () => {
                 d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
               />
             </svg>
-            <span class="badge badge-primary badge-sm indicator-item">7</span>
+            <span className="badge badge-primary badge-sm indicator-item">
+              7
+            </span>
           </span>
         </Link>
       </li>
@@ -59,15 +62,15 @@ const Navbar = () => {
   );
 
   return (
-    <>
-      <div class="navbar px-3 bg-gradient-to-r from-cyan-400 via-white to-cyan-400">
+    <div className="bg-gradient-to-r from-cyan-400 via-white to-cyan-400">
+      <Content className="navbar px-3">
         {/* Logo section */}
-        <div class="navbar-start">
-          <div class="dropdown">
-            <label tabIndex="0" class="btn btn-ghost lg:hidden">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <label tabIndex="0" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -82,13 +85,13 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex="0"
-              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               {navMenu}
             </ul>
           </div>
-          <Link to="/" class="normal-case text-2xl">
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-warning font-extrabold">
+          <Link to="/" className="normal-case text-2xl">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-warning font-extrabold">
               {/* BD Traveler */}
               <img
                 src={navLogo}
@@ -100,26 +103,26 @@ const Navbar = () => {
         </div>
 
         {/* Navbar Phone/horizontal Menu */}
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal p-0">{navMenu}</ul>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal p-0">{navMenu}</ul>
         </div>
 
         {/* navbar end section*/}
-        <div class="navbar-end">
+        <div className="navbar-end">
           {/* Search input */}
-          <div class="form-control bg-secondary bg-opacity-25 rounded-lg hidden lg:block">
+          <div className="form-control bg-secondary bg-opacity-25 rounded-lg hidden lg:block">
             <input
               type="text"
               placeholder="Search"
-              class="input input-ghost w-full h-8 max-w-xs text-xs"
+              className="input input-ghost w-full h-8 max-w-xs text-xs"
             />
           </div>
 
           {/* Search button */}
-          <button class="btn btn-ghost btn-circle">
+          <button className="btn btn-ghost btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
+              className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -134,11 +137,11 @@ const Navbar = () => {
           </button>
 
           {/* Notify button */}
-          <button class="btn btn-ghost btn-circle">
-            <div class="indicator">
+          <button className="btn btn-ghost btn-circle">
+            <div className="indicator">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -150,16 +153,16 @@ const Navbar = () => {
                   d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
                 />
               </svg>
-              <span class="badge badge-xs badge-primary indicator-item"></span>
+              <span className="badge badge-xs badge-primary indicator-item"></span>
             </div>
           </button>
 
           {/* Profile Section */}
-          <div class="flex justify-center items-center gap-2">
-            <div class="dropdown dropdown-end">
+          <div className="flex justify-center items-center gap-2">
+            <div className="dropdown dropdown-end">
               {/* img */}
-              <label tabIndex="0" class="btn btn-ghost btn-circle avatar">
-                <div class="w-10 rounded-full">
+              <label tabIndex="0" className="btn btn-ghost btn-circle avatar">
+                <div className="w-10 rounded-full">
                   <img src="https://placeimg.com/192/192/people" alt="" />
                 </div>
               </label>
@@ -167,15 +170,15 @@ const Navbar = () => {
               {/* Profile Section Menu*/}
               <ul
                 tabIndex="0"
-                class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
               >
                 {profileMenu}
               </ul>
             </div>
           </div>
         </div>
-      </div>
-    </>
+      </Content>
+    </div>
   );
 };
 
