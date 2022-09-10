@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../Assets/log/logo-w.png";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import Content from "../theme/Content";
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
           alt=""
         />
       </figure>
-      <div className="flex flex-col gap-20 text-white pt-20 px-5">
+      <Content className="flex flex-col gap-20 text-white pt-20 px-5">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           <div className="flex flex-col gap-5">
             <div>
@@ -77,7 +78,7 @@ const Footer = () => {
             <FaLinkedin />
           </span>
         </div>
-      </div>
+      </Content>
     </footer>
   );
 };
