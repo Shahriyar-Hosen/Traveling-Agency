@@ -1,11 +1,13 @@
 import React from "react";
+import Content from "../../theme/Content";
 import DealsCard from "../../theme/DealsCard";
 import PButton from "../../theme/PButton";
 
 const TopDeals = () => {
   return (
-    <div>
+    <Content>
       <div className="flex justify-center items-center flex-col gap-5  text-center w-3/4 mx-auto ">
+
         <h5 className="font-serif text-secondary font-semibold text-lg mt-16">
           Top Deals
         </h5>
@@ -47,7 +49,7 @@ const TopDeals = () => {
         />
         <PButton className='my-10'>View All Deals</PButton>
       </div>
-    </div>
+    </Content>
   );
 };
 
