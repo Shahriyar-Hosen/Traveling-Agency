@@ -1,4 +1,5 @@
 import React from "react";
+import Partners from "../Home/Partners";
 import Content from "../theme/Content";
 import DestinationCard from "../theme/DestinationCard";
 import Header from "./Header";
@@ -21,9 +22,6 @@ const Destinations = () => {
           </p>
         </div>
         <div className="grid justify-items-center content-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 my-10">
-          {/* 
-
-          */}
           <DestinationCard
             img="https://i.ibb.co/WsrVvYH/agra.jpg"
             place="Agra"
@@ -98,6 +96,7 @@ const Destinations = () => {
           />
         </div>
       </Content>
+      <Partners />
     </section>
   );
 };
