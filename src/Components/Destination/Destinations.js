@@ -8,7 +8,7 @@ import LoveGoing from "./LoveGoing";
 const Destinations = () => {
   return (
     <section>
-      <Header />
+      <Header h1="Destination List" page="Destinations" />
       <Content>
         <div className="flex justify-center items-center flex-col gap-5  text-center w-3/4 mx-auto">
           <h5 className="font-serif text-secondary font-semibold text-lg mt-16">
