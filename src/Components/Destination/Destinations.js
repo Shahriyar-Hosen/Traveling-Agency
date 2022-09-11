@@ -3,6 +3,7 @@ import Partners from "../Home/Partners";
 import Content from "../theme/Content";
 import DestinationCard from "../theme/DestinationCard";
 import Header from "./Header";
+import LoveGoing from "./LoveGoing";
 
 const Destinations = () => {
   return (
@@ -14,7 +15,7 @@ const Destinations = () => {
             Top Destinations
           </h5>
           <h1 className="font-serif text-3xl md:text-4xl text-primary ">
-            <span className="text-neutral">Explore</span> Top Destinations
+            <span className="text-black">Explore</span> Top Destinations
           </h1>
           <p className="max-w-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -96,6 +97,7 @@ const Destinations = () => {
           />
         </div>
       </Content>
+      <LoveGoing />
       <Partners />
     </section>
   );
