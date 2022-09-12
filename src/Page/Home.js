@@ -9,7 +9,7 @@ import TopDeals from "../Components/Home/TopDeals/TopDeals";
 import Testimonials from "../Components/Home/Testimonials/Testimonials";
 import TourGuides from "../Components/Home/TourGuides";
 import Blogs from "../Components/Home/Blogs/Blogs";
-import Partners from "../Components/Home/Partners";
+import Partners from "../Components/Shared/Partners";
 
 const Home = () => {
   return (

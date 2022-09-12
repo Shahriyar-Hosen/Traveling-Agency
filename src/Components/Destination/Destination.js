@@ -1,9 +1,9 @@
 import React from "react";
 import Content from "../theme/Content";
-import Header from "./Header";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { FaFacebookF, FaGooglePlusG, FaTwitter } from "react-icons/fa";
 import CategoriesBtn from "../theme/CategoriesBtn";
+import Header from "../theme/Header";
 
 const Destination = () => {
   return (
