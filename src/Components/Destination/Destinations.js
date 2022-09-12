@@ -1,9 +1,9 @@
 import React from "react";
-import Partners from "../Home/Partners";
+import Partners from "../Shared/Partners";
 import Content from "../theme/Content";
 import DestinationCard from "../theme/DestinationCard";
-import Header from "./Header";
-import LoveGoing from "./LoveGoing";
+import Header from "../theme/Header";
+import LoveGoing from "../Shared/LoveGoing";
 
 const Destinations = () => {
   return (

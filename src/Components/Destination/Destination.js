@@ -1,15 +1,17 @@
 import React from "react";
 import Content from "../theme/Content";
-import Header from "./Header";
 import { HiOutlineLocationMarker } from "react-icons/hi";
+import { FaFacebookF, FaGooglePlusG, FaTwitter } from "react-icons/fa";
+import CategoriesBtn from "../theme/CategoriesBtn";
+import Header from "../theme/Header";
 
 const Destination = () => {
   return (
     <div>
       <Header h1="Bangkok - Thailand" page="Destination Detail" />
-      <div className="mx-3">
-        <Content>
-          <div>
+      <div className="mx-3 ">
+        <Content className="flex flex-col lg:flex-row gap-5">
+          <div className="lg:w-8/12">
             {/* Header */}
             <div className="flex flex-col gap-3 my-3 pb-3 border-b">
               <h1 className="text-4xl font-semibold font-serif text-black">
@@ -221,6 +223,63 @@ const Destination = () => {
                 ></textarea>
               </form>
             </div>
+          </div>
+          <div className="lg:w-4/12 flex flex-col justify-start mt-28 gap-10">
+            {/* card */}
+            <div className="border p-10 flex flex-col justify-center items-center text-center gap-5 rounded-lg w-full">
+              <div>
+                <figure className="avatar">
+                  <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                    <img src="https://i.ibb.co/s1KKgDz/img2.jpg" alt="" />
+                  </div>
+                </figure>
+              </div>
+              <div className="flex flex-col justify-center items-center gap-5">
+                <h3 className="text-2xl md:text-3xl font-serif font-semibold">
+                  Rolson Dulux
+                </h3>
+                <p className="">
+                  Hello, We're content writer who is fascinated by content
+                  fashion, celebrity and lifestyle. We helps clients bring the
+                  right content to the right people.
+                </p>
+                <div className="flex justify-center items-center gap-2">
+                  <div className="w-10 h-10 rounded-lg bg-[#4f4fc0] hover:bg-[#5e5eb7] text-white p-3">
+                    <FaFacebookF />
+                  </div>
+                  <div className="w-10 h-10 rounded-lg bg-[#b40107] hover:bg-[#c72026] text-white p-3">
+                    <FaGooglePlusG />{" "}
+                  </div>
+                  <div className="w-10 h-10 rounded-lg bg-[#00aeff] hover:bg-[#29a4dd] text-white p-3">
+                    <FaTwitter />{" "}
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* All Categories */}
+            <div>
+              <h1 className="text-2xl font-semibold font-serif text-start pl-2 mb-2">
+                All Categories
+              </h1>
+              <div className="flex flex-col justify-center items-center gap-3">
+                <CategoriesBtn>Travelling</CategoriesBtn>
+                <CategoriesBtn>Tour Position</CategoriesBtn>
+                <CategoriesBtn>Trip Landmark</CategoriesBtn>
+                <CategoriesBtn active>Adventurous</CategoriesBtn>
+                <CategoriesBtn>Address and Map</CategoriesBtn>
+                <CategoriesBtn>Booking Requests</CategoriesBtn>
+                <CategoriesBtn>Wildlife Reservation</CategoriesBtn>
+                <CategoriesBtn>Top Destination</CategoriesBtn>
+              </div>
+            </div>
+
+            <figure>
+              <img
+                className="rounded-lg w-full "
+                src="https://i.ibb.co/7QTnT7P/destination4.jpg"
+                alt=""
+              />
+            </figure>
           </div>
         </Content>
       </div>
