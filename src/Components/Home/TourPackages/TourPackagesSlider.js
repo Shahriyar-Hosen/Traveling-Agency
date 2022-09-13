@@ -18,16 +18,18 @@ const TourPackagesSlider = () => {
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
-        freeMode={false}
-        grabCursor={true}
-        centeredSlides={true}
+        loop={true}
+        loopFillGroupWithBlank={true}
+        // freeMode={false}
+        // grabCursor={true}
+        // centeredSlides={true}
         autoplay={{
           delay: 3500,
           disableOnInteraction: true,
         }}
-        pagination={{
-          clickable: true,
-        }}
+        // pagination={{
+        //   clickable: true,
+        // }}
         navigation={false}
         breakpoints={{
           640: {

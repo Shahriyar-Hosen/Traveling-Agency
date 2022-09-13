@@ -18,17 +18,16 @@ const TopCategoriesSlider = () => {
     <>
       <Swiper
         slidesPerView={1}
-        spaceBetween={10}
-        freeMode={false}
-        grabCursor={true}
-        centeredSlides={true}
+        spaceBetween={30}
+        loop={true}
+        loopFillGroupWithBlank={true}
         autoplay={{
           delay: 5000,
           disableOnInteraction: true,
         }}
-        pagination={{
-          clickable: true,
-        }}
+        // pagination={{
+        //   clickable: true,
+        // }}
         navigation={false}
         breakpoints={{
           440: {
