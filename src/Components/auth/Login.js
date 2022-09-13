@@ -1,11 +1,14 @@
 import React from "react";
 import { FaFacebook, FaGoogle } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import auth from "../../firebase.inite";
 import Content from "../theme/Content";
 import Header from "../theme/Header";
 import PButton from "../theme/PButton";
+import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 
 const Login = () => {
+  const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
   return (
     <div>
       <Header h1="Login" page="Login" />
