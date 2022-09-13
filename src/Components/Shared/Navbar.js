@@ -119,7 +119,7 @@ const Navbar = () => {
           </div>
 
           {/* Search button */}
-          <button className="btn btn-ghost btn-circle">
+          <button className="btn btn-ghost btn-circle hidden lg:flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -156,6 +156,9 @@ const Navbar = () => {
               <span className="badge badge-xs badge-primary indicator-item"></span>
             </div>
           </button>
+
+          {/*  Login/Register */}
+          <button className="btn btn-ghost">Login/Register</button>
 
           {/* Profile Section */}
           <div className="flex justify-center items-center gap-2">
