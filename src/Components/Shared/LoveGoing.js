@@ -4,13 +4,13 @@ import Content from "../theme/Content";
 const LoveGoing = () => {
   return (
     <div
-      className="hero bg-cover relative h-[80vh]"
+      className="hero bg-cover relative h-[83vh]"
       style={{
         backgroundImage: "url(https://i.ibb.co/PF7SRHR/section-bg1.png)",
       }}
     >
       <div className="bg-white bg-opacity-40 py-[22vh] w-full">
-        <figure className="absolute bottom-0 w-fit ">
+        <figure className="absolute bottom-0 h-fit w-fit ">
           <img
             className="w-full"
             src="https://i.ibb.co/nqXpPyP/shape6.png"
