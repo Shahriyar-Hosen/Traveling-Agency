@@ -14,7 +14,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [agree, setAgree] = useState(false);
-  const [error, setError] = useState("");
+  // const [error, setError] = useState("");
 
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
   const [signInWithEmailAndPassword, EPUser, EPLoading, EPError] =
@@ -32,9 +32,9 @@ const Login = () => {
     // navigate(from, { replace: true });
   }, [navigate, from]);
 
-  if (EPLoading || gLoading) {
-    return <div>Loading...</div>;
-  }
+  // if (EPLoading || gLoading) {
+  //   return <div>Loading...</div>;
+  // }
 
   if (EPError || gError) {
     signUpError = (
@@ -45,6 +45,13 @@ const Login = () => {
   const signInGoogle = () => {
     signInWithGoogle();
   };
+
+  if (gUser || EPUser) {
+    setEmail("");
+    setPassword("");
+    setAgree(false);
+    navigate("/");
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -101,11 +108,12 @@ const Login = () => {
             </div>
             <button
               type="submit"
-              disabled={!agree}
-              className="btn btn-primary hover:btn-secondary border-none  text-white hover:text-white tracking-widest hover:duration-500 hover:ease-in-out ease-in-out duration-500 disabled:bg-orange-200"
+              disabled={!agree || EPLoading || gLoading}
+              className="btn btn-primary hover:btn-secondary border-none  text-white hover:text-white tracking-widest hover:duration-500 hover:ease-in-out ease-in-out duration-500 disabled:bg-orange-200 w-full"
             >
               Login
             </button>
+            {signUpError}
           </form>
           <div>
             <h5 className="text-center mb-5">
