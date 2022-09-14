@@ -42,16 +42,16 @@ const Login = () => {
     );
   }
 
-  const signInGoogle = () => {
-    signInWithGoogle();
-  };
-
   if (gUser || EPUser) {
     setEmail("");
     setPassword("");
     setAgree(false);
     navigate("/");
   }
+
+  const signInGoogle = () => {
+    signInWithGoogle();
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -108,7 +108,7 @@ const Login = () => {
             </div>
             <button
               type="submit"
-              disabled={!agree || EPLoading || gLoading}
+              disabled={!agree || EPLoading}
               className="btn btn-primary hover:btn-secondary border-none  text-white hover:text-white tracking-widest hover:duration-500 hover:ease-in-out ease-in-out duration-500 disabled:bg-orange-200 w-full"
             >
               Login
@@ -128,6 +128,7 @@ const Login = () => {
             {/* Social Login section */}
             <div className="flex flex-col justify-center items-center gap-3 px-3">
               <button
+                disabled={gLoading}
                 className="px-2 py-3 rounded-lg w-full text-white hover:bg-[#ff3015] border-none bg-[#dd4b39] hover:duration-500 hover:ease-in-out ease-in-out duration-500 flex justify-center items-center gap-3"
                 onClick={signInGoogle}
               >

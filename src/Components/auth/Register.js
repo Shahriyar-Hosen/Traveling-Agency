@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   useCreateUserWithEmailAndPassword,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
 import { FaFacebook, FaGoogle } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.inite";
 import Content from "../theme/Content";
 import Header from "../theme/Header";
@@ -21,13 +21,42 @@ const Register = () => {
     useCreateUserWithEmailAndPassword(auth);
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
 
+  // const [token] = useToken(user || gUser);
+
+  const navigate = useNavigate();
+  let location = useLocation();
+
+  let signUpError;
+  let from = location.state?.from?.pathname || "/";
+
+  useEffect(() => {
+    // navigate(from, { replace: true });
+  }, [navigate, from]);
+
+  // if (EPLoading || gLoading) {
+  //   return <div>Loading...</div>;
+  // }
+
+  if (EPError || gError) {
+    signUpError = (
+      <p className="text-red-500">{EPError?.message || gError?.message}</p>
+    );
+  }
+
+  if (gUser || EPUser) {
+    setEmail("");
+    setPassword("");
+    setAgree(false);
+    navigate("/");
+  }
+
   const signInGoogle = () => {
     signInWithGoogle();
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(agree);
+
     if (password === reEnterPassword) {
       console.log(userName, email, password);
 
@@ -88,12 +117,13 @@ const Register = () => {
             </div>
             <button
               type="submit"
-              disabled={!agree}
+              disabled={!agree || EPLoading}
               className="btn btn-primary hover:btn-secondary border-none  text-white hover:text-white tracking-widest hover:duration-500 hover:ease-in-out ease-in-out duration-500 disabled:bg-orange-200"
             >
               {" "}
               Registration
             </button>
+            {signUpError}
           </form>
           <div>
             <h1 className="text-center mb-5">
@@ -108,6 +138,7 @@ const Register = () => {
             {/* Social Login section */}
             <div className="flex flex-col justify-center items-center gap-3 px-3">
               <button
+                disabled={gLoading}
                 className="px-2 py-3 rounded-lg w-full text-white hover:bg-[#ff3015] border-none bg-[#dd4b39] hover:duration-500 hover:ease-in-out ease-in-out duration-500 flex justify-center items-center gap-3"
                 onClick={signInGoogle}
               >
