@@ -3,12 +3,12 @@ import "./App.css";
 import Login from "./Components/auth/Login";
 import Register from "./Components/auth/Register";
 import Destination from "./Components/Destination/Destination";
-import Destinations from "./Components/Destination/Destinations";
 import Footer from "./Components/Shared/Footer";
 import Navbar from "./Components/Shared/Navbar";
 import Tour from "./Components/TourLists/Tour";
-import TourLists from "./Components/TourLists/TourLists";
+import Destinations from "./Page/Destinations";
 import Home from "./Page/Home.js";
+import Tours from "./Page/Tours";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
         {/* Privet Page */}
         <Route path="destinations" element={<Destinations />} />
         <Route path="destinations/:destinationId" element={<Destination />} />
-        <Route path="tours" element={<TourLists />} />
+        <Route path="tours" element={<Tours />} />
         <Route path="tours/:tourId" element={<Tour />} />
       </Routes>
       <Footer />
