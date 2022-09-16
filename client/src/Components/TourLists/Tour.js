@@ -334,7 +334,7 @@ const Tour = () => {
           <h1 className="text-2xl font-semibold font-serif pb-3">
             Write A Review
           </h1>
-          <form className="w-full flex flex-col gap-5">
+          <form className="w-full  flex flex-col gap-5">
             <span className="flex flex-col sm:flex-row gap-5">
               <input
                 type="text"
