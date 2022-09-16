@@ -97,8 +97,6 @@ const TourLists = () => {
           />
         </div>
       </Content>
-      <LoveGoing />
-      <Partners />
     </section>
   );
 };

@@ -5,7 +5,7 @@ import DestinationCard from "../theme/DestinationCard";
 import Header from "../theme/Header";
 import LoveGoing from "../Shared/LoveGoing";
 
-const Destinations = () => {
+const DestinationsSection = () => {
   return (
     <section>
       <Header h1="Destination List" page="Destinations" />
@@ -103,4 +103,4 @@ const Destinations = () => {
   );
 };
 
-export default Destinations;
+export default DestinationsSection;
