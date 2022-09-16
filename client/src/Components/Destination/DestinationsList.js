@@ -1,14 +1,13 @@
 import React from "react";
+import LoveGoing from "../Shared/LoveGoing";
 import Partners from "../Shared/Partners";
 import Content from "../theme/Content";
 import DestinationCard from "../theme/DestinationCard";
-import Header from "../theme/Header";
-import LoveGoing from "../Shared/LoveGoing";
 
-const DestinationsSection = () => {
+const DestinationsList = () => {
   return (
     <section>
-      <Header h1="Destination List" page="Destinations" />
+      
       <Content>
         <div className="flex justify-center items-center flex-col gap-5  text-center w-3/4 mx-auto">
           <h5 className="font-serif text-secondary font-semibold text-lg mt-16">
@@ -97,10 +96,8 @@ const DestinationsSection = () => {
           />
         </div>
       </Content>
-      <LoveGoing />
-      <Partners />
     </section>
   );
 };
 
-export default DestinationsSection;
+export default DestinationsList;
