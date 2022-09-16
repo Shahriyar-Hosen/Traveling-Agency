@@ -1,16 +1,15 @@
 import React from "react";
 import LoveGoing from "../Components/Shared/LoveGoing";
 import Partners from "../Components/Shared/Partners";
-import TourLists from "../Components/TourLists/TourLists";
 
-const Tours = () => {
+const Hotels = () => {
   return (
     <section>
-      <TourLists />
+      <h1>This is Hotels Page</h1>
       <LoveGoing />
       <Partners />
     </section>
   );
 };
 
-export default Tours;
+export default Hotels;

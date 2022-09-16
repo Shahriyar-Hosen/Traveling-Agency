@@ -1,10 +1,11 @@
 import React from "react";
-import Destination from "../Components/Destination/Destination";
+import DestinationsSection from "../Components/Destination/Destinations";
+
 
 const Destinations = () => {
   return (
     <section>
-      <Destination />
+      <DestinationsSection />
     </section>
   );
 };

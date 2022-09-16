@@ -10,7 +10,7 @@ import gravatarUrl from "gravatar-url";
 const Navbar = () => {
   const [user] = useAuthState(auth);
   const { email, photoURL } = user || {};
-  
+
   const logout = () => {
     signOut(auth);
   };
@@ -26,6 +26,9 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink to="/tours">Tours</NavLink>
+      </li>
+      <li>
+        <NavLink to="/hotels">Hotels</NavLink>
       </li>
     </>
   );

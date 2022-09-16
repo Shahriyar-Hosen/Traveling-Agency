@@ -8,6 +8,7 @@ import Navbar from "./Components/Shared/Navbar";
 import Tour from "./Components/TourLists/Tour";
 import Destinations from "./Page/Destinations";
 import Home from "./Page/Home.js";
+import Hotels from "./Page/Hotels";
 import Tours from "./Page/Tours";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="destinations/:destinationId" element={<Destination />} />
         <Route path="tours" element={<Tours />} />
         <Route path="tours/:tourId" element={<Tour />} />
+        <Route path="hotels" element={<Hotels />} />
       </Routes>
       <Footer />
     </main>
