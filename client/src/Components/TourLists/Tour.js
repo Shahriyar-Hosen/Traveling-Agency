@@ -1,10 +1,11 @@
 import React from "react";
-import { HiOutlineLocationMarker } from "react-icons/hi";
 import LoveGoing from "../Shared/LoveGoing";
 import Partners from "../Shared/Partners";
 import Content from "../theme/Content";
 import Header from "../theme/Header";
+import Collapse from "./Collapse";
 import Description from "./Description";
+import Expect from "./Expect";
 import Gallery from "./Gallery";
 import TourHeader from "./TourHeader";
 
@@ -21,82 +22,9 @@ const Tour = () => {
         {/* Description */}
         <Description />
         {/* What To Expect */}
-        <div className="my-10">
-          <h1 className="text-2xl font-semibold font-serif">What To Expect</h1>
-          <p className="mt-5">
-            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
-            in laying out print, graphic or web designs. The passage is
-            attributed to an unknown typesetter in the 15th century who is
-            thought to have scrambled parts of Cicero's De Finibus Bonorum et
-            Malorum for use in a type specimen book.Lorem ipsum, or lipsum as it
-            is sometimes known, is dummy text used in laying out print, graphic
-            or web designs.{" "}
-          </p>
-          <p className="mt-2">
-            The passage is attributed to an unknown typesetter in the 15th
-            century who is thought to have scrambled parts of Cicero's De
-            Finibus Bonorum et Malorum for use in a type specimen book.
-          </p>
-        </div>
+        <Expect />
         {/* Collapse */}
-        <div className="my-10 ">
-          <div tabIndex={0} className="collapse collapse-arrow bg-base-100">
-            <input type="checkbox" />
-            {/* checked bg-primary text-white */}
-            <div className="collapse-title text-xl font-medium border rounded-lg">
-              Day 1 - Barcelona - Zaragoza - Madrid
-            </div>
-            <div className="collapse-content pt-5">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa,
-                inventore cumque veniam, praesentium velit incidunt rem quas a,
-                quos eos ipsum, reprehenderit voluptatem.
-              </p>
-            </div>
-          </div>
-          <div tabIndex={0} className="collapse collapse-arrow bg-base-100 ">
-            <input type="checkbox" />
-            {/* checked bg-primary text-white */}
-            <div className="collapse-title text-xl font-medium border rounded-lg">
-              Day 2 - Zurich - Biel/Bienne - Neuchatel - Geneva
-            </div>
-            <div className="collapse-content pt-5">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa,
-                inventore cumque veniam, praesentium velit incidunt rem quas a,
-                quos eos ipsum, reprehenderit voluptatem.
-              </p>
-            </div>
-          </div>
-          <div tabIndex={0} className="collapse collapse-arrow bg-base-100 ">
-            <input type="checkbox" />
-            {/* checked bg-primary text-white */}
-            <div className="collapse-title text-xl font-medium border rounded-lg">
-              Day 3 - Enchanting Engelberg
-            </div>
-            <div className="collapse-content pt-5">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa,
-                inventore cumque veniam, praesentium velit incidunt rem quas a,
-                quos eos ipsum, reprehenderit voluptatem.
-              </p>
-            </div>
-          </div>
-          <div tabIndex={0} className="collapse collapse-arrow bg-base-100 ">
-            <input type="checkbox" />
-            {/* checked bg-primary text-white */}
-            <div className="collapse-title text-xl font-medium border rounded-lg">
-              Day 4 - Barcelona - Zaragoza - Madrid
-            </div>
-            <div className="collapse-content pt-5">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa,
-                inventore cumque veniam, praesentium velit incidunt rem quas a,
-                quos eos ipsum, reprehenderit voluptatem.
-              </p>
-            </div>
-          </div>
-        </div>
+        <Collapse />
         {/* Map */}
         <div className="my-10">
           <h1 className="text-2xl font-semibold font-serif pb-3">Map</h1>
