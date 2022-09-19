@@ -1,5 +1,5 @@
+import React from "react";
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
 import Login from "./Components/auth/Login";
 import Register from "./Components/auth/Register";
 import Destination from "./Components/Destination/Destination";
@@ -11,7 +11,7 @@ import Home from "./Page/Home.js";
 import Hotels from "./Page/Hotels";
 import Tours from "./Page/Tours";
 
-function App() {
+const App = () => {
   return (
     <main>
       <Navbar />
@@ -31,6 +31,6 @@ function App() {
       <Footer />
     </main>
   );
-}
+};
 
 export default App;
