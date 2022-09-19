@@ -1,19 +1,35 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/home/Home";
-import Hotel from "./pages/hotel/Hotel";
-import List from "./pages/list/List";
-import Login from "./pages/login/Login";
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Login from "./Components/auth/Login";
+import Register from "./Components/auth/Register";
+import Destination from "./Components/Destination/Destination";
+import Footer from "./Components/Shared/Footer";
+import Navbar from "./Components/Shared/Navbar";
+import Tour from "./Components/TourLists/Tour";
+import Destinations from "./Page/Destinations";
+import Home from "./Page/Home.js";
+import Hotels from "./Page/Hotels";
+import Tours from "./Page/Tours";
 
 function App() {
   return (
-    <BrowserRouter>
+    <main>
+      <Navbar />
       <Routes>
+        {/* Public Page */}
         <Route path="/" element={<Home />} />
-        <Route path="/hotels" element={<List />} />
-        <Route path="/hotels/:id" element={<Hotel />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+
+        {/* Privet Page */}
+        <Route path="destinations" element={<Destinations />} />
+        <Route path="destinations/:destinationId" element={<Destination />} />
+        <Route path="tours" element={<Tours />} />
+        <Route path="tours/:tourId" element={<Tour />} />
+        <Route path="hotels" element={<Hotels />} />
       </Routes>
-    </BrowserRouter>
+      <Footer />
+    </main>
   );
 }
 
