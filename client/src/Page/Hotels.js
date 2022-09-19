@@ -6,7 +6,6 @@ const Hotels = () => {
   return (
     <section>
       <h1>This is Hotels Page</h1>
-      <span>Hotels lists</span>
       <LoveGoing />
       <Partners />
     </section>
