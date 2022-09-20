@@ -11,16 +11,16 @@ import HeadLine from "../theme/HeadLine";
 import Map from "../theme/Map";
 import Reviews from "../theme/Reviews";
 
-const Tour = () => {
+const Hotel = () => {
   const galleryImg = [
-    "https://i.ibb.co/r77YXNS/trending1.jpg",
-    "https://i.ibb.co/zGzhCkz/trending2.jpg",
-    "https://i.ibb.co/jrGj182/trending3.jpg",
+    "https://i.ibb.co/YcnqRSK/single3.webp",
+    "https://i.ibb.co/KsHgF2v/Luxury-Hotels.jpg",
+    "https://i.ibb.co/5YD96h2/single1.jpg",
   ];
   return (
     <section>
-      {/* Full width Tour page */}
-      <Header h1="Tour single" page="Tour Single Three" />
+      {/* Full width Hotel page */}
+      <Header h1="Hotel single" page="Hotel" />
       <Content className="px-3">
         {/* Header */}
         <HeadLine
@@ -47,4 +47,4 @@ const Tour = () => {
   );
 };
 
-export default Tour;
+export default Hotel;

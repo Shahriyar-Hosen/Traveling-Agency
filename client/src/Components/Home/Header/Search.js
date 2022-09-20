@@ -1,6 +1,6 @@
 import React from "react";
-import { VscLocation } from "react-icons/vsc";
 import { FaSearch } from "react-icons/fa";
+import { VscLocation } from "react-icons/vsc";
 import Content from "../../theme/Content";
 
 const Search = () => {
@@ -18,22 +18,22 @@ const Search = () => {
           <input
             type="text"
             placeholder="Destination"
-            class="w-full  py-3 px-3 text-xs border outline-gray-400 rounded-md mt-3 lg:mt-0"
+            className="w-full  py-3 px-3 text-xs border outline-gray-400 rounded-md mt-3 lg:mt-0"
           />
           <input
             type="text"
             placeholder="dd/mm/yyy"
-            class="w-full  py-3 px-3 text-xs border outline-gray-400 rounded-md"
+            className="w-full  py-3 px-3 text-xs border outline-gray-400 rounded-md"
           />
           <input
             type="text"
             placeholder="Travel Type"
-            class="w-full  py-3 px-3 text-xs border outline-gray-400 rounded-md"
+            className="w-full  py-3 px-3 text-xs border outline-gray-400 rounded-md"
           />
           <input
             type="text"
             placeholder="Tour Duration"
-            class="w-full  py-3 px-3 text-xs border outline-gray-400 rounded-md"
+            className="w-full  py-3 px-3 text-xs border outline-gray-400 rounded-md"
           />
           <button className="flex justify-center items-center gap-1 bg-primary w-full rounded-md py-3 px-5 text-white text-sm font-mono">
             <FaSearch className="text-xs" /> <span>Search Now</span>

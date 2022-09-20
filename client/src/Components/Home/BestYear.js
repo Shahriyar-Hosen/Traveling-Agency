@@ -18,7 +18,7 @@ const BestYear = () => {
             {/* best in travel 2022 svg */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="text-white m-auto mb-12 md:mb-32 h-auto w-full md:max-w-xl lg:max-w-3xl"
+              className="text-white m-auto mb-12 md:mb-32 h-auto w-full md:max-w-xl lg:max-w-3xl"
               width="25em"
               height="12.375em"
               viewBox="0 0 462 204"

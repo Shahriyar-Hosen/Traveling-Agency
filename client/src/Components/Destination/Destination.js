@@ -1,8 +1,8 @@
 import React from "react";
-import Content from "../theme/Content";
-import { HiOutlineLocationMarker } from "react-icons/hi";
 import { FaFacebookF, FaGooglePlusG, FaTwitter } from "react-icons/fa";
+import { HiOutlineLocationMarker } from "react-icons/hi";
 import CategoriesBtn from "../theme/CategoriesBtn";
+import Content from "../theme/Content";
 import Header from "../theme/Header";
 
 const Destination = () => {
@@ -126,7 +126,7 @@ const Destination = () => {
             {/* Map */}
             <div className="my-10">
               <h1 className="text-2xl font-semibold font-serif pb-3">Map</h1>
-              <div class="map rounded overflow-hidden">
+              <div className="map rounded overflow-hidden">
                 <div className="w-full">
                   <iframe
                     className=" rounded overflow-hidden w-full"
@@ -134,7 +134,7 @@ const Destination = () => {
                     title="google maps"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116834.05517529047!2d90.27575512876744!3d23.780727221499042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa723bbdd5904c2!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1662898823726!5m2!1sen!2sus"
                     loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
+                    referrerPolicy="no-referrer-when-downgrade"
                   ></iframe>
                 </div>
               </div>
