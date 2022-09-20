@@ -6,8 +6,8 @@ const CardFull = ({ img, offers, title, location, des1, des2, price }) => {
   return (
     <div className="border rounded-lg p-5 flex lg:flex-row flex-col w-fit lg:w-full justify-between items-center">
       <div className="flex flex-col lg:flex-row justify-center items-center text-center lg:text-start  gap-5">
-        <figure>
-          <img className="w-96 h-56 rounded-lg" src={img} alt={title} />
+        <figure className="w-96 h-56">
+          <img className="w-full h-full image-full rounded-lg" src={img} alt={title} />
         </figure>
         <div className="flex flex-col justify-between">
           <div className="flex flex-col gap-2">
