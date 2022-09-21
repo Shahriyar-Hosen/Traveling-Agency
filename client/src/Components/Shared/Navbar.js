@@ -1,8 +1,8 @@
-import { signOut } from "firebase/auth";
 import React from "react";
+import { signOut } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, NavLink } from "react-router-dom";
-import navLogo from "../../Assets/log/traveler.png";
+import navLogo from "../../Assets/log/logo.png";
 import auth from "../../firebase.inite";
 import Content from "../theme/Content";
 import gravatarUrl from "gravatar-url";
@@ -78,7 +78,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="bg-gradient-to-r from-cyan-400 via-white to-cyan-400">
+    <div className="bg-gradient-to-r from-white via-yellow-200 to-white">
       <Content className="navbar  px-3">
         {/* Logo section */}
         <div className="navbar-start">
