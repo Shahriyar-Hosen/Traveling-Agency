@@ -11,6 +11,10 @@ import "swiper/css/bundle";
 import { Provider } from "react-redux";
 import { store } from "./app/store";
 
+// react-date-range
+import 'react-date-range/dist/styles.css'; // main style file
+import 'react-date-range/dist/theme/default.css'; // theme css file
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
