@@ -11,7 +11,7 @@ const HotelsPackages = () => {
         <img className="-mt-5 hidden md:block" src={bgImg} alt="" />
       </figure>
       <Content>
-        <div className="flex justify-center items-center flex-col gap-5  text-center w-3/4 mx-auto">
+        <div className="flex justify-center items-center flex-col gap-5 mt-12 text-center w-3/4 mx-auto">
           <h5 className="font-serif text-secondary font-semibold text-lg mt-16 md:-mt-28">
             Top Pick
           </h5>

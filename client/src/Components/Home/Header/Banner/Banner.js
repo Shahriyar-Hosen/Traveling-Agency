@@ -36,7 +36,7 @@ const Banner = () => {
 
   return (
     <section className="banner min-h-[110vh] h-full relative pb-10">
-      <div className="bg-black w-full h-full bg-opacity-40 py-10 px-5 ">
+      <div className="bg-black w-full h-full bg-opacity-40 pt-10 pb-20 px-5 ">
         <Content>
           <div className="bg-white w-60 mx-auto p-5 rounded-xl mb-10 mt-5">
             <img src={bannerLogo} alt="" />
@@ -124,7 +124,7 @@ const Banner = () => {
                       id="adult"
                       className="select select-bordered w-full"
                     >
-                      <option >Adult</option>
+                      <option selected>Adult</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
@@ -136,7 +136,7 @@ const Banner = () => {
                       id="children"
                       className="select select-bordered w-full"
                     >
-                      <option >Children</option>
+                      <option selected>Children</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
@@ -149,7 +149,7 @@ const Banner = () => {
                     id="room"
                     className="select select-bordered w-full"
                   >
-                    <option >Rooms</option>
+                    <option selected>Rooms</option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -220,7 +220,7 @@ const Banner = () => {
       <figure className="absolute -bottom-1">
         <img
           className="rotate-180 w-full h-full"
-          src="https://i.ibb.co/mGnbXdH/shape8.png"
+          src="https://i.ibb.co/rZwg7jJ/header-shap.png"
           alt=""
         />
       </figure>
