@@ -5,7 +5,7 @@ import Content from "../../theme/Content";
 const Blogs = () => {
   return (
     <Content>
-      <div className="flex justify-center items-center flex-col gap-5  text-center w-3/4 mx-auto ">
+      <div className="flex justify-center items-center flex-col gap-5  text-center w-3/4 mx-auto pb-5">
         <h5 className="font-serif text-secondary font-semibold text-lg mt-16">
           Our Blogs Offers
         </h5>

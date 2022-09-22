@@ -10,6 +10,7 @@ import TourGuides from "../Components/Home/TourGuides";
 import Blogs from "../Components/Home/Blogs/Blogs";
 import Partners from "../Components/Shared/Partners";
 import TopCategories from "../Components/Home/TopCategories";
+import HotelsPackages from "../Components/hotels/HotelsPackages";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <TopDestinations />
       <BestYear />
       <TourPackages />
+      <HotelsPackages />
       <Testimonials />
       <TourGuides />
       <Blogs />

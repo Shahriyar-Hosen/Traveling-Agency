@@ -1,5 +1,5 @@
 import React from "react";
-import HotelsList from "../Components/Hotels/HotelsList";
+import HotelsList from "../Components/hotels/HotelsList";
 import Header from "../Components/Shared/Header";
 import LoveGoing from "../Components/Shared/LoveGoing";
 import Partners from "../Components/Shared/Partners";

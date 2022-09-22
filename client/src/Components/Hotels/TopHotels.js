@@ -1,18 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Content from "../../theme/Content";
-import DealsCard from "../../theme/DealsCard";
-import PButton from "../../theme/PButton";
+import Content from "../theme/Content";
+import DealsCard from "../theme/DealsCard";
+import PButton from "../theme/PButton";
 
-const TopDeals = () => {
+const TopHotels = () => {
   return (
     <Content>
       <div className="flex justify-center items-center flex-col gap-5  text-center w-3/4 mx-auto ">
         <h5 className="font-serif text-secondary font-semibold text-lg mt-16">
-          Top Deals
+          Top Hotels
         </h5>
         <h1 className="font-serif text-3xl md:text-4xl text-primary ">
-          <span className="text-neutral">The Last </span> Minute Deals
+          <span className="text-neutral">The Last </span> Minute Hotels Deals
         </h1>
         <p className="max-w-xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -47,12 +47,12 @@ const TopDeals = () => {
           rating="12"
           time="3 Days"
         />
-        <Link to="/tours">
-          <PButton className="my-10">View All Deals</PButton>
+        <Link to="/hotels">
+          <PButton className="my-10">View All Hotels</PButton>
         </Link>
       </div>
     </Content>
   );
 };
 
-export default TopDeals;
+export default TopHotels;
