@@ -2,13 +2,13 @@ import React from "react";
 import { MdArrowForwardIos, MdArrowBackIosNew } from "react-icons/md";
 import bgImg from "../../../Assets/background/shape8.png";
 import Content from "../../theme/Content";
-import TopCategoriesSlider from "./TopCategoriesSlider";
+import TopDeals from "../TopDeals/TopDeals";
 import TourPackagesSlider from "./TourPackagesSlider";
 
 const TourPackages = () => {
   return (
     <div
-      className="min-h-screen my-10 bg-gray-100"
+      className="min-h-screen bg-gray-100"
     >
       <figure>
         <img src={bgImg} alt="" />
@@ -39,13 +39,8 @@ const TourPackages = () => {
         <div className="mt-16">
           <TourPackagesSlider />
         </div>
-        <div className="w-full flex flex-col lg:flex-row gap-5 justify-start items-center">
-          <div className="bg-primary w-full lg:w-48 py-10 text-4xl lg:text-3xl px-5 font-semibold text-white flex justify-center items-center rounded-lg text-center">
-            Top Categories
-          </div>
-          <TopCategoriesSlider />
-        </div>
       </Content>
+      <TopDeals />
     </div>
   );
 };

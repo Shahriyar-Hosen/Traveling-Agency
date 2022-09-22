@@ -21,7 +21,7 @@ const TopDestinations = () => {
           <div className="md:row-span-3 relative">
             <img
               className="w-full h-full rounded-xl"
-              src="	https://htmldesigntemplates.com/html/travelin/images/destination/destination2.jpg"
+              src="https://htmldesigntemplates.com/html/travelin/images/destination/destination2.jpg"
               alt=""
             />
             <div className="absolute bottom-0 pb-5 rounded-xl top-0 z-10 flex justify-between w-full px-10 py-5 items-end bg-gray-900 bg-opacity-20 font-serif">

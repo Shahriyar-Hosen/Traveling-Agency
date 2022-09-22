@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Content from "../../theme/Content";
 import PlacesSlider from "./PlacesSlider";
 
@@ -23,9 +24,9 @@ const Places = () => {
         <PlacesSlider />
       </div>
       <div className="w-48 mx-auto">
-        <button className="py-1 mt-5 px-6 font-bold rounded-full border-spacing-1 border border-primary md:hidden">
+        <Link to='/destinations' className="py-1 mt-5 px-6 font-bold rounded-full border-spacing-1 border border-primary md:hidden">
           View all Places
-        </button>
+        </Link>
       </div>
     </Content>
   );

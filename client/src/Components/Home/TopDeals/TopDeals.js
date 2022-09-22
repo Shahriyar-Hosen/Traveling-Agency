@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Content from "../../theme/Content";
 import DealsCard from "../../theme/DealsCard";
 import PButton from "../../theme/PButton";
@@ -7,7 +8,6 @@ const TopDeals = () => {
   return (
     <Content>
       <div className="flex justify-center items-center flex-col gap-5  text-center w-3/4 mx-auto ">
-
         <h5 className="font-serif text-secondary font-semibold text-lg mt-16">
           Top Deals
         </h5>
@@ -47,7 +47,9 @@ const TopDeals = () => {
           rating="12"
           time="3 Days"
         />
-        <PButton className='my-10'>View All Deals</PButton>
+        <Link to="/tours">
+          <PButton className="my-10">View All Deals</PButton>
+        </Link>
       </div>
     </Content>
   );

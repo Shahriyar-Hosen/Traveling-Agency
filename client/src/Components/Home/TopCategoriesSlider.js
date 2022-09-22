@@ -13,7 +13,6 @@ import "swiper/css/pagination";
 import { FreeMode, Autoplay, Pagination, Navigation } from "swiper";
 
 const TopCategoriesSlider = () => {
-
   return (
     <>
       <Swiper
@@ -55,10 +54,10 @@ const TopCategoriesSlider = () => {
         className="mySwiper"
       >
         <SwiperSlide className="my-5 pb-5">
-          <div className="card card-compact w-44 h-44 bg-gray-100  shadow-xl">
+          <div className="rounded-xl w-44 h-44 bg-gray-100 shadow-xl">
             <figure>
               <img
-                className="w-full p-12 pt-12 pb-4"
+                className="w-full p-12 pt-12 pb-2"
                 src="https://i.ibb.co/KNMMDRd/hiking.png"
                 alt="Package"
               />
@@ -72,7 +71,7 @@ const TopCategoriesSlider = () => {
           <div className="card card-compact w-44 h-44 bg-gray-100  shadow-xl">
             <figure>
               <img
-                className="w-full p-12 pt-12 pb-4"
+                className="w-full p-12 pt-12 pb-2"
                 src="https://i.ibb.co/JRRPkdK/sunbed.png"
                 alt="Package"
               />
@@ -86,7 +85,7 @@ const TopCategoriesSlider = () => {
           <div className="card card-compact w-44 h-44 bg-gray-100  shadow-xl">
             <figure>
               <img
-                className="w-full p-12 pt-12 pb-4"
+                className="w-full p-12 pt-12 pb-2"
                 src="https://i.ibb.co/9Nx1DmR/surf.png"
                 alt="Package"
               />
@@ -100,7 +99,7 @@ const TopCategoriesSlider = () => {
           <div className="card card-compact w-44 h-44 bg-gray-100  shadow-xl">
             <figure>
               <img
-                className="w-full p-12 pt-12 pb-4"
+                className="w-full p-12 pt-12 pb-2"
                 src="https://i.ibb.co/GPmC65f/safari.png"
                 alt="Package"
               />
@@ -114,7 +113,7 @@ const TopCategoriesSlider = () => {
           <div className="card card-compact w-44 h-44 bg-gray-100  shadow-xl">
             <figure>
               <img
-                className="w-full p-12 pt-12 pb-4"
+                className="w-full p-12 pt-12 pb-2"
                 src="https://i.ibb.co/8x3b9L7/cycling.png"
                 alt="Package"
               />
@@ -128,7 +127,7 @@ const TopCategoriesSlider = () => {
           <div className="card card-compact w-44 h-44 bg-gray-100 shadow-xl">
             <figure>
               <img
-                className="w-full p-12 pt-12 pb-4"
+                className="w-full p-12 pt-12 pb-2"
                 src="https://i.ibb.co/Tt9cGxB/camping-tent.png"
                 alt="Package"
               />
@@ -142,7 +141,7 @@ const TopCategoriesSlider = () => {
           <div className="card card-compact w-44 h-44 bg-gray-100 shadow-xl">
             <figure>
               <img
-                className="w-full p-12 pt-12 pb-4"
+                className="w-full p-12 pt-12 pb-2"
                 src="https://i.ibb.co/Zg1rC3J/hiking-1.png"
                 alt="Package"
               />

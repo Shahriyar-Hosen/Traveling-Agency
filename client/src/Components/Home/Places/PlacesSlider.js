@@ -10,11 +10,10 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
 // import required modules
-import {  Autoplay,  Navigation } from "swiper";
+import { FreeMode, Autoplay, Navigation } from "swiper";
 // FreeMode,Pagination,
 
 const PlacesSlider = () => {
-
   return (
     <>
       <Swiper
@@ -22,7 +21,7 @@ const PlacesSlider = () => {
         spaceBetween={30}
         loop={true}
         loopFillGroupWithBlank={true}
-        // freeMode={false}
+        freeMode={false}
         // grabCursor={true}
         // centeredSlides={true}
         autoplay={{
@@ -48,7 +47,7 @@ const PlacesSlider = () => {
           },
         }}
         // FreeMode, Pagination,
-        modules={[Autoplay,  Navigation]}
+        modules={[FreeMode, Autoplay, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide className="pb-20">

@@ -35,8 +35,8 @@ const Banner = () => {
   // navigate("/findRoom", { state: { dates, option } });
 
   return (
-    <section className="banner min-h-[110vh] h-full">
-      <div className="bg-black w-full h-full bg-opacity-40 py-10 px-5">
+    <section className="banner min-h-[110vh] h-full relative pb-10">
+      <div className="bg-black w-full h-full bg-opacity-40 py-10 px-5 ">
         <Content>
           <div className="bg-white w-60 mx-auto p-5 rounded-xl mb-10 mt-5">
             <img src={bannerLogo} alt="" />
@@ -167,12 +167,14 @@ const Banner = () => {
             <div className="flex flex-col gap-10">
               <div className="flex gap-5 border-b-2 border-dotted pb-10">
                 {" "}
-                <div className="w-24 h-28 rounded-xl flex flex-col justify-center items-center text-white bg-primary hover:border-none hover:bg-secondary hover:duration-300 hover:ease-in ease-in duration-300">
-                  <FaUmbrellaBeach className="text-5xl" />
+                <div className="min-w-[96px] w-24 h-28 rounded-xl flex flex-col justify-center items-center text-white bg-primary hover:border-none hover:bg-secondary hover:duration-300 hover:ease-in ease-in duration-300">
+                  <FaUmbrellaBeach className="text-4xl sm:text-5xl" />
                 </div>
-                <div className="max-w-md text-white">
-                  <h1 className="text-secondary text-2xl font-semibold font-serif">Many Choices</h1>
-                  <p className="font-medium pt-3">
+                <div className="max-w-lg font-normal text-white">
+                  <h1 className="text-secondary text-2xl font-semibold font-serif">
+                    Many Choices
+                  </h1>
+                  <p className="pt-3">
                     Duis aute irure dolor in reprehenderit in voluptate velit
                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                     occaecat cupidatat non proident.
@@ -181,12 +183,14 @@ const Banner = () => {
               </div>
               <div className="flex gap-5 border-b-2 border-dotted pb-10">
                 {" "}
-                <div className="w-24 h-28 rounded-xl flex flex-col justify-center items-center text-white bg-primary hover:border-none hover:bg-secondary hover:duration-300 hover:ease-in ease-in duration-300">
-                  <FaLuggageCart className="text-5xl -mb-1" />
+                <div className="min-w-[96px] w-24 h-28 rounded-xl flex flex-col justify-center items-center text-white bg-primary hover:border-none hover:bg-secondary hover:duration-300 hover:ease-in ease-in duration-300">
+                  <FaLuggageCart className="text-4xl sm:text-5xl -mb-1" />
                 </div>
-                <div className="max-w-md text-white">
-                  <h1 className="text-secondary text-2xl font-semibold font-serif">Pick Up & Go</h1>
-                  <p className="font-medium pt-3">
+                <div className="max-w-lg font-normal text-white">
+                  <h1 className="text-secondary text-2xl font-semibold font-serif">
+                    Pick Up & Go
+                  </h1>
+                  <p className="pt-3">
                     Duis aute irure dolor in reprehenderit in voluptate velit
                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                     occaecat cupidatat non proident.
@@ -195,12 +199,14 @@ const Banner = () => {
               </div>
               <div className="flex gap-5 border-b-2 border-dotted pb-10">
                 {" "}
-                <div className="w-24 h-28 rounded-xl flex flex-col justify-center items-center text-white bg-primary hover:border-none hover:bg-secondary hover:duration-300 hover:ease-in ease-in duration-300">
-                  <FaBriefcase className="text-5xl" />
+                <div className="min-w-[96px] w-24 h-28 rounded-xl flex flex-col justify-center items-center text-white bg-primary hover:border-none hover:bg-secondary hover:duration-300 hover:ease-in ease-in duration-300">
+                  <FaBriefcase className="text-4xl sm:text-5xl" />
                 </div>
-                <div className="max-w-md text-white">
-                  <h1 className="text-secondary text-2xl font-semibold font-serif">Best Prices</h1>
-                  <p className="font-medium pt-3">
+                <div className="max-w-lg font-normal text-white">
+                  <h1 className="text-secondary text-2xl font-semibold font-serif">
+                    Best Prices
+                  </h1>
+                  <p className="pt-3">
                     Duis aute irure dolor in reprehenderit in voluptate velit
                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                     occaecat cupidatat non proident.
@@ -211,6 +217,13 @@ const Banner = () => {
           </div>
         </Content>
       </div>
+      <figure className="absolute -bottom-1">
+        <img
+          className="rotate-180 w-full h-full"
+          src="https://i.ibb.co/mGnbXdH/shape8.png"
+          alt=""
+        />
+      </figure>
     </section>
   );
 };
