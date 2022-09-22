@@ -1,18 +1,16 @@
 import React from "react";
-import { MdArrowForwardIos, MdArrowBackIosNew } from "react-icons/md";
-import bgImg from "../../../Assets/background/shape8.png";
-import Content from "../../theme/Content";
-import TopDeals from "./TopDeals";
-import TourPackagesSlider from "./TourPackagesSlider";
+import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
+import bgImg from "../../Assets/background/shape8.png";
+import Content from "../theme/Content";
+import HotelsPackagesSlider from "./HotelsPackagesSlider";
+import TopHotels from "./TopHotels";
 
-const TourPackages = () => {
+const HotelsPackages = () => {
   return (
-    <div
-      className="min-h-screen bg-gray-100"
-    >
-      <figure>
-        <img src={bgImg} alt="" />
-      </figure>
+    <div className="min-h-screen ">
+    <figure>
+      <img className="-mt-5" src={bgImg} alt="" />
+    </figure>
       <Content>
         <div className="flex justify-between items-center gap-3">
           <div className="max-w-xl flex flex-col justify-start items-start gap-5 mx-5">
@@ -20,7 +18,7 @@ const TourPackages = () => {
               Top Pick
             </span>
             <h2 className="text-3xl md:text-5xl font-bold text-primary font-serif">
-              Best Tour Packages
+              Best Hotels Packages
             </h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -37,15 +35,15 @@ const TourPackages = () => {
           </div>
         </div>
         <div className="mt-16">
-          <TourPackagesSlider />
+          <HotelsPackagesSlider />
         </div>
       </Content>
-      <TopDeals />
+      <TopHotels />
       <figure>
-        <img className="rotate-180 -mt-24" src={bgImg} alt="" />
+        <img className="rotate-180 -mt-48" src={bgImg} alt="" />
       </figure>
     </div>
   );
 };
 
-export default TourPackages;
+export default HotelsPackages;

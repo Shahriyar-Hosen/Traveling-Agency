@@ -16,7 +16,7 @@ import Content from "../theme/Content";
 const Partners = () => {
   return (
     <Content>
-      <div className="flex justify-center items-center flex-col gap-5  text-center w-3/4 mx-auto ">
+      <div className="flex justify-center items-center flex-col gap-5  text-center w-3/4 mx-auto pb-10">
         <h5 className="font-serif text-secondary font-semibold text-lg mt-16">
           Our Partners
         </h5>
@@ -30,20 +30,19 @@ const Partners = () => {
       </div>
 
       {/* slider */}
-      <div>
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
-          freeMode={false}
-          grabCursor={true}
-          centeredSlides={true}
+          freeMode={true}
+          loop={true}
+          loopFillGroupWithBlank={true}
           autoplay={{
             delay: 3000,
             disableOnInteraction: true,
           }}
-          pagination={{
-            clickable: true,
-          }}
+          // pagination={{
+          //   clickable: true,
+          // }}
           navigation={false}
           breakpoints={{
             440: {
@@ -67,7 +66,7 @@ const Partners = () => {
               spaceBetween: 50,
             },
           }}
-          modules={[FreeMode, Autoplay, Pagination, Navigation]}
+          modules={[FreeMode, Autoplay, Navigation]}
           className="mySwiper"
         >
           <SwiperSlide className="pb-10">
@@ -116,7 +115,6 @@ const Partners = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-      </div>
     </Content>
   );
 };

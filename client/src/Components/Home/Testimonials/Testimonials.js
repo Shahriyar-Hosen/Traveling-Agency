@@ -5,7 +5,7 @@ import SideCard from "../../theme/SideCard";
 
 const Testimonials = () => {
   return (
-    <section className="my-10">
+    <section className="mb-10">
       <div
         className="hero bg-cover"
         style={{

@@ -3,11 +3,11 @@ import { FaFacebook, FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.inite";
 import Content from "../theme/Content";
-import Header from "../theme/Header";
 import {
   useSignInWithEmailAndPassword,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
+import Header from "../Shared/Header";
 
 const Login = () => {
   const [userName, setUserName] = useState("");

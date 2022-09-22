@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "../Shared/Header";
 import LoveGoing from "../Shared/LoveGoing";
 import Partners from "../Shared/Partners";
 import Collapse from "../theme/Collapse";
@@ -6,7 +7,6 @@ import Content from "../theme/Content";
 import Description from "../theme/Description";
 import Expect from "../theme/Expect";
 import Gallery from "../theme/Gallery";
-import Header from "../theme/Header";
 import HeadLine from "../theme/HeadLine";
 import Map from "../theme/Map";
 import Reviews from "../theme/Reviews";

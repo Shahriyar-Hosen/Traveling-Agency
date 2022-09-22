@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 // import required modules
 import { FreeMode, Autoplay, Pagination, Navigation } from "swiper";
 
-const TourPackagesSlider = () => {
+const HotelsPackagesSlider = () => {
   return (
     <Swiper
       slidesPerView={1}
@@ -315,4 +315,4 @@ const TourPackagesSlider = () => {
   );
 };
 
-export default TourPackagesSlider;
+export default HotelsPackagesSlider;

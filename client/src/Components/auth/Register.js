@@ -6,8 +6,8 @@ import {
 import { FaFacebook, FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.inite";
+import Header from "../Shared/Header";
 import Content from "../theme/Content";
-import Header from "../theme/Header";
 
 const Register = () => {
   const [userName, setUserName] = useState("");

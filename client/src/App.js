@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Login from "./Components/auth/Login";
 import Register from "./Components/auth/Register";
 import Destination from "./Components/Destination/Destination";
-import Hotel from "./Components/Hotels/Hotel";
+import Hotel from "./Components/hotels/Hotel";
 import Footer from "./Components/Shared/Footer";
 import Navbar from "./Components/Shared/Navbar";
 import Tour from "./Components/TourLists/Tour";
