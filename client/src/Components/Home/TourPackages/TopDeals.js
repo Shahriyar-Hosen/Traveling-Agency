@@ -47,8 +47,8 @@ const TopDeals = () => {
           rating="12"
           time="3 Days"
         />
-        <Link to="/tours">
-          <PButton className="mt-10">View All Deals</PButton>
+        <Link  className="my-10 md:mb-0" to="/tours">
+          <PButton>View All Deals</PButton>
         </Link>
       </div>
     </Content>

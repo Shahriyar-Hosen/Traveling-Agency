@@ -42,7 +42,7 @@ const TourPackages = () => {
       </Content>
       <TopDeals />
       <figure>
-        <img className="rotate-180 -mt-24" src={bgImg} alt="" />
+        <img className="rotate-180 hidden md:block w-full h-32" src={bgImg} alt="" />
       </figure>
     </div>
   );
