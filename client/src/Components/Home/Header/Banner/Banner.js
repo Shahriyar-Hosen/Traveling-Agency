@@ -182,7 +182,7 @@ const Banner = () => {
               <div className="flex gap-5 border-b-2 border-dotted pb-10">
                 {" "}
                 <div className="w-24 h-28 rounded-xl flex flex-col justify-center items-center text-white bg-primary hover:border-none hover:bg-secondary hover:duration-300 hover:ease-in ease-in duration-300">
-                  <FaLuggageCart className="text-5xl" />
+                  <FaLuggageCart className="text-5xl -mb-1" />
                 </div>
                 <div className="max-w-md text-white">
                   <h1 className="text-secondary text-2xl font-semibold font-serif">Pick Up & Go</h1>

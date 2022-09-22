@@ -1,8 +1,8 @@
 import React from "react";
 import DestinationsList from "../Components/Destination/DestinationsList";
+import Header from "../Components/Shared/Header";
 import LoveGoing from "../Components/Shared/LoveGoing";
 import Partners from "../Components/Shared/Partners";
-import Header from "../Components/theme/Header";
 
 const Destinations = () => {
   return (

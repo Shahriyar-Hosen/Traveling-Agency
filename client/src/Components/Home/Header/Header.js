@@ -7,8 +7,8 @@ const Header = () => {
   return (
     <>
       <Banner />
-      <BannerSlider />
-      <Search />
+      {/* <BannerSlider /> */}
+      {/* <Search /> */}
     </>
   );
 };
