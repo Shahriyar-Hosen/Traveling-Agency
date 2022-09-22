@@ -22,7 +22,7 @@ const TopHotels = () => {
 
       {/* cards */}
       {/* { link, h1, h2, price, rating, time }  */}
-      <div className="flex justify-center items-center gap-5 flex-col lg:flex-row flex-wrap py-10 md:pb-0">
+      <div className="flex justify-center items-center gap-5 flex-col md:flex-row flex-wrap py-10 md:pb-0">
         <DealsCard
           link="https://i.ibb.co/bgPWqXP/destination11.jpg"
           h1="Norway Lake"
@@ -47,9 +47,6 @@ const TopHotels = () => {
           rating="12"
           time="3 Days"
         />
-        <Link to="/hotels">
-          <PButton className="my-10 md:mb-0">View All Hotels</PButton>
-        </Link>
       </div>
     </Content>
   );

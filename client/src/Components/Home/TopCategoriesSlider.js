@@ -21,7 +21,7 @@ const TopCategoriesSlider = () => {
         loop={true}
         loopFillGroupWithBlank={true}
         autoplay={{
-          delay: 8000,
+          delay: 5000,
           disableOnInteraction: true,
         }}
         // pagination={{
