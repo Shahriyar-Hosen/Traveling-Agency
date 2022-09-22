@@ -5,12 +5,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/free-mode";
 import "swiper/css/effect-coverflow";
+import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 // import required modules
-import { FreeMode, Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, FreeMode, Navigation, Pagination } from "swiper";
 
 const TourPackagesSlider = () => {
   return (
@@ -73,25 +73,25 @@ const TourPackagesSlider = () => {
                   type="radio"
                   name="rating-2"
                   className="mask mask-star-2 bg-secondary "
-                  checked
+                  defaultChecked
                 />
                 <input
                   type="radio"
                   name="rating-2"
                   className="mask mask-star-2 bg-secondary"
-                  checked
+                  defaultChecked
                 />
                 <input
                   type="radio"
                   name="rating-2"
                   className="mask mask-star-2 bg-secondary"
-                  checked
+                  defaultChecked
                 />
                 <input
                   type="radio"
                   name="rating-2"
                   className="mask mask-star-2 bg-secondary"
-                  checked
+                  defaultChecked
                 />
               </div>
               <span className="px-1">(38)</span>
@@ -139,25 +139,25 @@ const TourPackagesSlider = () => {
                   type="radio"
                   name="rating-2"
                   className="mask mask-star-2 bg-secondary "
-                  checked
+                  defaultChecked
                 />
                 <input
                   type="radio"
                   name="rating-2"
                   className="mask mask-star-2 bg-secondary"
-                  checked
+                  defaultChecked
                 />
                 <input
                   type="radio"
                   name="rating-2"
                   className="mask mask-star-2 bg-secondary"
-                  checked
+                  defaultChecked
                 />
                 <input
                   type="radio"
                   name="rating-2"
                   className="mask mask-star-2 bg-secondary"
-                  checked
+                  defaultChecked
                 />
               </div>
               <span className="px-1">(18)</span>
@@ -205,25 +205,25 @@ const TourPackagesSlider = () => {
                   type="radio"
                   name="rating-2"
                   className="mask mask-star-2 bg-secondary "
-                  checked
+                  defaultChecked
                 />
                 <input
                   type="radio"
                   name="rating-2"
                   className="mask mask-star-2 bg-secondary"
-                  checked
+                  defaultChecked
                 />
                 <input
                   type="radio"
                   name="rating-2"
                   className="mask mask-star-2 bg-secondary"
-                  checked
+                  defaultChecked
                 />
                 <input
                   type="radio"
                   name="rating-2"
                   className="mask mask-star-2 bg-secondary"
-                  checked
+                  defaultChecked
                 />
               </div>
               <span className="px-1">(38)</span>
@@ -271,25 +271,25 @@ const TourPackagesSlider = () => {
                   type="radio"
                   name="rating-2"
                   className="mask mask-star-2 bg-secondary "
-                  checked
+                  defaultChecked
                 />
                 <input
                   type="radio"
                   name="rating-2"
                   className="mask mask-star-2 bg-secondary"
-                  checked
+                  defaultChecked
                 />
                 <input
                   type="radio"
                   name="rating-2"
                   className="mask mask-star-2 bg-secondary"
-                  checked
+                  defaultChecked
                 />
                 <input
                   type="radio"
                   name="rating-2"
                   className="mask mask-star-2 bg-secondary"
-                  checked
+                  defaultChecked
                 />
               </div>
               <span className="px-1">(12)</span>

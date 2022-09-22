@@ -124,7 +124,7 @@ const Banner = () => {
                       id="adult"
                       className="select select-bordered w-full"
                     >
-                      <option selected>Adult</option>
+                      <option >Adult</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
@@ -136,7 +136,7 @@ const Banner = () => {
                       id="children"
                       className="select select-bordered w-full"
                     >
-                      <option selected>Children</option>
+                      <option >Children</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
@@ -149,7 +149,7 @@ const Banner = () => {
                     id="room"
                     className="select select-bordered w-full"
                   >
-                    <option selected>Rooms</option>
+                    <option >Rooms</option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>

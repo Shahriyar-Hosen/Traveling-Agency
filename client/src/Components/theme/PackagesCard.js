@@ -1,26 +1,29 @@
 import React from "react";
-import { FaRegCalendarAlt } from "react-icons/fa";
 
-const SideCard = ({ img, h2, h1, rating, details, time, price, offers }) => {
+const PackagesCard = ({
+  img,
+  offers,
+  title,
+  location,
+  des,
+  price,
+  ratting,
+  hotel,
+}) => {
   return (
-    <div className="card lg:card-side bg-base-100 shadow-xl w-5/6 lg:w-full">
-      {" "}
-        <figure className="relative w-full lg:w-[350px]">
-          <span className="absolute top-14 -left-20 font-bold bg-secondary px-20 py-2 text-xl text-white -rotate-45">
-            <span className="pl-8">{offers}% OFF</span>
-          </span>
-          <img
-            className="lg:max-w-[300px] w-full h-[300px] lg:h-full"
-            src={img}
-            alt={h2}
-          />
-        </figure>
+    <div className="card card-compact w-96 bg-base-100 shadow-xl">
+      <figure className=" relative">
+        <span className="absolute bottom-0 right-5 btn text-white btn-primary -mb-5">
+          {offers}
+        </span>
+        <img className="w-full min-h-[260px] max-h-[260px]" src={img} alt="Package" />
+      </figure>
       <div className="card-body text-start">
         <h2 className="text-primary text-lg  font-serif font-semibold ">
-          {h2}
+          {location}
         </h2>
         <h1 className="text-2xl font-serif font-semibold hover:text-primary">
-          {h1}
+          {title}
         </h1>
         <span className="flex justify-start items-center">
           <div className="rating rating-sm">
@@ -54,19 +57,16 @@ const SideCard = ({ img, h2, h1, rating, details, time, price, offers }) => {
               defaultChecked
             />
           </div>
-          <span className="px-1">({rating})</span>
+          <span className="px-1">({ratting})</span>
         </span>
-        <p className="text-base pt-2">{details}</p>
-        <p className="text-primary font-semibold flex justify-start items-center gap-2">
-          <FaRegCalendarAlt /> {time} Tours
-        </p>
+        <p className="text-base py-2">{des}</p>
         <div className="card-actions justify-start border-t pt-3">
           <div className="flex justify-center items-center gap-2">
             <span className="text-primary text-xl font-bold">${price}</span>
 
             <span className="text-lg text-gray-500 font-semibold">
               {" "}
-              | Per person
+              | Per {hotel ? "Day" : "Person"}
             </span>
           </div>
         </div>
@@ -75,4 +75,4 @@ const SideCard = ({ img, h2, h1, rating, details, time, price, offers }) => {
   );
 };
 
-export default SideCard;
+export default PackagesCard;
