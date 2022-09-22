@@ -22,7 +22,7 @@ const TopDeals = () => {
 
       {/* cards */}
       {/* { link, h1, h2, price, rating, time }  */}
-      <div className="flex justify-center items-center gap-5 flex-col lg:flex-row flex-wrap pt-10">
+      <div className="flex justify-center items-center gap-5 flex-col md:flex-row flex-wrap pt-10">
         <DealsCard
           link="https://i.ibb.co/bgPWqXP/destination11.jpg"
           h1="Norway Lake"
@@ -47,9 +47,6 @@ const TopDeals = () => {
           rating="12"
           time="3 Days"
         />
-        <Link  className="my-10 md:mb-0" to="/tours">
-          <PButton>View All Deals</PButton>
-        </Link>
       </div>
     </Content>
   );

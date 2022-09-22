@@ -24,7 +24,7 @@ const BestYear = () => {
               viewBox="0 0 462 204"
               fill="currentColor"
               aria-hidden="true"
-              className="w-full md:text-3xl "
+              className="w-full md:text-3xl"
             >
               <path d="M0.516052 1.96021H17.0157C24.4176 1.96021 29.027 7.26271 28.8521 14.6108C28.7377 17.76 27.6274 21.0303 25.003 22.8337C26.3437 23.772 27.437 25.0212 28.1893 26.4744C28.9417 27.9275 29.3307 29.5414 29.3231 31.1777C29.3417 32.81 29.0378 34.4298 28.4287 35.9443C27.8196 37.4587 26.9174 38.838 25.7739 40.0028C24.6303 41.1676 23.2679 42.0951 21.7649 42.7319C20.262 43.3688 18.648 43.7025 17.0157 43.714H0.516052V1.96021ZM8.94082 18.6954H16.3428C18.7316 18.6954 20.1918 16.7708 20.1918 14.4964C20.1918 12.222 18.7316 10.2975 16.3428 10.2975H8.94082V18.6954ZM8.94082 35.3834H16.3428C16.8959 35.3897 17.4448 35.2854 17.9571 35.0766C18.4694 34.8679 18.9348 34.5588 19.3259 34.1676C19.7171 33.7764 20.0262 33.311 20.2349 32.7988C20.4437 32.2865 20.548 31.7376 20.5417 31.1845C20.5482 30.6338 20.4436 30.0874 20.2342 29.578C20.0248 29.0686 19.7149 28.6067 19.323 28.2198C18.931 27.8328 18.4651 27.5289 17.9531 27.3261C17.441 27.1233 16.8933 27.0258 16.3428 27.0394H8.94082V35.3834Z"></path>
               <path d="M41.3951 43.714V1.9939H62.2552V10.3379H49.7392V18.6954H60.7008V27.0327H49.7392V35.3834H62.9752V43.7207L41.3951 43.714Z"></path>
@@ -53,7 +53,9 @@ const BestYear = () => {
               must-see destinations, places, and unforgettable experiences
               guaranteed to inspire.
             </p>
-            <button className="bg-white text-black px-5 py-2 rounded-full font-semibold border border-primary hover:bg-blue-700 hover:text-white hover:border-blue-700">Discover the winners</button>
+            <button className="bg-white text-black px-5 py-2 rounded-full font-semibold border border-primary hover:bg-blue-700 hover:text-white hover:border-blue-700">
+              Discover the winners
+            </button>
           </div>
         </div>
       </div>
