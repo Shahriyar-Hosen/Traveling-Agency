@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
-  useCreateUserWithEmailAndPassword,
-  useSignInWithGoogle,
+    useCreateUserWithEmailAndPassword,
+    useSignInWithGoogle
 } from "react-firebase-hooks/auth";
 import { FaFacebook, FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -107,7 +107,7 @@ const Register = () => {
                 <input
                   type="checkbox"
                   value={agree}
-                  onChange={(e) => setAgree(e.target.checked)}
+                  onChange={(e) => setAgree(e.target.defaultChecked)}
                   className="checkbox"
                 />
                 <span className="label-text pr-5 pl-2">

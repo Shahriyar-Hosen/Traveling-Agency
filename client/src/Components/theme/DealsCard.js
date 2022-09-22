@@ -20,25 +20,25 @@ const DealsCard = ({ link, h1, h2, price, rating, time }) => {
                 type="radio"
                 name="rating-2"
                 className="mask mask-star-2 bg-secondary "
-                checked
+                defaultChecked
               />
               <input
                 type="radio"
                 name="rating-2"
                 className="mask mask-star-2 bg-secondary"
-                checked
+                defaultChecked
               />
               <input
                 type="radio"
                 name="rating-2"
                 className="mask mask-star-2 bg-secondary"
-                checked
+                defaultChecked
               />
               <input
                 type="radio"
                 name="rating-2"
                 className="mask mask-star-2 bg-secondary"
-                checked
+                defaultChecked
               />
             </div>
             <span className="px-1 text-white font-sans text-lg">

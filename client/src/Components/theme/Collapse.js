@@ -5,7 +5,7 @@ const Collapse = () => {
     <div className="my-10 ">
       <div tabIndex={0} className="collapse collapse-arrow bg-base-100">
         <input type="checkbox" />
-        {/* checked bg-primary text-white */}
+        {/* defaultChecked bg-primary text-white */}
         <div className="collapse-title text-xl font-medium border rounded-lg">
           Day 1 - Barcelona - Zaragoza - Madrid
         </div>
@@ -19,7 +19,7 @@ const Collapse = () => {
       </div>
       <div tabIndex={0} className="collapse collapse-arrow bg-base-100 ">
         <input type="checkbox" />
-        {/* checked bg-primary text-white */}
+        {/* defaultChecked bg-primary text-white */}
         <div className="collapse-title text-xl font-medium border rounded-lg">
           Day 2 - Zurich - Biel/Bienne - Neuchatel - Geneva
         </div>
@@ -33,7 +33,7 @@ const Collapse = () => {
       </div>
       <div tabIndex={0} className="collapse collapse-arrow bg-base-100 ">
         <input type="checkbox" />
-        {/* checked bg-primary text-white */}
+        {/* defaultChecked bg-primary text-white */}
         <div className="collapse-title text-xl font-medium border rounded-lg">
           Day 3 - Enchanting Engelberg
         </div>
@@ -47,7 +47,7 @@ const Collapse = () => {
       </div>
       <div tabIndex={0} className="collapse collapse-arrow bg-base-100 ">
         <input type="checkbox" />
-        {/* checked bg-primary text-white */}
+        {/* defaultChecked bg-primary text-white */}
         <div className="collapse-title text-xl font-medium border rounded-lg">
           Day 4 - Barcelona - Zaragoza - Madrid
         </div>
