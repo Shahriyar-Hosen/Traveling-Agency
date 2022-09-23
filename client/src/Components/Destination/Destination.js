@@ -4,6 +4,8 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import Header from "../Shared/Header";
 import CategoriesBtn from "../theme/CategoriesBtn";
 import Content from "../theme/Content";
+import TopHotels from "./TopHotels";
+import TopTours from "./TopTours";
 
 const Destination = () => {
   return (
@@ -50,6 +52,7 @@ const Destination = () => {
                 <span>(1,186 Reviews)</span>
               </p>
             </div>
+
             {/* Large Image */}
             <figure className="">
               <img
@@ -58,6 +61,7 @@ const Destination = () => {
                 alt=""
               />
             </figure>
+
             {/* Description */}
             <div className="my-10">
               <h1 className="text-2xl font-semibold font-serif">Description</h1>
@@ -100,6 +104,7 @@ const Destination = () => {
                 </div>
               </div>
             </div>
+
             {/* Gallery */}
             <div className="my-10">
               <h1 className="text-2xl font-semibold font-serif pb-3">
@@ -123,6 +128,7 @@ const Destination = () => {
                 </figure>
               </div>
             </div>
+
             {/* Map */}
             <div className="my-10">
               <h1 className="text-2xl font-semibold font-serif pb-3">Map</h1>
@@ -140,6 +146,10 @@ const Destination = () => {
               </div>
               <div className="flex md:flex-row flex-col justify-start items-center gap-5"></div>
             </div>
+
+            <TopTours />
+            <TopHotels />
+
             {/* Average Reviews */}
             <div className="my-10">
               <h1 className="text-2xl font-semibold font-serif pb-3">
@@ -160,7 +170,7 @@ const Destination = () => {
                     <h1>Cleanliness</h1>
                     <progress
                       className="progress progress-primary w-full"
-                      defaultValue="45"
+                      value="45"
                       max="100"
                     ></progress>
                   </span>
@@ -168,15 +178,15 @@ const Destination = () => {
                     <h1>Facilities</h1>
                     <progress
                       className="progress progress-primary w-full"
-                      defaultValue="40"
+                      value="40"
                       max="100"
                     ></progress>
                   </span>
                   <span className="text-lg font-semibold">
-                    <h1>defaultValue for money</h1>
+                    <h1>value for money</h1>
                     <progress
                       className="progress progress-primary w-full"
-                      defaultValue="30"
+                      value="30"
                       max="100"
                     ></progress>
                   </span>
@@ -184,7 +194,7 @@ const Destination = () => {
                     <h1>Service</h1>
                     <progress
                       className="progress progress-primary w-full"
-                      defaultValue="45"
+                      value="45"
                       max="100"
                     ></progress>
                   </span>
@@ -192,13 +202,14 @@ const Destination = () => {
                     <h1>Location</h1>
                     <progress
                       className="progress progress-primary w-full"
-                      defaultValue="20"
+                      value="20"
                       max="100"
                     ></progress>
                   </span>
                 </div>
               </div>
             </div>
+
             {/* Write A Review */}
             <div className="my-10">
               <h1 className="text-2xl font-semibold font-serif pb-3">
@@ -224,6 +235,8 @@ const Destination = () => {
               </form>
             </div>
           </div>
+
+          {/* Right side card */}
           <div className="lg:w-4/12 flex flex-col justify-start mt-28 gap-10">
             {/* card */}
             <div className="border p-10 flex flex-col justify-center items-center text-center gap-5 rounded-lg w-full">
@@ -256,6 +269,7 @@ const Destination = () => {
                 </div>
               </div>
             </div>
+
             {/* All Categories */}
             <div>
               <h1 className="text-2xl font-semibold font-serif text-start pl-2 mb-2">
