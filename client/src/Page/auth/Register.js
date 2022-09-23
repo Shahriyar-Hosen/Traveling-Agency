@@ -1,29 +1,41 @@
 import React, { useEffect, useState } from "react";
 import {
-    useSignInWithEmailAndPassword,
-    useSignInWithGoogle
+  useCreateUserWithEmailAndPassword,
+  useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
 import { FaFacebook, FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import Header from "../../Components/Shared/Header";
+import Content from "../../Components/theme/Content";
+import { useRegisterMutation } from "../../features/auth/authApi";
 import auth from "../../firebase.inite";
-import Header from "../Shared/Header";
-import Content from "../theme/Content";
 
-const Login = () => {
+const Register = () => {
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [reEnterPassword, setReEnterPassword] = useState("");
   const [agree, setAgree] = useState(false);
-  // const [error, setError] = useState("");
-
-  const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
-  const [signInWithEmailAndPassword, EPUser, EPLoading, EPError] =
-    useSignInWithEmailAndPassword(auth);
-
-  // const [token] = useToken(user || gUser);
+  const [error, setError] = useState("");
 
   const navigate = useNavigate();
   let location = useLocation();
+
+  const [register, { data, isLoading, error: responseError }] =
+    useRegisterMutation();
+
+  useEffect(() => {
+    if (responseError?.data) {
+      setError(responseError.data);
+    }
+    if (data?.accessToken && data?.user) {
+      navigate("/inbox");
+    }
+  }, [data, responseError, navigate]);
+
+  // const [createUserWithEmailAndPassword, EPUser, EPLoading, EPError] =
+    useCreateUserWithEmailAndPassword(auth);
+  const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
 
   let signUpError;
   let from = location.state?.from?.pathname || "/";
@@ -36,35 +48,37 @@ const Login = () => {
   //   return <div>Loading...</div>;
   // }
 
-  if (EPError || gError) {
-    signUpError = (
-      <p className="text-red-500">{EPError?.message || gError?.message}</p>
-    );
-  }
-
-  if (gUser || EPUser) {
-    setEmail("");
-    setPassword("");
-    setAgree(false);
-    navigate("/");
-  }
+  // if (EPError || gError) {
+  //   signUpError = (
+  //     <p className="text-red-500">{EPError?.message || gError?.message}</p>
+  //   );
+  // }
 
   const signInGoogle = () => {
     signInWithGoogle();
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-    signInWithEmailAndPassword(email, password);
+    if (password === reEnterPassword) {
+      // createUserWithEmailAndPassword(email, password);
+      register({
+        username: userName,
+        email,
+        password,
+      });
+    } else {
+      setError("Passwords do not match");
+    }
   };
 
   return (
-    <div>
-      <Header h1="Login" page="Login" />
+    <section>
+      <Header h1="Register" page="Register" />
       <Content className="flex flex-col justify-center items-center gap-3 ">
         <h1 className="text-center text-3xl font-serif font-semibold w-96 hover:text-primary">
-          Login
+          Register
         </h1>
         <div className="w-96 flex flex-col justify-center gap-5">
           <form
@@ -89,39 +103,42 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
               className="input input-bordered w-full"
             />
-            <div className="flex justify-between items-center w-full">
-              <div className="flex justify-center gap-1">
+            <input
+              type="password"
+              placeholder="Re-enter Password"
+              onChange={(e) => setReEnterPassword(e.target.value)}
+              className="input input-bordered w-full"
+            />
+            <div className="form-control">
+              <label className="label cursor-pointer">
                 <input
-                  value={agree}
-                  onChange={(e) => setAgree(e.target.defaultChecked)}
                   type="checkbox"
+                  value={agree}
+                  onChange={(e) => setAgree(e.target.checked)}
                   className="checkbox"
                 />
-                Remember me
-              </div>
-              <Link
-                to="/login"
-                className="hover:text-warning text-error font-semibold hover:duration-500 "
-              >
-                Lost your password?
-              </Link>
+                <span className="label-text pr-5 pl-2">
+                  I have read and accept the Terms and Privacy Policy?
+                </span>
+              </label>
             </div>
             <button
               type="submit"
-              disabled={!agree || EPLoading}
-              className="btn btn-primary hover:btn-secondary border-none  text-white hover:text-white tracking-widest hover:duration-500 hover:ease-in-out ease-in-out duration-500 disabled:bg-orange-200 w-full"
+              disabled={!agree}
+              className="btn btn-primary hover:btn-secondary border-none  text-white hover:text-white tracking-widest hover:duration-500 hover:ease-in-out ease-in-out duration-500 disabled:bg-orange-200"
             >
-              Login
+              {" "}
+              Registration
             </button>
             {signUpError}
           </form>
           <div>
-            <h5 className="text-center mb-5">
-              Don't have an account?{" "}
-              <Link to="/register" className="text-primary font-semibold ">
-                Registration
+            <h1 className="text-center mb-5">
+              Already have an account?{" "}
+              <Link to="/login" className="text-primary font-semibold ">
+                Login
               </Link>
-            </h5>
+            </h1>
 
             <div className="divider text-primary">OR</div>
 
@@ -141,8 +158,8 @@ const Login = () => {
           </div>
         </div>
       </Content>
-    </div>
+    </section>
   );
 };
 
-export default Login;
+export default Register;
