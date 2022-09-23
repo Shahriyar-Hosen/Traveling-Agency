@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Login from "./Components/auth/Login";
 import Register from "./Components/auth/Register";
+import Blog from "./Components/Blogs/Blog";
 import Destination from "./Components/Destination/Destination";
 import Hotel from "./Components/hotels/Hotel";
 import Footer from "./Components/Shared/Footer";
@@ -18,14 +19,17 @@ const App = () => {
     <main>
       <Navbar />
       <Routes>
-        {/* Public Page */}
-        <Route path="/" element={<Home />} />
+        {/* auth page */}
         <Route path="register" element={<Register />} />
         <Route path="login" element={<Login />} />
+
+        {/* Public Page */}
+        <Route path="/" element={<Home />} />
         <Route path="destinations" element={<Destinations />} />
         <Route path="tours" element={<Tours />} />
         <Route path="hotels" element={<Hotels />} />
         <Route path="blogs" element={<Blogs />} />
+        <Route path="blogs/:blogsId" element={<Blog />} />
 
         {/* Privet Page */}
         <Route path="destinations/:destinationId" element={<Destination />} />
