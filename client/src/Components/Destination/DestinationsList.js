@@ -1,13 +1,10 @@
 import React from "react";
-import LoveGoing from "../Shared/LoveGoing";
-import Partners from "../Shared/Partners";
 import Content from "../theme/Content";
 import DestinationCard from "../theme/DestinationCard";
 
 const DestinationsList = () => {
   return (
     <section>
-      
       <Content>
         <div className="flex justify-center items-center flex-col gap-5  text-center w-3/4 mx-auto">
           <h5 className="font-serif text-secondary font-semibold text-lg mt-16">

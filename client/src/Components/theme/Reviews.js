@@ -23,7 +23,7 @@ const Reviews = () => {
               <h1>Cleanliness</h1>
               <progress
                 className="progress progress-primary w-full"
-                defaultValue="45"
+                value="45"
                 max="100"
               ></progress>
             </span>
@@ -31,15 +31,15 @@ const Reviews = () => {
               <h1>Facilities</h1>
               <progress
                 className="progress progress-primary w-full"
-                defaultValue="40"
+                value="40"
                 max="100"
               ></progress>
             </span>
             <span className="text-lg font-semibold">
-              <h1>defaultValue for money</h1>
+              <h1>value for money</h1>
               <progress
                 className="progress progress-primary w-full"
-                defaultValue="30"
+                value="30"
                 max="100"
               ></progress>
             </span>
@@ -47,7 +47,7 @@ const Reviews = () => {
               <h1>Service</h1>
               <progress
                 className="progress progress-primary w-full"
-                defaultValue="45"
+                value="45"
                 max="100"
               ></progress>
             </span>
@@ -55,7 +55,7 @@ const Reviews = () => {
               <h1>Location</h1>
               <progress
                 className="progress progress-primary w-full"
-                defaultValue="20"
+                value="20"
                 max="100"
               ></progress>
             </span>

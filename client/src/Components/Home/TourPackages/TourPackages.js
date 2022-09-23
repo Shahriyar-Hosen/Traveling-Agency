@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import bgImg from "../../../Assets/background/shape8.png";
 import Content from "../../theme/Content";
 import PButton from "../../theme/PButton";
-import TopDeals from "./TopDeals";
+import TopDeals from "../TopDeals";
 import TourPackagesSlider from "./TourPackagesSlider";
 
 const TourPackages = () => {
@@ -43,7 +43,6 @@ const TourPackages = () => {
           <PButton>View All Deals</PButton>
         </Link>
       </Content>
-      <TopDeals />
       <figure>
         <img
           className="rotate-180 w-full max-h-40"

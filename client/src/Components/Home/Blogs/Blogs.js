@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import BlogCard from "../../theme/BlogCard";
 import Content from "../../theme/Content";
 
@@ -20,21 +21,27 @@ const Blogs = () => {
 
       {/* card */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
-        <BlogCard
-          img="https://i.ibb.co/BTdpjT4/trending10.jpg"
-          h1="Technology"
-          p="How A Developer Duo At Deutsche Bank Keep Remote Alive."
-        />
-        <BlogCard
-          img="https://i.ibb.co/tYGmTcM/trending12.jpg"
-          h1="Inspiration"
-          p="Inspire Runner With Autism Graces Of Women's Running"
-        />
-        <BlogCard
-          img="https://i.ibb.co/p1HMyQd/trending13.jpg"
-          h1="Public"
-          p="Services To Grow Your Business Sell Affiliate Products"
-        />
+        <Link to="blogs/1">
+          <BlogCard
+            img="https://i.ibb.co/BTdpjT4/trending10.jpg"
+            h1="Technology"
+            p="How A Developer Duo At Deutsche Bank Keep Remote Alive."
+          />
+        </Link>
+        <Link to="blogs/1">
+          <BlogCard
+            img="https://i.ibb.co/tYGmTcM/trending12.jpg"
+            h1="Inspiration"
+            p="Inspire Runner With Autism Graces Of Women's Running"
+          />
+        </Link>
+        <Link to="blogs/1">
+          <BlogCard
+            img="https://i.ibb.co/p1HMyQd/trending13.jpg"
+            h1="Public"
+            p="Services To Grow Your Business Sell Affiliate Products"
+          />
+        </Link>
       </div>
     </Content>
   );

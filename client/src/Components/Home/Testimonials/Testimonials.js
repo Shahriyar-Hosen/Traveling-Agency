@@ -1,5 +1,6 @@
 import React from "react";
 import { FaQuoteLeft } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import Content from "../../theme/Content";
 import SideCard from "../../theme/SideCard";
 
@@ -65,26 +66,30 @@ const Testimonials = () => {
       </div>
       {/* testimonial card */}
       <Content className="-mt-20 flex flex-col lg:flex-row justify-center items-center gap-5">
-        <SideCard
-          img="https://i.ibb.co/zGzhCkz/trending2.jpg"
-          h2="Greece"
-          h1="Santorini, Oia"
-          rating="18"
-          details="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"
-          time="9 Days"
-          price="210.00"
-          offers="10"
-        />
-        <SideCard
-          img="https://i.ibb.co/jrGj182/trending3.jpg"
-          h2=" Norway"
-          h1="Norway Lake"
-          rating="17"
-          details="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"
-          time="6 Days"
-          price="185.00"
-          offers="30"
-        />
+        <Link to="/tours/1">
+          <SideCard
+            img="https://i.ibb.co/zGzhCkz/trending2.jpg"
+            h2="Greece"
+            h1="Santorini, Oia"
+            rating="18"
+            details="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"
+            time="9 Days"
+            price="210.00"
+            offers="10"
+          />
+        </Link>
+        <Link to="/tours/1">
+          <SideCard
+            img="https://i.ibb.co/jrGj182/trending3.jpg"
+            h2=" Norway"
+            h1="Norway Lake"
+            rating="17"
+            details="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"
+            time="6 Days"
+            price="185.00"
+            offers="30"
+          />
+        </Link>
       </Content>
     </section>
   );

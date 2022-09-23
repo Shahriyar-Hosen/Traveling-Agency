@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -59,52 +60,60 @@ const HotelsPackagesSlider = () => {
       hotel,
       */}
       <SwiperSlide className="pb-14">
-        <PackagesCard
-          img="https://i.ibb.co/QPdvFw1/LTI.jpg"
-          offers="15% OFF"
-          title="Leeds Castle"
-          location="Croatia"
-          des="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"
-          price="125"
-          ratting="55"
-          hotel
-        />
+        <Link to="/hotels/1">
+          <PackagesCard
+            img="https://i.ibb.co/QPdvFw1/LTI.jpg"
+            offers="15% OFF"
+            title="Leeds Castle"
+            location="Croatia"
+            des="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"
+            price="125"
+            ratting="55"
+            hotel
+          />
+        </Link>
       </SwiperSlide>
       <SwiperSlide className="pb-14">
-        <PackagesCard
-          img="https://i.ibb.co/KsHgF2v/Luxury-Hotels.jpg"
-          offers="15% OFF"
-          title="Adriatic Adventure"
-          location="Greece"
-          des="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"
-          price="165"
-          ratting="35"
-          hotel
-        />
+        <Link to="/hotels/1">
+          <PackagesCard
+            img="https://i.ibb.co/KsHgF2v/Luxury-Hotels.jpg"
+            offers="15% OFF"
+            title="Adriatic Adventure"
+            location="Greece"
+            des="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"
+            price="165"
+            ratting="35"
+            hotel
+          />
+        </Link>
       </SwiperSlide>
       <SwiperSlide className="pb-14">
-        <PackagesCard
-          img="https://i.ibb.co/fXbs3QX/Conrad-Shenyang-Hilton-luxury-hotels.jpg"
-          offers="15% OFF"
-          title="The Spanish Riviera"
-          location="Spain"
-          des="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"
-          price="160"
-          ratting="50"
-          hotel
-        />
+        <Link to="/hotels/1">
+          <PackagesCard
+            img="https://i.ibb.co/fXbs3QX/Conrad-Shenyang-Hilton-luxury-hotels.jpg"
+            offers="15% OFF"
+            title="The Spanish Riviera"
+            location="Spain"
+            des="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"
+            price="160"
+            ratting="50"
+            hotel
+          />
+        </Link>
       </SwiperSlide>
       <SwiperSlide className="pb-14">
-        <PackagesCard
-          img="https://i.ibb.co/7pVMhhP/Hotels.png"
-          offers="15% OFF"
-          title="Vietnam Highlights"
-          location="Vietnam"
-          des="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"
-          price="110"
-          ratting="35"
-          hotel
-        />
+        <Link to="/hotels/1">
+          <PackagesCard
+            img="https://i.ibb.co/7pVMhhP/Hotels.png"
+            offers="15% OFF"
+            title="Vietnam Highlights"
+            location="Vietnam"
+            des="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"
+            price="110"
+            ratting="35"
+            hotel
+          />
+        </Link>
       </SwiperSlide>
     </Swiper>
   );

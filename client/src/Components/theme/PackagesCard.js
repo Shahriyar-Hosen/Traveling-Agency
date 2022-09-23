@@ -12,11 +12,11 @@ const PackagesCard = ({
 }) => {
   return (
     <div className="card card-compact w-96 bg-base-100 shadow-xl">
-      <figure className=" relative">
+      <figure className=" relative w-full">
         <span className="absolute bottom-0 right-5 btn text-white btn-primary -mb-5">
           {offers}
         </span>
-        <img className="w-full min-h-[260px] max-h-[260px]" src={img} alt="Package" />
+        <img className="w-full min-w-[480px] min-h-[260px] max-h-[260px]" src={img} alt="Package" />
       </figure>
       <div className="card-body text-start">
         <h2 className="text-primary text-lg  font-serif font-semibold ">
