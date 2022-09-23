@@ -1,13 +1,13 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Login from "./Components/auth/Login";
-import Register from "./Components/auth/Register";
 import Blog from "./Components/Blogs/Blog";
 import Destination from "./Components/Destination/Destination";
 import Hotel from "./Components/hotels/Hotel";
 import Footer from "./Components/Shared/Footer";
 import Navbar from "./Components/Shared/Navbar";
 import Tour from "./Components/TourLists/Tour";
+import Login from "./Page/auth/Login";
+import Register from "./Page/auth/Register";
 import Blogs from "./Page/Blogs";
 import Destinations from "./Page/Destinations";
 import Home from "./Page/Home.js";

@@ -5,10 +5,11 @@ export const authApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     register: builder.mutation({
       query: (data) => ({
-        url: "/register",
+        url: "/auth/register",
         method: "POST",
         body: data,
       }),
+      // SyntaxError: Unexpected token \'U\', "User has b"... is not valid JSON
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {
           const result = await queryFulfilled;

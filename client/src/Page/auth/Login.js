@@ -1,25 +1,24 @@
 import React, { useEffect, useState } from "react";
 import {
-    useCreateUserWithEmailAndPassword,
+    useSignInWithEmailAndPassword,
     useSignInWithGoogle
 } from "react-firebase-hooks/auth";
 import { FaFacebook, FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import Header from "../../Components/Shared/Header";
+import Content from "../../Components/theme/Content";
 import auth from "../../firebase.inite";
-import Header from "../Shared/Header";
-import Content from "../theme/Content";
 
-const Register = () => {
+const Login = () => {
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [reEnterPassword, setReEnterPassword] = useState("");
   const [agree, setAgree] = useState(false);
-  const [error, setError] = useState("");
+  // const [error, setError] = useState("");
 
-  const [createUserWithEmailAndPassword, EPUser, EPLoading, EPError] =
-    useCreateUserWithEmailAndPassword(auth);
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
+  const [signInWithEmailAndPassword, EPUser, EPLoading, EPError] =
+    useSignInWithEmailAndPassword(auth);
 
   // const [token] = useToken(user || gUser);
 
@@ -54,24 +53,18 @@ const Register = () => {
     signInWithGoogle();
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-    if (password === reEnterPassword) {
-      console.log(userName, email, password);
-
-      createUserWithEmailAndPassword(email, password);
-    } else {
-      setError("Password don't match");
-    }
+    signInWithEmailAndPassword(email, password);
   };
 
   return (
-    <section>
-      <Header h1="Register" page="Register" />
+    <div>
+      <Header h1="Login" page="Login" />
       <Content className="flex flex-col justify-center items-center gap-3 ">
         <h1 className="text-center text-3xl font-serif font-semibold w-96 hover:text-primary">
-          Register
+          Login
         </h1>
         <div className="w-96 flex flex-col justify-center gap-5">
           <form
@@ -96,42 +89,39 @@ const Register = () => {
               onChange={(e) => setPassword(e.target.value)}
               className="input input-bordered w-full"
             />
-            <input
-              type="password"
-              placeholder="Re-enter Password"
-              onChange={(e) => setReEnterPassword(e.target.value)}
-              className="input input-bordered w-full"
-            />
-            <div className="form-control">
-              <label className="label cursor-pointer">
+            <div className="flex justify-between items-center w-full">
+              <div className="flex justify-center gap-1">
                 <input
-                  type="checkbox"
                   value={agree}
-                  onChange={(e) => setAgree(e.target.defaultChecked)}
+                  onChange={(e) => setAgree(e.target.checked)}
+                  type="checkbox"
                   className="checkbox"
                 />
-                <span className="label-text pr-5 pl-2">
-                  I have read and accept the Terms and Privacy Policy?
-                </span>
-              </label>
+                Remember me
+              </div>
+              <Link
+                to="/login"
+                className="hover:text-warning text-error font-semibold hover:duration-500 "
+              >
+                Lost your password?
+              </Link>
             </div>
             <button
               type="submit"
               disabled={!agree || EPLoading}
-              className="btn btn-primary hover:btn-secondary border-none  text-white hover:text-white tracking-widest hover:duration-500 hover:ease-in-out ease-in-out duration-500 disabled:bg-orange-200"
+              className="btn btn-primary hover:btn-secondary border-none  text-white hover:text-white tracking-widest hover:duration-500 hover:ease-in-out ease-in-out duration-500 disabled:bg-orange-200 w-full"
             >
-              {" "}
-              Registration
+              Login
             </button>
             {signUpError}
           </form>
           <div>
-            <h1 className="text-center mb-5">
-              Already have an account?{" "}
-              <Link to="/login" className="text-primary font-semibold ">
-                Login
+            <h5 className="text-center mb-5">
+              Don't have an account?{" "}
+              <Link to="/register" className="text-primary font-semibold ">
+                Registration
               </Link>
-            </h1>
+            </h5>
 
             <div className="divider text-primary">OR</div>
 
@@ -151,8 +141,8 @@ const Register = () => {
           </div>
         </div>
       </Content>
-    </section>
+    </div>
   );
 };
 
-export default Register;
+export default Login;
