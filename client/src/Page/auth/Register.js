@@ -39,7 +39,8 @@ const Register = () => {
 
   let signUpError;
   let from = location.state?.from?.pathname || "/";
-
+  
+/* 
   useEffect(() => {
     // navigate(from, { replace: true });
   }, [navigate, from]);
@@ -52,7 +53,7 @@ const Register = () => {
   //   signUpError = (
   //     <p className="text-red-500">{EPError?.message || gError?.message}</p>
   //   );
-  // }
+  // } */
 
   const signInGoogle = () => {
     signInWithGoogle();

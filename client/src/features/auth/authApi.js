@@ -9,7 +9,6 @@ export const authApi = apiSlice.injectEndpoints({
         method: "POST",
         body: data,
       }),
-      // SyntaxError: Unexpected token \'U\', "User has b"... is not valid JSON
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {
           const result = await queryFulfilled;
