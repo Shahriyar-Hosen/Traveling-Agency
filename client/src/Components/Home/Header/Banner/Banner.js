@@ -79,12 +79,12 @@ const Banner = () => {
                 <div className="w-full ">
                   <label className="label">
                     <span className="label-text text-white">
-                      What is your name?
+                      Destinations Here
                     </span>
                   </label>
                   <input
                     type="text"
-                    placeholder="Type here"
+                    placeholder="destinations"
                     className="input input-bordered w-full "
                   />
                 </div>
