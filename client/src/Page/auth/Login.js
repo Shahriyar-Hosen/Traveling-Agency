@@ -20,6 +20,7 @@ const Login = () => {
   const navigate = useNavigate();
   let location = useLocation();
 
+
   const [login, { data, isLoading, error: responseError }] = useLoginMutation();
 
   let from = location.state?.from?.pathname || "/";
@@ -60,11 +61,7 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log({
-      username: userName,
-      email,
-      password,
-    });
+    
     login({
       username: userName,
       email,

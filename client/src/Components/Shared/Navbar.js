@@ -6,13 +6,19 @@ import navLogo from "../../Assets/log/logo.png";
 import auth from "../../firebase.inite";
 import Content from "../theme/Content";
 import gravatarUrl from "gravatar-url";
+import { useDispatch, useSelector } from "react-redux";
+import { userLoggedOut } from "../../features/auth/authSlice";
 
 const Navbar = () => {
-  const [user] = useAuthState(auth);
-  const { email, photoURL } = user || {};
+  const user = useSelector((state) => state.auth.user);
+
+  const dispatch = useDispatch();
+
+  const { email, img } = user || {};
 
   const logout = () => {
-    signOut(auth);
+    dispatch(userLoggedOut());
+    localStorage.clear();
   };
 
   // Navbar Menu
@@ -194,8 +200,8 @@ const Navbar = () => {
                   <div className="w-10 rounded-full">
                     <img
                       src={
-                        photoURL
-                          ? photoURL
+                        img
+                          ? img
                           : gravatarUrl(email, {
                               size: 80,
                               default: "mm",
