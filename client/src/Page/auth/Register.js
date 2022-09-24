@@ -24,23 +24,24 @@ const Register = () => {
   const [register, { data, isLoading, error: responseError }] =
     useRegisterMutation();
 
+  let from = location.state?.from?.pathname || "/";
+
   useEffect(() => {
     if (responseError?.data) {
       setError(responseError.data);
     }
     if (data?.accessToken && data?.user) {
-      navigate("/inbox");
+      navigate(from, { replace: true });
     }
-  }, [data, responseError, navigate]);
+  }, [data, responseError, navigate, from]);
 
   // const [createUserWithEmailAndPassword, EPUser, EPLoading, EPError] =
-    useCreateUserWithEmailAndPassword(auth);
+  useCreateUserWithEmailAndPassword(auth);
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
 
   let signUpError;
-  let from = location.state?.from?.pathname || "/";
-  
-/* 
+
+  /* 
   useEffect(() => {
     // navigate(from, { replace: true });
   }, [navigate, from]);

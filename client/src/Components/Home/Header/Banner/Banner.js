@@ -29,9 +29,6 @@ const Banner = () => {
   const handleChange = (e) => {
     setOption((prev) => ({ ...prev, [e.target.id]: e.target.value }));
   };
-
-  console.log(option);
-
   // navigate("/findRoom", { state: { dates, option } });
 
   return (
