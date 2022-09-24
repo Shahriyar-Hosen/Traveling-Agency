@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import {
-    useSignInWithEmailAndPassword,
-    useSignInWithGoogle
+  useSignInWithEmailAndPassword,
+  useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
 import { FaFacebook, FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Header from "../../Components/Shared/Header";
 import Content from "../../Components/theme/Content";
+import { useLoginMutation } from "../../features/auth/authApi";
 import auth from "../../firebase.inite";
 
 const Login = () => {
@@ -14,35 +15,40 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [agree, setAgree] = useState(false);
-  // const [error, setError] = useState("");
-
-  const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
-  const [signInWithEmailAndPassword, EPUser, EPLoading, EPError] =
-    useSignInWithEmailAndPassword(auth);
-
-  // const [token] = useToken(user || gUser);
+  const [error, setError] = useState("");
 
   const navigate = useNavigate();
   let location = useLocation();
 
-  let signUpError;
+
+  const [login, { data, isLoading, error: responseError }] = useLoginMutation();
+
   let from = location.state?.from?.pathname || "/";
 
   useEffect(() => {
-    // navigate(from, { replace: true });
-  }, [navigate, from]);
+    if (responseError?.data) {
+      setError(responseError.data);
+    }
+    if (data?.accessToken && data?.user) {
+      navigate(from, { replace: true });
+    }
+  }, [data, responseError, navigate, from]);
 
+  const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
+  
+  // const [signInWithEmailAndPassword, EPUser, EPLoading, EPError] =
+  // useSignInWithEmailAndPassword(auth);
+
+  let signUpError;
   // if (EPLoading || gLoading) {
   //   return <div>Loading...</div>;
   // }
 
-  if (EPError || gError) {
-    signUpError = (
-      <p className="text-red-500">{EPError?.message || gError?.message}</p>
-    );
+  if (gError) {
+    signUpError = <p className="text-red-500">{gError?.message}</p>;
   }
 
-  if (gUser || EPUser) {
+  if (gUser) {
     setEmail("");
     setPassword("");
     setAgree(false);
@@ -55,8 +61,13 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    signInWithEmailAndPassword(email, password);
+    
+    login({
+      username: userName,
+      email,
+      password,
+    });
+    // signInWithEmailAndPassword(email, password);
   };
 
   return (
@@ -108,13 +119,14 @@ const Login = () => {
             </div>
             <button
               type="submit"
-              disabled={!agree || EPLoading}
+              disabled={!agree || isLoading}
               className="btn btn-primary hover:btn-secondary border-none  text-white hover:text-white tracking-widest hover:duration-500 hover:ease-in-out ease-in-out duration-500 disabled:bg-orange-200 w-full"
             >
               Login
             </button>
             {signUpError}
           </form>
+          {/* social login */}
           <div>
             <h5 className="text-center mb-5">
               Don't have an account?{" "}

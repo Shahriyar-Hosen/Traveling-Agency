@@ -6,6 +6,7 @@ import Hotel from "./Components/hotels/Hotel";
 import Footer from "./Components/Shared/Footer";
 import Navbar from "./Components/Shared/Navbar";
 import Tour from "./Components/TourLists/Tour";
+import useAuthCheck from "./hooks/useAuthCheck";
 import Login from "./Page/auth/Login";
 import Register from "./Page/auth/Register";
 import Blogs from "./Page/Blogs";
@@ -15,7 +16,11 @@ import Hotels from "./Page/Hotels";
 import Tours from "./Page/Tours";
 
 const App = () => {
-  return (
+  const authLoading = useAuthCheck();
+
+  return authLoading ? (
+    <div>Checking Authentication ...</div>
+  ) : (
     <main>
       <Navbar />
       <Routes>
