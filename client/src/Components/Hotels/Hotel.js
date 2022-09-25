@@ -24,6 +24,42 @@ const Hotel = () => {
 
   console.log(hotel);
 
+  // decide what to render
+  let content = null;
+
+  if (isLoading) {
+    content = <li className="m-2 text-center">Loading...</li>;
+  } else if (!isLoading && isError) {
+    console.log("Error Message:- ", error?.data);
+    content = (
+      <li className="m-2 text-center">
+        {/* <Error message={error?.data} /> */}
+      </li>
+    );
+  } else if (!isLoading && !isError && hotel?.length === 0) {
+    content = <p className="m-2 text-center">No hotels Found</p>;
+  } else if (!isLoading && !isError && hotel?.length > 0) {
+    content = (
+      <>
+        {hotel.map((hotel) => {
+          const {
+            _id,
+            address,
+            cheapestPrice,
+            city,
+            desc,
+            name,
+            photos,
+            title,
+            rating,
+          } = hotel || {};
+
+          return <div key={_id}></div>;
+        })}
+      </>
+    );
+  }
+
   const galleryImg = [
     "https://i.ibb.co/YcnqRSK/single3.webp",
     "https://i.ibb.co/KsHgF2v/Luxury-Hotels.jpg",
