@@ -1,9 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useGetHotelsQuery } from "../../features/hotels/hotelsApi";
 import CardFull from "../theme/CardFull";
 import Content from "../theme/Content";
 
 const HotelsList = () => {
+  const { data, isLoading, isError, error } = useGetHotelsQuery() || {};
+
+  console.log(data);
+
+  /* {_id, address, cheapestPrice, city, desc, distance, featured, name, photos, rooms, title, type } */
+
+  /* {img = photos, offers = name, title, location = city, des1 = desc.slice(0, 20), des2 = address, price = cheapestPrice, ratting } */
+
   return (
     <Content>
       {/* page info & filter */}
