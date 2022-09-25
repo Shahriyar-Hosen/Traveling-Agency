@@ -10,7 +10,7 @@ const ComingSoon = () => {
         src="https://res.cloudinary.com/dev-shahriyar/image/upload/v1663909751/Pages/Coming-soon-yello_zilsgl.jpg"
         alt=""
       />
-      <div className="absolute top-28 left-0 right-0 z-10 flex justify-center items-center">
+      <div className="absolute top-24 left-0 right-0 z-10 flex justify-center items-center">
         <img src={logo} alt="" />
       </div>
     </Content>
