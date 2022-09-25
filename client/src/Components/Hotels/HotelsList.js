@@ -17,6 +17,7 @@ const HotelsList = () => {
   if (isLoading) {
     content = <li className="m-2 text-center">Loading...</li>;
   } else if (!isLoading && isError) {
+    console.log("Error Message:- ", error?.data);
     content = (
       <li className="m-2 text-center">
         {/* <Error message={error?.data} /> */}
