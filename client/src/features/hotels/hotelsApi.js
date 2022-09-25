@@ -4,7 +4,7 @@ export const hotelsApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     getHotels: builder.query({
       /*  filter by
-      
+
       => countByCity?cities=Dhaka,Sofia,Antalya
       => featured=true
       => limit=4
@@ -16,6 +16,9 @@ export const hotelsApi = apiSlice.injectEndpoints({
 
       */
       query: () => `/hotels`,
+    }),
+    getHotel: builder.query({
+      query: (id) => `/hotels/find/${id}`,
     }),
 
     addHotel: builder.mutation({
@@ -35,5 +38,9 @@ export const hotelsApi = apiSlice.injectEndpoints({
   }),
 });
 
-export const { useGetHotelsQuery, useAddHotelMutation, useEditHotelMutation } =
-  hotelsApi;
+export const {
+  useGetHotelsQuery,
+  useGetHotelQuery,
+  useAddHotelMutation,
+  useEditHotelMutation,
+} = hotelsApi;

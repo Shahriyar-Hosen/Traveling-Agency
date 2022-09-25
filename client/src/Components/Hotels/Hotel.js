@@ -1,4 +1,6 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+import { useGetHotelQuery } from "../../features/hotels/hotelsApi";
 import Header from "../Shared/Header";
 import LoveGoing from "../Shared/LoveGoing";
 import Partners from "../Shared/Partners";
@@ -12,6 +14,16 @@ import Map from "../theme/Map";
 import Reviews from "../theme/Reviews";
 
 const Hotel = () => {
+  const { hotelId } = useParams();
+  const {
+    data: hotel,
+    isLoading,
+    isError,
+    error,
+  } = useGetHotelQuery(hotelId) || {};
+
+  console.log(hotel);
+
   const galleryImg = [
     "https://i.ibb.co/YcnqRSK/single3.webp",
     "https://i.ibb.co/KsHgF2v/Luxury-Hotels.jpg",
