@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import PButton from "./PButton";
 
@@ -13,7 +13,7 @@ const CardFull = ({
   ratting,
 }) => {
   return (
-    <div className="border rounded-lg p-5 flex lg:flex-row flex-col w-fit lg:w-full justify-between items-center">
+    <div className="border rounded-lg p-5 flex lg:flex-row flex-col w-fit lg:w-full justify-between items-center min-w-full">
       <div className="flex flex-col lg:flex-row justify-center items-center text-center lg:text-start  gap-5">
         <figure className="w-96 h-56">
           <img
@@ -45,6 +45,7 @@ const CardFull = ({
               type="radio"
               name="rating-5"
               className="mask mask-star-2 bg-orange-400"
+              // defaultChecked={ratting === 0 && true}
             />
             <input
               type="radio"
@@ -65,7 +66,7 @@ const CardFull = ({
               type="radio"
               name="rating-5"
               className="mask mask-star-2 bg-orange-400"
-              defaultChecked
+              
             />
           </div>
           {ratting} Reviews

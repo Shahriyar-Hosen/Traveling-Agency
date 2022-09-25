@@ -5,14 +5,61 @@ import CardFull from "../theme/CardFull";
 import Content from "../theme/Content";
 
 const HotelsList = () => {
-  const { data, isLoading, isError, error } = useGetHotelsQuery() || {};
-
-  console.log(data);
+  const { data: hotels, isLoading, isError, error } = useGetHotelsQuery() || {};
 
   /* {_id, address, cheapestPrice, city, desc, distance, featured, name, photos, rooms, title, type } */
 
   /* {img = photos, offers = name, title, location = city, des1 = desc.slice(0, 20), des2 = address, price = cheapestPrice, ratting } */
 
+  // decide what to render
+  let content = null;
+
+  if (isLoading) {
+    content = <li className="m-2 text-center">Loading...</li>;
+  } else if (!isLoading && isError) {
+    content = (
+      <li className="m-2 text-center">
+        {/* <Error message={error?.data} /> */}
+      </li>
+    );
+  } else if (!isLoading && !isError && hotels?.length === 0) {
+    content = <p className="m-2 text-center">No hotels Found</p>;
+  } else if (!isLoading && !isError && hotels?.length > 0) {
+    content = (
+      <>
+        {hotels.map((hotel) => {
+          const {
+            _id,
+            address,
+            cheapestPrice,
+            city,
+            desc,
+            name,
+            photos,
+            title,
+            rating,
+          } = hotel || {};
+
+          return (
+            <Link to={`/hotels/${_id}`} key={_id}>
+              <CardFull
+                img={photos[0]}
+                offers={name}
+                title={title.length >= 40 ? title.slice(0, 40) + " ..." : title}
+                location={city}
+                des1={desc.length >= 20 ? desc.slice(0, 20) + " ..." : desc}
+                des2={
+                  address.length >= 30 ? address.slice(0, 30) + " ..." : address
+                }
+                price={cheapestPrice}
+                ratting={rating || 0}
+              />
+            </Link>
+          );
+        })}
+      </>
+    );
+  }
   return (
     <Content>
       {/* page info & filter */}
@@ -35,91 +82,8 @@ const HotelsList = () => {
         </div>
       </div>
       {/* card */}
-      <div className="px-5 xxl:px-0 flex flex-col gap-5 justify-center items-center">
-        <Link to="/hotels/1">
-          <CardFull
-            img="https://i.ibb.co/KsHgF2v/Luxury-Hotels.jpg"
-            offers="15% OF"
-            title="Leeds Castle, Cliffs Of Dover"
-            location="Croatia"
-            des1="Taking Safety Measures"
-            des2="Free cancellation"
-            price="125"
-            ratting="200"
-          />
-        </Link>
-        <Link to="/hotels/1">
-          <CardFull
-            img="https://i.ibb.co/7pVMhhP/Hotels.png"
-            offers="15% OFF"
-            title="Adriatic Adventure–Zagreb To Athens"
-            location="Greece"
-            des1="Taking Safety Measures"
-            des2="Free cancellation"
-            price="160"
-            ratting="200"
-          />
-        </Link>
-        <Link to="/hotels/1">
-          <CardFull
-            img="https://i.ibb.co/XSL4zjL/Poseidon-Undersea-Resort-in-Fiji.jpg"
-            offers="15% OFF"
-            title="The Spanish Riviera Cost Bay"
-            location="Spain"
-            des1="Taking Safety Measures"
-            des2="Free cancellation"
-            price="160"
-            ratting="200"
-          />
-        </Link>
-        <Link to="/hotels/1">
-          <CardFull
-            img="https://i.ibb.co/TRckYZB/Lappartement-14-695x390.jpg"
-            offers="15% OFF"
-            title="Adriatic Adventure–Zagreb To Athens"
-            location="Greece"
-            des1="Taking Safety Measures"
-            des2="Free cancellation"
-            price="160"
-            ratting="200"
-          />
-        </Link>
-        <Link to="/hotels/1">
-          <CardFull
-            img="https://i.ibb.co/QPdvFw1/LTI.jpg"
-            offers="15% OFF"
-            title="Highlights Scenery Of Vietnam"
-            location="Vietnam"
-            des1="Taking Safety Measures"
-            des2="Free cancellation"
-            price="160"
-            ratting="200"
-          />
-        </Link>
-        <Link to="/hotels/1">
-          <CardFull
-            img="https://i.ibb.co/fXbs3QX/Conrad-Shenyang-Hilton-luxury-hotels.jpg"
-            offers="15% OFF"
-            title="The Spanish Riviera Cost Bay"
-            location="Spain"
-            des1="Taking Safety Measures"
-            des2="Free cancellation"
-            price="160"
-            ratting="200"
-          />
-        </Link>
-        <Link to="/hotels/1">
-          <CardFull
-            img="https://i.ibb.co/D8jbyKp/The-Muraka-Undersea-Bedroom-scaled.jpg"
-            offers="15% OFF"
-            title="Empire Prestige Causeway Bay"
-            location="SEgyptpain"
-            des1="Taking Safety Measures"
-            des2="Free cancellation"
-            price="160"
-            ratting="200"
-          />
-        </Link>
+      <div className="px-5 xxl:px-0 flex flex-col gap-5 justify-center items-center pb-10">
+        {content}
       </div>
     </Content>
   );
