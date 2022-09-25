@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Content from "../theme/Content";
 import DestinationCard from "../theme/DestinationCard";
 
@@ -19,78 +20,102 @@ const DestinationsList = () => {
           </p>
         </div>
         <div className="grid justify-items-center content-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 my-10">
-          <DestinationCard
-            img="https://i.ibb.co/WsrVvYH/agra.jpg"
-            place="Agra"
-            country="India"
-            time="22 Hours"
-          />
-          <DestinationCard
-            img="https://i.ibb.co/FJz4sxT/istanbul.jpg"
-            place="Istanbul"
-            country="Turkey"
-            time="24 Hours"
-          />
-          <DestinationCard
-            img="https://i.ibb.co/SV5RJhP/dubai.jpg"
-            place="Dubai"
-            country="United Arab Emirates"
-            time="48 Hours"
-          />
-          <DestinationCard
-            img="https://i.ibb.co/sRMwdrN/cox-s-bazar.jpg"
-            place="Cox's Bazar"
-            country="Bangladesh"
-            time="12 Hours"
-          />
-          <DestinationCard
-            img="https://htmldesigntemplates.com/html/travelin/images/destination/destination4.jpg"
-            place="Bali"
-            country="Indonesia"
-            time="17 Hours"
-          />
-          <DestinationCard
-            img="https://htmldesigntemplates.com/html/travelin/images/destination/destination10.jpg"
-            place="Bali"
-            country="Indonesia"
-            time="14 Hours"
-          />
-          <DestinationCard
-            img="https://htmldesigntemplates.com/html/travelin/images/destination/destination16.jpg"
-            place="Florida"
-            country="America"
-            time="32 Hours"
-          />
-          <DestinationCard
-            img="https://htmldesigntemplates.com/html/travelin/images/destination/destination5.jpg"
-            place="Bangkok"
-            country="Thailand"
-            time="24 Hours"
-          />
-          <DestinationCard
-            img="https://htmldesigntemplates.com/html/travelin/images/destination/destination15.jpg"
-            place="Moscow"
-            country="Russia"
-            time="18 Hours"
-          />
-          <DestinationCard
-            img="https://htmldesigntemplates.com/html/travelin/images/destination/destination17.jpg"
-            country="Italy"
-            place="Caspian Valley"
-            time="18 Hours"
-          />
-          <DestinationCard
-            img="https://htmldesigntemplates.com/html/travelin/images/destination/destination14.jpg"
-            country="Japan"
-            place="Tokyo"
-            time="21 Hours"
-          />
-          <DestinationCard
-            img="https://htmldesigntemplates.com/html/travelin/images/destination/destination1.jpg"
-            country="England"
-            place="London"
-            time="15 Hours"
-          />
+          <Link to="/destinations/1">
+            <DestinationCard
+              img="https://i.ibb.co/WsrVvYH/agra.jpg"
+              place="Agra"
+              country="India"
+              time="22 Hours"
+            />
+          </Link>
+          <Link to="/destinations/1">
+            <DestinationCard
+              img="https://i.ibb.co/FJz4sxT/istanbul.jpg"
+              place="Istanbul"
+              country="Turkey"
+              time="24 Hours"
+            />
+          </Link>
+          <Link to="/destinations/1">
+            <DestinationCard
+              img="https://i.ibb.co/SV5RJhP/dubai.jpg"
+              place="Dubai"
+              country="United Arab Emirates"
+              time="48 Hours"
+            />
+          </Link>
+          <Link to="/destinations/1">
+            <DestinationCard
+              img="https://i.ibb.co/sRMwdrN/cox-s-bazar.jpg"
+              place="Cox's Bazar"
+              country="Bangladesh"
+              time="12 Hours"
+            />
+          </Link>
+          <Link to="/destinations/1">
+            <DestinationCard
+              img="https://htmldesigntemplates.com/html/travelin/images/destination/destination4.jpg"
+              place="Bali"
+              country="Indonesia"
+              time="17 Hours"
+            />
+          </Link>
+          <Link to="/destinations/1">
+            <DestinationCard
+              img="https://htmldesigntemplates.com/html/travelin/images/destination/destination10.jpg"
+              place="Bali"
+              country="Indonesia"
+              time="14 Hours"
+            />
+          </Link>
+          <Link to="/destinations/1">
+            <DestinationCard
+              img="https://htmldesigntemplates.com/html/travelin/images/destination/destination16.jpg"
+              place="Florida"
+              country="America"
+              time="32 Hours"
+            />
+          </Link>
+          <Link to="/destinations/1">
+            <DestinationCard
+              img="https://htmldesigntemplates.com/html/travelin/images/destination/destination5.jpg"
+              place="Bangkok"
+              country="Thailand"
+              time="24 Hours"
+            />
+          </Link>
+          <Link to="/destinations/1">
+            <DestinationCard
+              img="https://htmldesigntemplates.com/html/travelin/images/destination/destination15.jpg"
+              place="Moscow"
+              country="Russia"
+              time="18 Hours"
+            />
+          </Link>
+          <Link to="/destinations/1">
+            <DestinationCard
+              img="https://htmldesigntemplates.com/html/travelin/images/destination/destination17.jpg"
+              country="Italy"
+              place="Caspian Valley"
+              time="18 Hours"
+            />
+          </Link>
+          <Link to="/destinations/1">
+            <DestinationCard
+              img="https://htmldesigntemplates.com/html/travelin/images/destination/destination14.jpg"
+              country="Japan"
+              place="Tokyo"
+              time="21 Hours"
+            />
+          </Link>
+          <Link to="/destinations/1">
+            <DestinationCard
+              img="https://htmldesigntemplates.com/html/travelin/images/destination/destination1.jpg"
+              country="England"
+              place="London"
+              time="15 Hours"
+            />
+          </Link>
         </div>
       </Content>
     </section>

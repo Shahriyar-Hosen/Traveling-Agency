@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Blog from "./Components/Blogs/Blog";
 import Destination from "./Components/Destination/Destination";
 import Hotel from "./Components/hotels/Hotel";
+import PrivateRoute from "./Components/route/PrivateRoute";
 import Footer from "./Components/Shared/Footer";
 import Navbar from "./Components/Shared/Navbar";
 import Tour from "./Components/TourLists/Tour";
@@ -34,12 +35,40 @@ const App = () => {
         <Route path="tours" element={<Tours />} />
         <Route path="hotels" element={<Hotels />} />
         <Route path="blogs" element={<Blogs />} />
-        <Route path="blogs/:blogsId" element={<Blog />} />
 
         {/* Privet Page */}
-        <Route path="destinations/:destinationId" element={<Destination />} />
-        <Route path="tours/:tourId" element={<Tour />} />
-        <Route path="hotels/:hotelId" element={<Hotel />} />
+        <Route
+          path="destinations/:destinationId"
+          element={
+            <PrivateRoute>
+              <Destination />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="tours/:tourId"
+          element={
+            <PrivateRoute>
+              <Tour />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="hotels/:hotelId"
+          element={
+            <PrivateRoute>
+              <Hotel />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="blogs/:blogsId"
+          element={
+            <PrivateRoute>
+              <Blog />
+            </PrivateRoute>
+          }
+        />
       </Routes>
       <Footer />
     </main>
