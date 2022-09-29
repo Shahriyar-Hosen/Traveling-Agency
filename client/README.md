@@ -4,9 +4,13 @@
 
 ## Home Page
 
+## **_ `Home Page Section` _**
+
 ### Banner
 
 ### Search
+
+### Top Categories
 
 ### Core Features
 
@@ -16,11 +20,11 @@
 
 ### Best In Year
 
-### Top Pick
+### Best Tour Packages
 
-### Top Categories
+### Best Hotels Packages
 
-### Top Deals
+### Top Deals & The Last Minute Deals
 
 ### Testimonials
 
@@ -29,3 +33,7 @@
 ### Our Blogs Offers
 
 ### Our Partners
+
+### Our Awesome Partners
+
+### Footer
