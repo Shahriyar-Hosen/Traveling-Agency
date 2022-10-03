@@ -52,9 +52,9 @@ const PlacesSlider = () => {
     >
       <SwiperSlide className="pb-20">
         <Link to="/destinations/1">
-          <div className="w-80 h-80">
+          <div className="w-80 h-80 overflow-hidden order-1 rounded-lg">
             <img
-              className="w-32 md:w-80 md:h-80 rounded-lg"
+              className="w-32 md:w-80 md:h-80 rounded-lg hover:scale-110 hover:duration-1000 hover:ease-in-out ease-in-out duration-1000"
               src="https://i.ibb.co/sRMwdrN/cox-s-bazar.jpg"
               alt=""
             />
@@ -64,9 +64,9 @@ const PlacesSlider = () => {
       </SwiperSlide>
       <SwiperSlide>
         <Link to="/destinations/1">
-          <div className="w-80 h-80">
+          <div className="w-80 h-80 overflow-hidden order-1 rounded-lg">
             <img
-              className="w-32  md:w-80 md:h-80 rounded-lg"
+              className="w-32 md:w-80 md:h-80 rounded-lg hover:scale-110 hover:duration-1000 hover:ease-in-out ease-in-out duration-1000"
               src="https://i.ibb.co/SV5RJhP/dubai.jpg"
               alt=""
             />
@@ -76,9 +76,9 @@ const PlacesSlider = () => {
       </SwiperSlide>
       <SwiperSlide>
         <Link to="/destinations/1">
-          <div className="w-80 h-80">
+          <div className="w-80 h-80 overflow-hidden order-1 rounded-lg">
             <img
-              className="w-32  md:w-80 md:h-80 rounded-lg"
+              className="w-32 md:w-80 md:h-80 rounded-lg hover:scale-110 hover:duration-1000 hover:ease-in-out ease-in-out duration-1000"
               src="https://i.ibb.co/FJz4sxT/istanbul.jpg"
               alt=""
             />
@@ -88,9 +88,9 @@ const PlacesSlider = () => {
       </SwiperSlide>
       <SwiperSlide>
         <Link to="/destinations/1">
-          <div className="w-80 h-80">
+          <div className="w-80 h-80 overflow-hidden order-1 rounded-lg">
             <img
-              className="w-32  md:w-80 md:h-80 rounded-lg"
+              className="w-32  md:w-80 md:h-80 rounded-lg hover:scale-110 hover:duration-1000 hover:ease-in-out ease-in-out duration-1000"
               src="https://i.ibb.co/WsdhSsF/maldives.jpg"
               alt=""
             />
@@ -100,9 +100,9 @@ const PlacesSlider = () => {
       </SwiperSlide>
       <SwiperSlide>
         <Link to="/destinations/1">
-          <div className="w-80 h-80">
+          <div className="w-80 h-80 overflow-hidden order-1 rounded-lg">
             <img
-              className="w-32  md:w-80 md:h-80 rounded-lg"
+              className="w-32  md:w-80 md:h-80 rounded-lg hover:scale-110 hover:duration-1000 hover:ease-in-out ease-in-out duration-1000"
               src="https://i.ibb.co/WsrVvYH/agra.jpg"
               alt=""
             />
@@ -112,9 +112,9 @@ const PlacesSlider = () => {
       </SwiperSlide>
       <SwiperSlide>
         <Link to="/destinations/1">
-          <div className="w-80 h-80">
+          <div className="w-80 h-80 overflow-hidden order-1 rounded-lg">
             <img
-              className="w-32  md:w-80 md:h-80 rounded-lg"
+              className="w-32  md:w-80 md:h-80 rounded-lg hover:scale-110 hover:duration-1000 hover:ease-in-out ease-in-out duration-1000"
               src="https://i.ibb.co/2nsH6L7/bankok.jpg"
               alt=""
             />
@@ -124,9 +124,9 @@ const PlacesSlider = () => {
       </SwiperSlide>
       <SwiperSlide>
         <Link to="/destinations/1">
-          <div className="w-80 h-80">
+          <div className="w-80 h-80 overflow-hidden order-1 rounded-lg">
             <img
-              className="w-32  md:w-80 md:h-80 rounded-lg"
+              className="w-32  md:w-80 md:h-80 rounded-lg hover:scale-110 hover:duration-1000 hover:ease-in-out ease-in-out duration-1000"
               src=" https://i.ibb.co/Yd39kWY/kathmandu.jpg"
               alt=""
             />
@@ -136,9 +136,9 @@ const PlacesSlider = () => {
       </SwiperSlide>
       <SwiperSlide>
         <Link to="/destinations/1">
-          <div className="w-80 h-80">
+          <div className="w-80 h-80 overflow-hidden order-1 rounded-lg">
             <img
-              className="w-32  md:w-80 md:h-80 rounded-lg"
+              className="w-32  md:w-80 md:h-80 rounded-lg hover:scale-110 hover:duration-1000 hover:ease-in-out ease-in-out duration-1000"
               src="https://i.ibb.co/xGSyWmB/colombo.jpg"
               alt=""
             />
