@@ -12,13 +12,17 @@ const PackagesCard = ({
 }) => {
   return (
     <div className="card card-compact w-96 bg-base-100 shadow-xl">
-      <figure className=" relative w-full">
-        <span className="absolute bottom-0 right-5 btn text-white btn-primary -mb-5">
+      <figure className=" relative w-full overflow-hidden">
+        <img
+          className="w-full min-w-[480px] min-h-[260px] max-h-[260px] hover:scale-110 hover:duration-1000 hover:ease-in-out ease-in-out duration-1000"
+          src={img}
+          alt="Package"
+        />
+      </figure>
+      <div className="card-body text-start relative">
+        <span className="absolute -top-7 right-5 btn text-white btn-primary -mb-5 z-10">
           {offers}
         </span>
-        <img className="w-full min-w-[480px] min-h-[260px] max-h-[260px]" src={img} alt="Package" />
-      </figure>
-      <div className="card-body text-start">
         <h2 className="text-primary text-lg  font-serif font-semibold ">
           {location}
         </h2>
