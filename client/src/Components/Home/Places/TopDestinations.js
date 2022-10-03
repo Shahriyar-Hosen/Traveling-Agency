@@ -23,9 +23,9 @@ const TopDestinations = () => {
         <div className="md:row-span-4 grid md:grid-rows-3grid-cols-1 gap-5">
           {/* img-1 w-f */}
           <Link to="/destinations/1">
-            <div className="md:row-span-3 relative">
+            <div className="md:row-span-3 relative overflow-hidden order-1 rounded-xl">
               <img
-                className="w-full h-full rounded-xl"
+                className="w-full h-full rounded-xl hover:scale-110 hover:duration-1000 hover:ease-in-out ease-in-out duration-1000"
                 src="https://htmldesigntemplates.com/html/travelin/images/destination/destination2.jpg"
                 alt=""
               />

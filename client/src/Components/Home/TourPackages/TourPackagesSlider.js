@@ -51,13 +51,17 @@ const TourPackagesSlider = () => {
       <SwiperSlide className="pb-14">
         <Link to="/tours/1">
           <div className="card card-compact w-96 bg-base-100 shadow-xl">
-            <figure className=" relative">
-              <span className="absolute bottom-0 right-5 btn text-white btn-primary -mb-5">
+            <figure className="overflow-hidden">
+              <img
+                className="hover:scale-110 hover:duration-1000 hover:ease-in-out ease-in-out duration-1000"
+                src="https://i.ibb.co/jrGj182/trending3.jpg"
+                alt="Package"
+              />
+            </figure>
+            <div className="card-body text-start relative">
+              <span className="absolute -top-7 right-5 btn text-white btn-primary -mb-5 z-10">
                 9 Days Tours
               </span>
-              <img src="https://i.ibb.co/jrGj182/trending3.jpg" alt="Package" />
-            </figure>
-            <div className="card-body text-start">
               <h2 className="text-primary text-lg  font-serif font-semibold ">
                 Greece
               </h2>
@@ -121,13 +125,17 @@ const TourPackagesSlider = () => {
       <SwiperSlide className="pb-14">
         <Link to="/tours/1">
           <div className="card card-compact w-96 bg-base-100 shadow-xl">
-            <figure className=" relative">
-              <span className="absolute bottom-0 right-5 btn text-white btn-primary -mb-5">
+            <figure className="overflow-hidden">
+              <img
+                className="hover:scale-110 hover:duration-1000 hover:ease-in-out ease-in-out duration-1000"
+                src="https://i.ibb.co/SX8f26w/trending4.jpg"
+                alt="Package"
+              />
+            </figure>
+            <div className="card-body text-start relative">
+              <span className="absolute -top-7 right-5 btn text-white btn-primary -mb-5 z-10">
                 9 Days Tours
               </span>
-              <img src="https://i.ibb.co/SX8f26w/trending4.jpg" alt="Package" />
-            </figure>
-            <div className="card-body text-start">
               <h2 className="text-primary text-lg  font-serif font-semibold ">
                 Maldives
               </h2>
@@ -191,13 +199,17 @@ const TourPackagesSlider = () => {
       <SwiperSlide className="pb-14">
         <Link to="/tours/1">
           <div className="card card-compact w-96 bg-base-100 shadow-xl">
-            <figure className=" relative">
-              <span className="absolute bottom-0 right-5 btn text-white btn-primary -mb-5">
+            <figure className="overflow-hidden">
+              <img
+                className="hover:scale-110 hover:duration-1000 hover:ease-in-out ease-in-out duration-1000"
+                src="https://i.ibb.co/vsf7WRX/trending1.jpg"
+                alt="Package"
+              />
+            </figure>
+            <div className="card-body text-start relative">
+              <span className="absolute -top-7 right-5 btn text-white btn-primary -mb-5 z-10">
                 5 Days Tours
               </span>
-              <img src="https://i.ibb.co/vsf7WRX/trending1.jpg" alt="Package" />
-            </figure>
-            <div className="card-body text-start">
               <h2 className="text-primary text-lg  font-serif font-semibold ">
                 Greece
               </h2>
@@ -261,13 +273,17 @@ const TourPackagesSlider = () => {
       <SwiperSlide className="pb-14">
         <Link to="/tours/1">
           <div className="card card-compact w-96 bg-base-100 shadow-xl">
-            <figure className=" relative">
-              <span className="absolute bottom-0 right-5 btn text-white btn-primary -mb-5">
+            <figure className="overflow-hidden">
+              <img
+                className="hover:scale-110 hover:duration-1000 hover:ease-in-out ease-in-out duration-1000"
+                src="https://i.ibb.co/zGzhCkz/trending2.jpg"
+                alt="Package"
+              />
+            </figure>
+            <div className="card-body text-start relative">
+              <span className="absolute -top-7 right-5 btn text-white btn-primary -mb-5 z-10">
                 9 Days Tours
               </span>
-              <img src="https://i.ibb.co/zGzhCkz/trending2.jpg" alt="Package" />
-            </figure>
-            <div className="card-body text-start">
               <h2 className="text-primary text-lg  font-serif font-semibold ">
                 Croatia
               </h2>
