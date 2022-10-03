@@ -2,8 +2,8 @@ import React from "react";
 
 const DealsCard = ({ link, h1, h2, price, rating, time }) => {
   return (
-    <div className="w-[400px] h-[400px] md:row-span-3 relative">
-      <img className="w-full h-full rounded-xl" src={link} alt={h2} />
+    <div className="w-[400px] h-[400px] md:row-span-3 relative overflow-hidden">
+      <img className="w-full h-full rounded-xl  hover:scale-110 hover:duration-1000 hover:ease-in-out ease-in-out duration-1000" src={link} alt={h2} />
       <div className="absolute bottom-0 pb-5 rounded-xl top-0 z-10 flex justify-between w-full px-7 py-5 items-end bg-black bg-opacity-50 font-serif">
         <div>
           <h2 className="text-xl font-semibold text-secondary">{h2}</h2>
