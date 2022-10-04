@@ -5,17 +5,17 @@ const SideCard = ({ img, h2, h1, rating, details, time, price, offers }) => {
   return (
     <div className="card lg:card-side bg-base-100 shadow-xl w-5/6 lg:w-full">
       {" "}
-        <figure className="relative w-full lg:w-[350px]">
-          <span className="absolute top-14 -left-20 font-bold bg-secondary px-20 py-2 text-xl text-white -rotate-45">
-            <span className="pl-8">{offers}% OFF</span>
-          </span>
-          <img
-            className="lg:max-w-[300px] w-full h-[300px] lg:h-full"
-            src={img}
-            alt={h2}
-          />
-        </figure>
+      <figure className="relative w-full lg:w-[350px] overflow-hidden">
+        <img
+          className="lg:max-w-[300px] w-full h-[300px] lg:h-full  hover:scale-110 hover:duration-1000 hover:ease-in-out ease-in-out duration-1000"
+          src={img}
+          alt={h2}
+        />
+      </figure>
       <div className="card-body text-start">
+        <span className="absolute top-14 -left-20 font-bold bg-secondary px-20 py-2 text-xl text-white -rotate-45">
+          <span className="pl-8">{offers}% OFF</span>
+        </span>
         <h2 className="text-primary text-lg  font-serif font-semibold ">
           {h2}
         </h2>
