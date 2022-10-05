@@ -22,15 +22,10 @@ const PlacesSlider = () => {
       loop={true}
       loopFillGroupWithBlank={true}
       freeMode={false}
-      // grabCursor={true}
-      // centeredSlides={true}
       autoplay={{
         delay: 3000,
         disableOnInteraction: true,
       }}
-      // pagination={{
-      //   clickable: true,
-      // }}
       navigation={false}
       breakpoints={{
         640: {

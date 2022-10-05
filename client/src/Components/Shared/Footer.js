@@ -8,10 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#17233e] pb-7">
       <figure>
-        <img
-          src="https://i.ibb.co/mGnbXdH/shape8.png"
-          alt=""
-        />
+        <img src="https://i.ibb.co/mGnbXdH/shape8.png" alt="" />
       </figure>
       <Content className="flex flex-col gap-20 text-white pt-20 px-5">
         <div className="grid grid-cols-1  lg:grid-cols-3 gap-10">
@@ -65,7 +62,9 @@ const Footer = () => {
                 placeholder="Enter your Email"
                 className="input w-full text-black"
               />
-              <PButton className="btn btn-primary text-white">Subscribe</PButton>
+              <PButton className="btn btn-primary text-white">
+                Subscribe
+              </PButton>
             </form>
           </div>
         </div>

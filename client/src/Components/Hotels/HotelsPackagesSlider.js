@@ -21,16 +21,10 @@ const HotelsPackagesSlider = () => {
       spaceBetween={30}
       loop={true}
       loopFillGroupWithBlank={true}
-      // freeMode={false}
-      // grabCursor={true}
-      // centeredSlides={true}
       autoplay={{
         delay: 3500,
         disableOnInteraction: true,
       }}
-      // pagination={{
-      //   clickable: true,
-      // }}
       navigation={false}
       breakpoints={{
         640: {
