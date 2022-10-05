@@ -12,9 +12,7 @@ const Header = ({ h1, page }) => {
     >
       <Content>
         <div className="text-white flex flex-col justify-center items-center pt-32 md:pt-52">
-          <h1 className="text-4xl font-semibold font-serif uppercase">
-          {h1}
-          </h1>
+          <h1 className="text-4xl font-semibold font-serif uppercase">{h1}</h1>
           <p className="text-lg">
             <span className="text-primary">Home</span> | {page}
           </p>

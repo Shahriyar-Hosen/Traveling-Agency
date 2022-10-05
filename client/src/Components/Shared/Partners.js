@@ -30,91 +30,68 @@ const Partners = () => {
       </div>
 
       {/* slider */}
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={30}
-          freeMode={true}
-          loop={true}
-          loopFillGroupWithBlank={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: true,
-          }}
-          // pagination={{
-          //   clickable: true,
-          // }}
-          navigation={false}
-          breakpoints={{
-            440: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            668: {
-              slidesPerView: 3,
-              spaceBetween: 40,
-            },
-            980: {
-              slidesPerView: 3,
-              spaceBetween: 40,
-            },
-            1100: {
-              slidesPerView: 4,
-              spaceBetween: 40,
-            },
-            1280: {
-              slidesPerView: 5,
-              spaceBetween: 50,
-            },
-          }}
-          modules={[FreeMode, Autoplay, Navigation]}
-          className="mySwiper"
-        >
-          <SwiperSlide className="pb-10">
-            <div>
-              <img
-                className=""
-                src="https://i.ibb.co/MgpDp6h/cl-1.png"
-                alt=""
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="pb-10">
-            <div>
-              <img
-                className=""
-                src="https://i.ibb.co/3C2fXzP/cl-2.png"
-                alt=""
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="pb-10">
-            <div>
-              <img
-                className=""
-                src="https://i.ibb.co/991kg3C/cl-3.png"
-                alt=""
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="pb-10">
-            <div>
-              <img
-                className=""
-                src="https://i.ibb.co/fpZ6jgh/cl-4.png"
-                alt=""
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="pb-10">
-            <div>
-              <img
-                className=""
-                src="https://i.ibb.co/5KXrk2n/cl-5.png"
-                alt=""
-              />
-            </div>
-          </SwiperSlide>
-        </Swiper>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        freeMode={true}
+        loop={true}
+        loopFillGroupWithBlank={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: true,
+        }}
+        navigation={false}
+        breakpoints={{
+          440: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          668: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          980: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1100: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1280: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }}
+        modules={[FreeMode, Autoplay, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide className="pb-10">
+          <div>
+            <img className="" src="https://i.ibb.co/MgpDp6h/cl-1.png" alt="" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="pb-10">
+          <div>
+            <img className="" src="https://i.ibb.co/3C2fXzP/cl-2.png" alt="" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="pb-10">
+          <div>
+            <img className="" src="https://i.ibb.co/991kg3C/cl-3.png" alt="" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="pb-10">
+          <div>
+            <img className="" src="https://i.ibb.co/fpZ6jgh/cl-4.png" alt="" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="pb-10">
+          <div>
+            <img className="" src="https://i.ibb.co/5KXrk2n/cl-5.png" alt="" />
+          </div>
+        </SwiperSlide>
+      </Swiper>
     </Content>
   );
 };

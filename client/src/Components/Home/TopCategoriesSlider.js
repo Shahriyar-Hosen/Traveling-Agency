@@ -24,9 +24,6 @@ const TopCategoriesSlider = () => {
           delay: 5000,
           disableOnInteraction: true,
         }}
-        // pagination={{
-        //   clickable: true,
-        // }}
         navigation={false}
         breakpoints={{
           440: {
