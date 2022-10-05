@@ -60,26 +60,24 @@ const Banner = () => {
 
               {/* section */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 justify-items-center content-center mt-10">
-                <div className="w-32 h-28 rounded-xl border-2 flex flex-col justify-center items-center text-white hover:border-none hover:bg-primary hover:duration-300 hover:ease-in ease-in duration-300">
-                  <WiUmbrella className="text-6xl" />
-                  TOUR
-                </div>
-                <div className="w-32 h-28 rounded-xl border-2 flex justify-center gap-3 items-center text-white flex-col hover:border-none hover:bg-primary hover:duration-300 hover:ease-in ease-in duration-300">
-                  <IoAirplaneOutline className="-rotate-45 text-5xl" />
-                  FLIGHT
-                </div>
-                <div
-                  className={`w-32 h-28 rounded-xl border-2 flex justify-center items-center text-white flex-col gap-3 hover:border-none hover:bg-primary hover:duration-300 hover:ease-in ease-in duration-300 ${
-                    selectSection === "hotel" && "border-none bg-primary"
-                  }`}
-                >
-                  <IoHomeOutline className="text-5xl" />
-                  HOTEL
-                </div>
-                <div className="w-32 h-28 rounded-xl border-2 flex justify-center items-center text-white flex-col gap-2 hover:border-none hover:bg-primary hover:duration-300 hover:ease-in ease-in duration-300">
-                  <IoLocationOutline className="text-5xl" />
-                  DESTINATION
-                </div>
+                {section.map((i) => (
+                  <div
+                    onClick={() => setSelectSection(i)}
+                    className={`w-32 h-28 rounded-xl border-2 flex justify-center items-center text-white flex-col gap-3 hover:border-none hover:bg-primary hover:duration-300 hover:ease-in ease-in duration-300 uppercase ${
+                      selectSection === i && "border-none bg-primary"
+                    }`}
+                  >
+                    {i === "tour" && <WiUmbrella className="text-6xl" />}
+                    {i === "flight" && (
+                      <IoAirplaneOutline className="-rotate-45 text-5xl" />
+                    )}
+                    {i === "hotel" && <IoHomeOutline className="text-5xl" />}
+                    {i === "destination" && (
+                      <IoLocationOutline className="text-5xl" />
+                    )}
+                    {i}
+                  </div>
+                ))}
               </div>
 
               {/* form */}
