@@ -10,7 +10,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
 // import required modules
-import { FreeMode, Autoplay, Pagination, Navigation } from "swiper";
+import { FreeMode, Autoplay, Navigation } from "swiper";
 import Content from "../theme/Content";
 
 const Partners = () => {
