@@ -17,6 +17,7 @@ import { format } from "date-fns";
 
 const Banner = () => {
   const [openDate, setOpenDate] = useState(false);
+  const [selectSection, setSelectSection] = useState("hotel");
   const [option, setOption] = useState({});
   const navigate = useNavigate();
   const [dates, setDates] = useState([
@@ -26,10 +27,13 @@ const Banner = () => {
       key: "selection",
     },
   ]);
+
   const handleChange = (e) => {
     setOption((prev) => ({ ...prev, [e.target.id]: e.target.value }));
   };
   // navigate("/findRoom", { state: { dates, option } });
+
+  const section = ["tour", "flight", "hotel", "destination"];
 
   return (
     <section className="banner min-h-[110vh] h-full relative pb-10">
@@ -64,7 +68,11 @@ const Banner = () => {
                   <IoAirplaneOutline className="-rotate-45 text-5xl" />
                   FLIGHT
                 </div>
-                <div className="w-32 h-28 rounded-xl border-2 flex justify-center items-center text-white flex-col gap-3 hover:border-none hover:bg-primary hover:duration-300 hover:ease-in ease-in duration-300">
+                <div
+                  className={`w-32 h-28 rounded-xl border-2 flex justify-center items-center text-white flex-col gap-3 hover:border-none hover:bg-primary hover:duration-300 hover:ease-in ease-in duration-300 ${
+                    selectSection === "hotel" && "border-none bg-primary"
+                  }`}
+                >
                   <IoHomeOutline className="text-5xl" />
                   HOTEL
                 </div>
