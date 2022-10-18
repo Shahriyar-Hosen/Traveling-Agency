@@ -145,6 +145,7 @@ const Register = () => {
             <div className="divider text-primary">OR</div>
 
             {/* Social Login section */}
+            {/* 
             <div className="flex flex-col justify-center items-center gap-3 px-3">
               <button
                 disabled={gLoading}
@@ -157,6 +158,7 @@ const Register = () => {
                 <FaFacebook /> Login with Facebook
               </button>
             </div>
+             */}
           </div>
         </div>
       </Content>

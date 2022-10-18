@@ -1,9 +1,6 @@
 import React from "react";
-import { signOut } from "firebase/auth";
-import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, NavLink } from "react-router-dom";
 import navLogo from "../../Assets/log/logo.png";
-import auth from "../../firebase.inite";
 import Content from "../theme/Content";
 import gravatarUrl from "gravatar-url";
 import { useDispatch, useSelector } from "react-redux";
