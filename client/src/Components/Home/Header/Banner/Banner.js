@@ -33,7 +33,7 @@ const Banner = () => {
   };
   // navigate("/findRoom", { state: { dates, option } });
 
-  const section = ["tour", "flight", "hotel", "destination"];
+  const featureSection = ["tour", "flight", "hotel", "destination"];
 
   return (
     <section className="banner min-h-[110vh] h-full relative pb-10">
@@ -60,8 +60,9 @@ const Banner = () => {
 
               {/* section */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 justify-items-center content-center mt-10">
-                {section.map((i) => (
+                {featureSection.map((i, index) => (
                   <div
+                    key={index}
                     onClick={() => setSelectSection(i)}
                     className={`w-32 h-28 rounded-xl border-2 flex justify-center items-center text-white flex-col gap-3 hover:border-none hover:bg-primary hover:duration-300 hover:ease-in ease-in duration-300 uppercase ${
                       selectSection === i && "border-none bg-primary"
@@ -127,10 +128,12 @@ const Banner = () => {
                       id="adult"
                       className="select select-bordered w-full"
                     >
-                      <option selected>Adult</option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
+                      <option selected value="Adult">
+                        Adult
+                      </option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
                     </select>
                   </div>
                   <div className="w-full">
@@ -139,10 +142,12 @@ const Banner = () => {
                       id="children"
                       className="select select-bordered w-full"
                     >
-                      <option selected>Children</option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
+                      <option selected value="Children">
+                        Children
+                      </option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
                     </select>
                   </div>
                 </div>
@@ -152,10 +157,12 @@ const Banner = () => {
                     id="room"
                     className="select select-bordered w-full"
                   >
-                    <option selected>Rooms</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
+                    <option selected value="Children">
+                      Rooms
+                    </option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
                   </select>
                 </div>
                 <PButton
