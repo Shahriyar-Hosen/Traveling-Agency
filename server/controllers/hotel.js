@@ -1,6 +1,7 @@
 import Hotel from "../models/Hotel.js";
 import Room from "../models/Room.js";
 
+// Create Hotel
 export const createHotel = async (req, res, next) => {
   const newHotel = new Hotel(req.body);
 
@@ -11,6 +12,8 @@ export const createHotel = async (req, res, next) => {
     next(err);
   }
 };
+
+// Update Hotel
 export const updateHotel = async (req, res, next) => {
   try {
     const updatedHotel = await Hotel.findByIdAndUpdate(
@@ -23,6 +26,8 @@ export const updateHotel = async (req, res, next) => {
     next(err);
   }
 };
+
+// Delete Hotel
 export const deleteHotel = async (req, res, next) => {
   try {
     await Hotel.findByIdAndDelete(req.params.id);
@@ -31,6 +36,8 @@ export const deleteHotel = async (req, res, next) => {
     next(err);
   }
 };
+
+// Get Hotel
 export const getHotel = async (req, res, next) => {
   try {
     const hotel = await Hotel.findById(req.params.id);
@@ -39,6 +46,8 @@ export const getHotel = async (req, res, next) => {
     next(err);
   }
 };
+
+// Get Hotels
 export const getHotels = async (req, res, next) => {
   const { min, max, ...others } = req.query;
   try {
@@ -51,6 +60,8 @@ export const getHotels = async (req, res, next) => {
     next(err);
   }
 };
+
+// Count By City
 export const countByCity = async (req, res, next) => {
   const cities = req.query.cities.split(",");
   try {
@@ -64,6 +75,8 @@ export const countByCity = async (req, res, next) => {
     next(err);
   }
 };
+
+// Count By Type
 export const countByType = async (req, res, next) => {
   try {
     const hotelCount = await Hotel.countDocuments({ type: "hotel" });
@@ -84,6 +97,7 @@ export const countByType = async (req, res, next) => {
   }
 };
 
+// Get Hotel Rooms
 export const getHotelRooms = async (req, res, next) => {
   try {
     const hotel = await Hotel.findById(req.params.id);
@@ -92,7 +106,7 @@ export const getHotelRooms = async (req, res, next) => {
         return Room.findById(room);
       })
     );
-    res.status(200).json(list)
+    res.status(200).json(list);
   } catch (err) {
     next(err);
   }
