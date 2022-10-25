@@ -6,34 +6,34 @@
 
 ## **_ `Home Page Section` _**
 
-### Banner
+#### Banner
 
-### Search
+#### Search
 
-### Top Categories
+#### Top Categories
 
-### Core Features
+#### Core Features
 
-### PLAN YOUR TRIP
+#### PLAN YOUR TRIP
 
-### Top Destinations
+#### Top Destinations
 
-### Best In Year
+#### Best In Year
 
-### Best Tour Packages
+#### Best Tour Packages
 
-### Best Hotels Packages
+#### Best Hotels Packages
 
-### Top Deals & The Last Minute Deals
+#### Top Deals & The Last Minute Deals
 
-### Testimonials
+#### Testimonials
 
-### Tour Guides
+#### Tour Guides
 
-### Our Blogs Offers
+#### Our Blogs Offers
 
-### Our Partners
+#### Our Partners
 
-### Our Awesome Partners
+#### Our Awesome Partners
 
-### Footer
+#### Footer
