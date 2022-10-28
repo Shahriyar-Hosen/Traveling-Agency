@@ -36,8 +36,8 @@ const Banner = () => {
   const featureSection = ["tour", "flight", "hotel", "destination"];
 
   return (
-    <section className="banner min-h-[110vh] h-full relative pb-10">
-      <div className="bg-black w-full h-full bg-opacity-40 pt-10 pb-20 px-5 ">
+    <section className="banner min-h-[110vh] h-full relative pb-10 pt-10">
+      <div className="bg-black w-full h-full bg-opacity-40 pt-10 pb-20 px-5">
         <Content>
           <div className="bg-white w-60 mx-auto p-5 rounded-xl mb-10 mt-5">
             <img src={bannerLogo} alt="" />
