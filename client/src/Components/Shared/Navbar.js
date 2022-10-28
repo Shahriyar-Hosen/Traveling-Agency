@@ -84,7 +84,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="bg-gradient-to-r from-white via-yellow-200 to-white">
+    <div className="bg-gradient-to-r from-white via-yellow-200 to-white fixed z-50 w-full">
       <Content className="navbar  px-3">
         {/* Logo section */}
         <div className="navbar-start">
