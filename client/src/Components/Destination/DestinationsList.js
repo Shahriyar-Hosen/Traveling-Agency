@@ -1,6 +1,4 @@
 import React from "react";
-import LoveGoing from "../Shared/LoveGoing";
-import Partners from "../Shared/Partners";
 import Content from "../theme/Content";
 import DestinationCard from "../theme/DestinationCard";
 

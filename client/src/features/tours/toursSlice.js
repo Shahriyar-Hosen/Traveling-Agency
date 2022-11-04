@@ -8,5 +8,5 @@ const toursSlice = createSlice({
   reducers: {},
 });
 
-export const {} = toursSlice.actions;
+// export const {} = toursSlice.actions;
 export default toursSlice.reducer;

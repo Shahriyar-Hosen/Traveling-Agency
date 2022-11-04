@@ -8,5 +8,5 @@ const hotelsSlice = createSlice({
   reducers: {},
 });
 
-export const {} = hotelsSlice.actions;
+// export const {} = hotelsSlice.actions;
 export default hotelsSlice.reducer;

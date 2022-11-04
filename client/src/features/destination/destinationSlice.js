@@ -8,5 +8,5 @@ const destinationSlice = createSlice({
   reducers: {},
 });
 
-export const {} = destinationSlice.actions;
+// export const {} = destinationSlice.actions;
 export default destinationSlice.reducer;

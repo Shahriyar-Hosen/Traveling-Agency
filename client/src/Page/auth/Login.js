@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import {
-  useSignInWithEmailAndPassword,
+  // useSignInWithEmailAndPassword,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
-import { FaFacebook, FaGoogle } from "react-icons/fa";
+// import { FaFacebook, FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Header from "../../Components/Shared/Header";
 import Content from "../../Components/theme/Content";
@@ -20,7 +20,6 @@ const Login = () => {
   const navigate = useNavigate();
   let location = useLocation();
 
-
   const [login, { data, isLoading, error: responseError }] = useLoginMutation();
 
   let from = location.state?.from?.pathname || "/";
@@ -35,7 +34,9 @@ const Login = () => {
   }, [data, responseError, navigate, from]);
 
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
-  
+
+  console.log(error, gLoading, signInWithGoogle);
+
   // const [signInWithEmailAndPassword, EPUser, EPLoading, EPError] =
   // useSignInWithEmailAndPassword(auth);
 
@@ -55,13 +56,13 @@ const Login = () => {
     navigate("/");
   }
 
-  const signInGoogle = () => {
-    signInWithGoogle();
-  };
+  // const signInGoogle = () => {
+  //   signInWithGoogle();
+  // };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    
+
     login({
       username: userName,
       email,

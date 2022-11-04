@@ -3,7 +3,7 @@ import {
   useCreateUserWithEmailAndPassword,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
-import { FaFacebook, FaGoogle } from "react-icons/fa";
+// import { FaFacebook, FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Header from "../../Components/Shared/Header";
 import Content from "../../Components/theme/Content";
@@ -39,6 +39,8 @@ const Register = () => {
   useCreateUserWithEmailAndPassword(auth);
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
 
+  console.log(error, isLoading, signInWithGoogle, gUser, gLoading, gError);
+
   let signUpError;
 
   /* 
@@ -56,9 +58,9 @@ const Register = () => {
   //   );
   // } */
 
-  const signInGoogle = () => {
-    signInWithGoogle();
-  };
+  // const signInGoogle = () => {
+  //   signInWithGoogle();
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();

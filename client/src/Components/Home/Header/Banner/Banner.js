@@ -28,6 +28,8 @@ const Banner = () => {
     },
   ]);
 
+  console.log(option, navigate);
+
   const handleChange = (e) => {
     setOption((prev) => ({ ...prev, [e.target.id]: e.target.value }));
   };

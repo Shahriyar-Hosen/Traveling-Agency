@@ -54,11 +54,23 @@ const Hotel = () => {
             rating,
           } = hotel || {};
 
+          console.log(
+            address,
+            cheapestPrice,
+            city,
+            desc,
+            name,
+            photos,
+            title,
+            rating
+          );
+
           return <div key={_id}></div>;
         })}
       </>
     );
   }
+  console.log(content);
 
   const galleryImg = [
     "https://i.ibb.co/YcnqRSK/single3.webp",
