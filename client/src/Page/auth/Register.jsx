@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 
 import ErrorMessage from "@/common/ErrorMessage";
@@ -10,29 +10,19 @@ import useLogin from "hooks/useLogin";
 import useRedirect from "hooks/useRedirect";
 import SocialLogin from "./SocialLogin";
 
-const Login = () => {
+const Register = () => {
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [reEnterPassword, setReEnterPassword] = useState("");
   const [agree, setAgree] = useState(false);
   const [errorMassage, setErrorMassage] = useState("");
 
   const login = useLogin();
   const redirect = useRedirect();
 
-  // const [login, { data, isLoading, error: resError }] = useLoginMutation();
-
-  // useEffect(() => {
-  //   if (resError?.data) {
-  //     setError(resError.data);
-  //   }
-  //   if (data?.user && data?.accessToken) {
-  //     redirect(data.user, data.accessToken);
-  //   }
-  // }, [data, redirect, resError]);
-
-  const [signInWithEmailAndPassword, user, loading, error] =
-    useSignInWithEmailAndPassword(auth);
+  const [createUserWithEmailAndPassword, user, loading, error] =
+    useCreateUserWithEmailAndPassword(auth);
 
   useEffect(() => {
     if (!loading && !error && user?.user?.accessToken) {
@@ -44,23 +34,22 @@ const Login = () => {
     }
   }, [user, loading, error, login, redirect]);
 
-  // let signUpError;
-  // if (EPLoading || gLoading) {
-  //   return <div>Loading...</div>;
-  // }
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
     console.log(userName);
-    signInWithEmailAndPassword(email, password);
+    if (password === reEnterPassword) {
+      createUserWithEmailAndPassword(email, password);
+    } else {
+      setErrorMassage("Passwords do not match");
+    }
   };
 
   return (
-    <div>
-      <Header h1="Login" page="Login" />
+    <section>
+      <Header h1="Register" page="Register" />
       <Content className="flex flex-col justify-center items-center gap-3 ">
         <h1 className="text-center text-3xl font-serif font-semibold w-96 hover:text-primary">
-          Login
+          Register
         </h1>
         <div className="w-96 flex flex-col justify-center gap-5">
           <form
@@ -85,42 +74,47 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
               className="input input-bordered w-full"
             />
-            <div className="flex justify-between items-center w-full">
-              <div className="flex justify-center gap-1">
+            <div className="w-full">
+              <input
+                type="password"
+                placeholder="Re-enter Password"
+                onChange={(e) => setReEnterPassword(e.target.value)}
+                className="input input-bordered w-full"
+              />
+              <ErrorMessage title={errorMassage} className="ml-2" />
+            </div>
+            <div className="form-control">
+              <label className="label cursor-pointer p-0">
                 <input
+                  type="checkbox"
                   value={agree}
                   onChange={(e) => setAgree(e.target.checked)}
-                  type="checkbox"
                   className="checkbox"
                 />
-                Remember me
-              </div>
-              <Link
-                to="/login"
-                className="hover:text-warning text-error font-semibold hover:duration-500 "
-              >
-                Lost your password?
-              </Link>
+                <span className="label-text pr-5 pl-2">
+                  I have read and accept the Terms and Privacy Policy?
+                </span>
+              </label>
             </div>
-            <div className="flex justify-center items-center flex-col w-full">
+            <div className="flex justify-center items-center flex-col">
               <button
                 type="submit"
-                disabled={!agree || loading}
-                className="btn btn-primary hover:btn-secondary border-none  text-white hover:text-white tracking-widest hover:duration-500 hover:ease-in-out ease-in-out duration-500 disabled:bg-orange-200 w-full"
+                disabled={!agree}
+                className="btn btn-primary hover:btn-secondary border-none  text-white hover:text-white tracking-widest hover:duration-500 hover:ease-in-out ease-in-out duration-500 disabled:bg-orange-200"
               >
-                Login
+                Registration
               </button>
               <ErrorMessage title={error?.message} className="ml-4 mt-2" />
             </div>
           </form>
-          {/* social login */}
+
           <div>
-            <h5 className="text-center mb-5">
-              Don't have an account?{" "}
-              <Link to="/register" className="text-primary font-semibold ">
-                Registration
+            <h1 className="text-center mb-5">
+              Already have an account?{" "}
+              <Link to="/login" className="text-primary font-semibold ">
+                Login
               </Link>
-            </h5>
+            </h1>
 
             <div className="divider text-primary">OR</div>
 
@@ -129,8 +123,8 @@ const Login = () => {
           </div>
         </div>
       </Content>
-    </div>
+    </section>
   );
 };
 
-export default Login;
+export default Register;

@@ -1,19 +1,20 @@
-import React from "react";
+import { signOut } from "firebase/auth";
+import { useDispatch, useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
 import navLogo from "../../Assets/log/logo.png";
-import Content from "../theme/Content";
-import gravatarUrl from "gravatar-url";
-import { useDispatch, useSelector } from "react-redux";
 import { userLoggedOut } from "../../features/auth/authSlice";
+import auth from "../../firebase.inite";
+import Content from "../theme/Content";
 
 const Navbar = () => {
   const user = useSelector((state) => state.auth.user);
 
   const dispatch = useDispatch();
 
-  const { email, img } = user || {};
+  // const { email, img } = user || {};
 
   const logout = () => {
+    signOut(auth);
     dispatch(userLoggedOut());
     localStorage.clear();
   };
@@ -196,14 +197,7 @@ const Navbar = () => {
                 <label tabIndex="0" className="btn btn-ghost btn-circle avatar">
                   <div className="w-10 rounded-full">
                     <img
-                      src={
-                        img
-                          ? img
-                          : gravatarUrl(email, {
-                              size: 80,
-                              default: "mm",
-                            })
-                      }
+                      src="https://res.cloudinary.com/dev-shahriyar/image/upload/v1664434575/Avater/avater_ytuiyd.jpg"
                       alt=""
                     />
                   </div>
