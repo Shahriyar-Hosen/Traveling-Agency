@@ -15,21 +15,9 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [agree, setAgree] = useState(false);
-  const [errorMassage, setErrorMassage] = useState("");
 
   const login = useLogin();
   const redirect = useRedirect();
-
-  // const [login, { data, isLoading, error: resError }] = useLoginMutation();
-
-  // useEffect(() => {
-  //   if (resError?.data) {
-  //     setError(resError.data);
-  //   }
-  //   if (data?.user && data?.accessToken) {
-  //     redirect(data.user, data.accessToken);
-  //   }
-  // }, [data, redirect, resError]);
 
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
@@ -43,11 +31,6 @@ const Login = () => {
       redirect(userDetails, token);
     }
   }, [user, loading, error, login, redirect]);
-
-  // let signUpError;
-  // if (EPLoading || gLoading) {
-  //   return <div>Loading...</div>;
-  // }
 
   const handleSubmit = (event) => {
     event.preventDefault();
