@@ -1,2 +1,2 @@
-# Traveling-Agency
+# Traveling Agency
 Traveling &amp; Booking App
