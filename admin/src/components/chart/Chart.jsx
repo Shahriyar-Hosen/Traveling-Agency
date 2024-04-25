@@ -50,4 +50,9 @@ const Chart = ({ aspect, title }) => {
   );
 };
 
+Chart.propTypes = {
+  aspect: PropTypes.number.isRequired, // Define prop types
+  title: PropTypes.string.isRequired,
+};
+
 export default Chart;
