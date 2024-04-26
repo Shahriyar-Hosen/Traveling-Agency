@@ -7,7 +7,7 @@ import Collapse from "./Collapse";
 import Description from "./Description";
 import Expect from "./Expect";
 import Gallery from "./Gallery";
-import Map from "./Map";
+import TourMap from "./Map";
 import Reviews from "./Reviews";
 import TourHeader from "./TourHeader";
 
@@ -28,7 +28,7 @@ const Tour = () => {
         {/* Collapse */}
         <Collapse />
         {/* Map */}
-        <Map />
+        <TourMap />
         {/* Reviews */}
         <Reviews />
       </Content>

@@ -33,7 +33,6 @@ const Banner = () => {
   const handleChange = (e) => {
     setOption((prev) => ({ ...prev, [e.target.id]: e.target.value }));
   };
-  // navigate("/findRoom", { state: { dates, option } });
 
   const featureSection = ["tour", "flight", "hotel", "destination"];
 
@@ -63,7 +62,7 @@ const Banner = () => {
               {/* section */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 justify-items-center content-center mt-10">
                 {featureSection.map((i, index) => (
-                  <div
+                  <button
                     key={index}
                     onClick={() => setSelectSection(i)}
                     className={`w-32 h-28 rounded-xl border-2 flex justify-center items-center text-white flex-col gap-3 hover:border-none hover:bg-primary hover:duration-300 hover:ease-in ease-in duration-300 uppercase ${
@@ -79,7 +78,7 @@ const Banner = () => {
                       <IoLocationOutline className="text-5xl" />
                     )}
                     {i}
-                  </div>
+                  </button>
                 ))}
               </div>
 

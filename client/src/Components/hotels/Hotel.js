@@ -10,7 +10,7 @@ import Description from "../theme/Description";
 import Expect from "../theme/Expect";
 import Gallery from "../theme/Gallery";
 import HeadLine from "../theme/HeadLine";
-import Map from "../theme/Map";
+import MapCompo from "../theme/Map";
 import Reviews from "../theme/Reviews";
 
 const Hotel = () => {
@@ -97,7 +97,7 @@ const Hotel = () => {
         {/* Collapse */}
         <Collapse />
         {/* Map */}
-        <Map />
+        <MapCompo />
         {/* Reviews */}
         <Reviews />
       </Content>

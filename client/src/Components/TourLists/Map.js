@@ -1,6 +1,6 @@
 import React from "react";
 
-const Map = () => {
+const TourMap = () => {
   return (
     <div className="my-10">
       <h1 className="text-2xl font-semibold font-serif pb-3">Map</h1>
@@ -21,4 +21,4 @@ const Map = () => {
   );
 };
 
-export default Map;
+export default TourMap;
